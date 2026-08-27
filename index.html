@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Stratégique — Jesse Ogoula & Iboga Lab</title>
+    <meta name="description" content="Tableau de bord de veille stratégique et idées de publications pour Jesse Ogoula & Iboga Lab.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #111113;
+            --bg-raised: #18181b;
+            --bg-hover: #1f1f23;
+            --text-primary: #ececef;
+            --text-secondary: #a0a0ab;
+            --text-muted: #63636e;
+            --accent: #6366f1;
+            --accent-muted: rgba(99, 102, 241, 0.12);
+            --urgent: #dc2626;
+            --urgent-muted: rgba(220, 38, 38, 0.10);
+            --separator: rgba(255, 255, 255, 0.06);
+            --pillar-product: #6366f1;
+            --pillar-ia: #a78bfa;
+            --pillar-formation: #34d399;
+            --pillar-entreprendre: #fbbf24;
+            --pillar-mindset: #f87171;
+            --account-personal: #60a5fa;
+            --account-business: #fbbf24;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+
+        /* ---- HEADER ---- */
+        .report-header {
+            margin-bottom: 56px;
+        }
+
+        .report-header .label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .report-header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .report-header .meta {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .report-header .meta span {
+            color: var(--text-muted);
+        }
+
+        /* ---- SESSION SELECTOR ---- */
+        .session-selector {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .session-selector .session-label {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .session-pills {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .session-pill {
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 6px 14px;
+            border: 1px solid var(--separator);
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .session-pill:hover {
+            color: var(--text-secondary);
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .session-pill.active {
+            color: var(--text-primary);
+            background: var(--accent-muted);
+            border-color: var(--accent);
+        }
+
+        .session-count {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-left: 4px;
+        }
+
+        /* ---- URGENT BLOCK ---- */
+        .urgent-block {
+            background: var(--bg-raised);
+            padding: 28px 24px;
+            margin-bottom: 48px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .urgent-block::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: var(--urgent);
+        }
+
+        .urgent-label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--urgent);
+            margin-bottom: 12px;
+        }
+
+        .urgent-block h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .urgent-block .deadline {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .urgent-block .hook {
+            font-size: 15px;
+            color: var(--text-secondary);
+            font-style: italic;
+            padding-left: 16px;
+            position: relative;
+            margin-bottom: 16px;
+        }
+
+        .urgent-block .hook::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--urgent);
+        }
+
+        .urgent-block .key-points {
+            list-style: none;
+            padding: 0;
+        }
+
+        .urgent-block .key-points li {
+            font-size: 14px;
+            color: var(--text-secondary);
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .urgent-block .key-points li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 4px;
+            height: 4px;
+            background: var(--urgent);
+            border-radius: 50%;
+        }
+
+        /* ---- FILTER BAR ---- */
+        .filter-bar {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            padding: 6px 14px;
+            border: 1px solid var(--separator);
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .filter-btn:hover {
+            color: var(--text-secondary);
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .filter-btn.active {
+            color: var(--text-primary);
+            background: var(--accent-muted);
+            border-color: var(--accent);
+        }
+
+        /* ---- SECTIONS ---- */
+        .section {
+            margin-bottom: 48px;
+        }
+
+        .section-title {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        /* ---- IDEA CARDS ---- */
+        .idea-card {
+            background: var(--bg-raised);
+            padding: 28px 24px;
+            margin-bottom: 16px;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+
+        .idea-card.hidden-by-filter {
+            display: none;
+        }
+
+        .idea-card-header {
+            margin-bottom: 12px;
+        }
+
+        .idea-card-header h3 {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .idea-card-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .pillar-tag {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 3px 8px;
+        }
+
+        .pillar-tag[data-pillar="product"] { color: var(--pillar-product); background: rgba(99, 102, 241, 0.10); }
+        .pillar-tag[data-pillar="ia"] { color: var(--pillar-ia); background: rgba(167, 139, 250, 0.10); }
+        .pillar-tag[data-pillar="formation"] { color: var(--pillar-formation); background: rgba(52, 211, 153, 0.10); }
+        .pillar-tag[data-pillar="entreprendre"] { color: var(--pillar-entreprendre); background: rgba(251, 191, 36, 0.10); }
+        .pillar-tag[data-pillar="mindset"] { color: var(--pillar-mindset); background: rgba(248, 113, 113, 0.10); }
+
+        .account-tag {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 3px 8px;
+        }
+
+        .account-tag[data-account="personal"] {
+            color: var(--account-personal);
+            background: rgba(96, 165, 250, 0.10);
+        }
+
+        .account-tag[data-account="business"] {
+            color: var(--account-business);
+            background: rgba(251, 191, 36, 0.10);
+        }
+
+        .funnel-tag {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            color: var(--text-muted);
+            background: rgba(255, 255, 255, 0.04);
+            margin-bottom: 4px;
+        }
+
+        .score {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .score strong {
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        /* ---- TABS ---- */
+        .angle-tabs {
+            display: flex;
+            gap: 0;
+            margin-bottom: 20px;
+        }
+
+        .angle-tab {
+            font-size: 13px;
+            font-weight: 500;
+            padding: 8px 16px;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: color 0.15s ease, background 0.15s ease;
+            position: relative;
+        }
+
+        .angle-tab::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: transparent;
+            transition: background 0.15s ease;
+        }
+
+        .angle-tab:hover {
+            color: var(--text-secondary);
+        }
+
+        .angle-tab.active {
+            color: var(--text-primary);
+        }
+
+        .angle-tab.active::after {
+            background: var(--accent);
+        }
+
+        .angle-panel {
+            display: none;
+        }
+
+        .angle-panel.active {
+            display: block;
+        }
+
+        .angle-panel .format {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 12px;
+        }
+
+        .angle-panel .hook {
+            font-size: 15px;
+            color: var(--text-secondary);
+            font-style: italic;
+            padding-left: 16px;
+            position: relative;
+            margin-bottom: 16px;
+        }
+
+        .angle-panel .hook::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--accent);
+        }
+
+        .angle-panel .key-points {
+            list-style: none;
+            padding: 0;
+        }
+
+        .angle-panel .key-points li {
+            font-size: 14px;
+            color: var(--text-secondary);
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .angle-panel .key-points li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 4px;
+            height: 4px;
+            background: var(--text-muted);
+            border-radius: 50%;
+        }
+
+        /* ---- SOURCES ---- */
+        .sources {
+            padding-top: 16px;
+        }
+
+        .sources-label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        .source-item {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            margin-bottom: 8px;
+        }
+
+        .source-link {
+            font-size: 13px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: color 0.15s ease;
+        }
+
+        .source-link:hover {
+            color: var(--text-primary);
+        }
+
+        .source-link svg {
+            width: 12px;
+            height: 12px;
+            flex-shrink: 0;
+        }
+
+        .source-meta {
+            font-size: 11px;
+            color: var(--text-muted);
+            padding-left: 2px;
+        }
+
+        /* ---- EXISTING POSTS ---- */
+        .existing-posts {
+            padding-top: 12px;
+        }
+
+        .existing-posts-label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        .existing-post {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+            flex-wrap: wrap;
+        }
+
+        .post-platform {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding: 2px 6px;
+        }
+
+        .post-platform[data-platform="linkedin"] { color: #0a66c2; background: rgba(10, 102, 194, 0.10); }
+        .post-platform[data-platform="facebook"] { color: #1877f2; background: rgba(24, 119, 242, 0.10); }
+        .post-platform[data-platform="x"] { color: var(--text-secondary); background: rgba(255, 255, 255, 0.06); }
+
+        .post-author {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .post-link {
+            font-size: 12px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: color 0.15s ease;
+        }
+
+        .post-link:hover { color: var(--text-primary); }
+
+        .post-link svg {
+            width: 10px;
+            height: 10px;
+            flex-shrink: 0;
+        }
+
+        /* ---- COPY BUTTON ---- */
+        .copy-prompt-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 8px 14px;
+            margin-top: 16px;
+            background: transparent;
+            border: 1px solid var(--separator);
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .copy-prompt-btn:hover {
+            color: var(--text-secondary);
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .copy-prompt-btn.copied {
+            color: var(--pillar-formation);
+            border-color: var(--pillar-formation);
+        }
+
+        .copy-prompt-btn svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        /* ---- PLANNING TABLE ---- */
+        .planning-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        .planning-table th {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            text-align: left;
+            padding: 10px 12px;
+        }
+
+        .planning-table td {
+            padding: 12px;
+            color: var(--text-secondary);
+            vertical-align: top;
+        }
+
+        .planning-table tr + tr {
+            border-top: 1px solid var(--separator);
+        }
+
+        .planning-table .day {
+            font-weight: 600;
+            color: var(--text-primary);
+            white-space: nowrap;
+            width: 90px;
+        }
+
+        .planning-table .pillar-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 8px;
+            vertical-align: middle;
+            position: relative;
+            top: -1px;
+        }
+
+        .planning-table .account-indicator {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            padding: 2px 6px;
+            display: inline-block;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+
+        .planning-table .account-indicator[data-account="personal"] {
+            color: var(--account-personal);
+            background: rgba(96, 165, 250, 0.10);
+        }
+
+        .planning-table .account-indicator[data-account="business"] {
+            color: var(--account-business);
+            background: rgba(251, 191, 36, 0.10);
+        }
+
+        /* ---- RECO CARDS ---- */
+        .reco-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .reco-card {
+            background: var(--bg-raised);
+            padding: 20px;
+        }
+
+        .reco-card .platform {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .reco-item {
+            margin-bottom: 12px;
+        }
+
+        .reco-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .reco-item .rank {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .reco-item .title {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+        }
+
+        .reco-item .detail {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* ---- FOOTER ---- */
+        .report-footer {
+            margin-top: 56px;
+            padding-top: 24px;
+            position: relative;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .report-footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: var(--separator);
+        }
+
+        /* ---- LOADING ---- */
+        .loading {
+            text-align: center;
+            padding: 80px 0;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .loading .spinner {
+            width: 24px;
+            height: 24px;
+            border: 2px solid var(--separator);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 16px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* ---- RESPONSIVE ---- */
+        @media (max-width: 640px) {
+            .container {
+                padding: 32px 16px 48px;
+            }
+
+            .report-header h1 {
+                font-size: 22px;
+            }
+
+            .idea-card {
+                padding: 20px;
+            }
+
+            .reco-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .angle-tab {
+                font-size: 12px;
+                padding: 8px 12px;
+            }
+
+            .filter-bar {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="app">
+        <div class="loading">
+            <div class="spinner"></div>
+            Chargement du tableau de bord...
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    var app = document.getElementById('app');
+    var sessionsData = null;
+    var currentSessionIndex = 0;
+    var currentFilter = 'all';
+
+    var externalLinkSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M3.75 2a.75.75 0 0 0 0 1.5h6.69L2.72 11.22a.75.75 0 1 0 1.06 1.06L11.5 4.56v6.69a.75.75 0 0 0 1.5 0V2.75a.75.75 0 0 0-.75-.75H3.75Z"/></svg>';
+    var copySvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M5.5 3.5A1.5 1.5 0 0 1 7 2h2.879a1.5 1.5 0 0 1 1.06.44l2.122 2.12a1.5 1.5 0 0 1 .439 1.061V12.5A1.5 1.5 0 0 1 12 14H7a1.5 1.5 0 0 1-1.5-1.5v-9Z"/><path d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H7A2.5 2.5 0 0 0 4.5 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h.5v-1.25c0-.69.56-1.25 1.25-1.25H4.5V5.75h-.25A.75.75 0 0 1 3.5 5.75Z"/></svg>';
+    var checkSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"/></svg>';
+
+    function esc(str) {
+        if (!str) return '';
+        var div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+    }
+
+    function loadData() {
+        fetch('data/sessions.json')
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                sessionsData = data;
+                currentSessionIndex = data.sessions.length - 1;
+                render();
+            })
+            .catch(function(err) {
+                app.innerHTML = '<div class="loading">Erreur de chargement des données.</div>';
+                console.error(err);
+            });
+    }
+
+    function render() {
+        var session = sessionsData.sessions[currentSessionIndex];
+        var personalCount = 0;
+        var businessCount = 0;
+        session.ideas.forEach(function(idea) {
+            if (idea.account === 'personal') personalCount++;
+            else businessCount++;
+        });
+
+        var html = '';
+
+        // Header
+        html += '<header class="report-header">';
+        html += '<div class="label">Rapport de veille & Stratégie de Contenu</div>';
+        html += '<h1>Idées de publications — ' + esc(session.weekLabel) + '</h1>';
+        html += '<div class="meta">Jesse Ogoula <span>/</span> Généré le ' + esc(session.generatedAt) + '</div>';
+
+        // Session selector
+        if (sessionsData.sessions.length > 0) {
+            html += '<div class="session-selector">';
+            html += '<span class="session-label">Sessions</span>';
+            html += '<div class="session-pills">';
+            sessionsData.sessions.forEach(function(s, i) {
+                var activeClass = i === currentSessionIndex ? ' active' : '';
+                html += '<button class="session-pill' + activeClass + '" onclick="switchSession(' + i + ')">' + esc(s.date) + '</button>';
+            });
+            html += '</div>';
+            html += '<span class="session-count">' + sessionsData.sessions.length + ' session(s)</span>';
+            html += '</div>';
+        }
+
+        html += '</header>';
+
+        // Newsjacking
+        if (session.newsjacking) {
+            var nj = session.newsjacking;
+            html += '<div class="urgent-block">';
+            html += '<div class="urgent-label">⚡ Newsjacking — À publier en priorité sous 24-48h</div>';
+            html += '<h2>' + esc(nj.title) + '</h2>';
+            html += '<div class="deadline">Deadline : ' + esc(nj.deadline) + '</div>';
+            html += '<div class="hook">' + esc(nj.hook) + '</div>';
+            html += '<ul class="key-points">';
+            nj.points.forEach(function(p) { html += '<li>' + esc(p) + '</li>'; });
+            html += '</ul>';
+            html += renderSources(nj.sources);
+            html += '</div>';
+        }
+
+        // Ideas section
+        html += '<section class="section">';
+        html += '<div class="section-title">Sujets identifiés — ' + session.ideas.length + ' fiches détaillées</div>';
+
+        // Filter bar
+        html += '<div class="filter-bar">';
+        html += '<button class="filter-btn' + (currentFilter === 'all' ? ' active' : '') + '" data-filter="all" onclick="filterCards(\'all\')">Tous (' + session.ideas.length + ')</button>';
+        html += '<button class="filter-btn' + (currentFilter === 'personal' ? ' active' : '') + '" data-filter="personal" onclick="filterCards(\'personal\')">👤 Jesse Ogoula (' + personalCount + ')</button>';
+        html += '<button class="filter-btn' + (currentFilter === 'business' ? ' active' : '') + '" data-filter="business" onclick="filterCards(\'business\')">🏢 Iboga Lab (' + businessCount + ')</button>';
+        html += '</div>';
+
+        // Idea cards
+        session.ideas.forEach(function(idea, ideaIdx) {
+            var hidden = currentFilter !== 'all' && idea.account !== currentFilter;
+            html += '<div class="idea-card' + (hidden ? ' hidden-by-filter' : '') + '" data-account="' + idea.account + '" data-idea-idx="' + ideaIdx + '">';
+            html += '<div class="idea-card-header">';
+            html += '<h3>' + esc(idea.title) + '</h3>';
+            html += '<div class="idea-card-tags">';
+            html += '<span class="account-tag" data-account="' + idea.account + '">' + (idea.account === 'personal' ? '👤 Jesse Ogoula' : '🏢 Iboga Lab') + '</span>';
+            html += '<span class="pillar-tag" data-pillar="' + idea.pillar + '">' + esc(idea.pillarLabel) + '</span>';
+            html += '</div></div>';
+            html += '<span class="funnel-tag">' + esc(idea.funnel) + '</span>';
+            html += '<div class="score">Pertinence : <strong>' + idea.score + '/5</strong> &nbsp;|&nbsp; Pont Iboga Lab : ' + esc(idea.bridge) + '</div>';
+
+            // Tabs
+            html += '<div class="angle-tabs">';
+            idea.angles.forEach(function(angle, ai) {
+                html += '<div class="angle-tab' + (ai === 0 ? ' active' : '') + '" onclick="switchAngle(this, ' + ai + ')">' + esc(angle.name) + '</div>';
+            });
+            html += '</div>';
+
+            // Panels
+            idea.angles.forEach(function(angle, ai) {
+                html += '<div class="angle-panel' + (ai === 0 ? ' active' : '') + '">';
+                html += '<div class="format">Format : ' + esc(angle.format) + '</div>';
+                html += '<div class="hook">' + esc(angle.hook) + '</div>';
+                html += '<ul class="key-points">';
+                angle.points.forEach(function(p) { html += '<li>' + esc(p) + '</li>'; });
+                html += '</ul></div>';
+            });
+
+            // Sources
+            html += renderSources(idea.sources);
+
+            // Existing posts
+            if (idea.existingPosts && idea.existingPosts.length > 0) {
+                html += '<div class="existing-posts">';
+                html += '<div class="existing-posts-label">Publications existantes sur le sujet</div>';
+                idea.existingPosts.forEach(function(post) {
+                    html += '<div class="existing-post">';
+                    html += '<span class="post-platform" data-platform="' + post.platform + '">' + esc(post.platform) + '</span>';
+                    html += '<span class="post-author">' + esc(post.author) + ' —</span>';
+                    html += '<a href="' + esc(post.url) + '" target="_blank" rel="noopener" class="post-link">' + esc(post.title) + externalLinkSvg + '</a>';
+                    html += '</div>';
+                });
+                html += '</div>';
+            }
+
+            // Copy button
+            html += '<button class="copy-prompt-btn" onclick="copyPrompt(this, ' + ideaIdx + ')">' + copySvg + ' Copier le prompt</button>';
+            html += '</div>';
+        });
+
+        html += '</section>';
+
+        // Recommendations
+        if (session.recommendations) {
+            var reco = session.recommendations;
+            html += '<section class="section">';
+            html += '<div class="section-title">Recommandations</div>';
+            html += '<div class="reco-grid">';
+            html += renderRecoCard('LinkedIn — 👤 Jesse', reco.linkedinPersonal);
+            html += renderRecoCard('LinkedIn — 🏢 Iboga Lab', reco.linkedinBusiness);
+            html += renderRecoCard('Facebook — 👤 Jesse', reco.facebookPersonal);
+            html += renderRecoCard('Facebook — 🏢 Iboga Lab', reco.facebookBusiness);
+            html += '</div></section>';
+        }
+
+        // Planning
+        if (session.planning && session.planning.length > 0) {
+            html += '<section class="section">';
+            html += '<div class="section-title">Planning hebdomadaire de publication</div>';
+            html += '<table class="planning-table"><thead><tr><th>Jour</th><th>Compte</th><th>LinkedIn</th><th>Facebook</th></tr></thead><tbody>';
+            session.planning.forEach(function(day) {
+                day.rows.forEach(function(row, ri) {
+                    html += '<tr>';
+                    if (ri === 0) {
+                        html += '<td class="day">' + esc(day.day) + '</td>';
+                    } else {
+                        html += '<td></td>';
+                    }
+                    html += '<td><span class="account-indicator" data-account="' + row.account + '">' + (row.account === 'personal' ? '👤 Jesse' : '🏢 Iboga') + '</span></td>';
+                    html += '<td>';
+                    if (row.linkedin && row.linkedin.text) {
+                        if (row.linkedin.pillarColor) html += '<span class="pillar-dot" style="background:' + row.linkedin.pillarColor + '"></span>';
+                        html += esc(row.linkedin.text);
+                    }
+                    html += '</td>';
+                    html += '<td>';
+                    if (row.facebook && row.facebook.text) {
+                        if (row.facebook.pillarColor) html += '<span class="pillar-dot" style="background:' + row.facebook.pillarColor + '"></span>';
+                        html += esc(row.facebook.text);
+                    }
+                    html += '</td>';
+                    html += '</tr>';
+                });
+            });
+            html += '</tbody></table></section>';
+        }
+
+        // Footer
+        html += '<footer class="report-footer">Rapport généré automatiquement pour Jesse Ogoula & Iboga Lab — Cliquez sur "📋 Copier le prompt" sous n\'importe quelle carte pour générer le brief de rédaction optimisé.</footer>';
+
+        app.innerHTML = html;
+    }
+
+    function renderSources(sources) {
+        if (!sources || sources.length === 0) return '';
+        var html = '<div class="sources">';
+        html += '<div class="sources-label">Sources vérifiées (' + sources.length + '/' + sources.length + ')</div>';
+        sources.forEach(function(src) {
+            html += '<div class="source-item">';
+            html += '<a href="' + esc(src.url) + '" target="_blank" rel="noopener" class="source-link">' + esc(src.title) + externalLinkSvg + '</a>';
+            html += '<span class="source-meta">' + esc(src.domain) + ' — ' + esc(src.date) + '</span>';
+            html += '</div>';
+        });
+        html += '</div>';
+        return html;
+    }
+
+    function renderRecoCard(platformLabel, items) {
+        if (!items || items.length === 0) return '';
+        var html = '<div class="reco-card">';
+        html += '<div class="platform">' + esc(platformLabel) + '</div>';
+        items.forEach(function(item) {
+            html += '<div class="reco-item">';
+            html += '<div class="rank">#' + item.rank + '</div>';
+            html += '<div class="title">' + esc(item.title) + '</div>';
+            html += '<div class="detail">' + esc(item.detail) + '</div>';
+            html += '</div>';
+        });
+        html += '</div>';
+        return html;
+    }
+
+    // Global functions
+    window.switchSession = function(idx) {
+        currentSessionIndex = idx;
+        currentFilter = 'all';
+        render();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+
+    window.filterCards = function(filter) {
+        currentFilter = filter;
+        document.querySelectorAll('.filter-btn').forEach(function(btn) {
+            btn.classList.toggle('active', btn.getAttribute('data-filter') === filter);
+        });
+        document.querySelectorAll('.idea-card').forEach(function(card) {
+            if (filter === 'all') {
+                card.classList.remove('hidden-by-filter');
+            } else {
+                var cardAccount = card.getAttribute('data-account');
+                card.classList.toggle('hidden-by-filter', cardAccount !== filter);
+            }
+        });
+    };
+
+    window.switchAngle = function(tab, angleIdx) {
+        var card = tab.closest('.idea-card');
+        card.querySelectorAll('.angle-tab').forEach(function(t) { t.classList.remove('active'); });
+        card.querySelectorAll('.angle-panel').forEach(function(p) { p.classList.remove('active'); });
+        tab.classList.add('active');
+        card.querySelectorAll('.angle-panel')[angleIdx].classList.add('active');
+    };
+
+    window.copyPrompt = function(button, ideaIdx) {
+        var session = sessionsData.sessions[currentSessionIndex];
+        var idea = session.ideas[ideaIdx];
+        var card = button.closest('.idea-card');
+
+        var activeTab = card.querySelector('.angle-tab.active');
+        var activePanel = card.querySelector('.angle-panel.active');
+        var angleName = activeTab ? activeTab.textContent.trim() : '';
+
+        var formatEl = activePanel ? activePanel.querySelector('.format') : null;
+        var format = formatEl ? formatEl.textContent.replace('Format : ', '').trim() : '';
+
+        var hookEl = activePanel ? activePanel.querySelector('.hook') : null;
+        var hook = hookEl ? hookEl.textContent.trim() : '';
+
+        var points = [];
+        if (activePanel) {
+            activePanel.querySelectorAll('.key-points li').forEach(function(li) {
+                points.push(li.textContent.trim());
+            });
+        }
+
+        var account = idea.account === 'personal' ? '👤 Jesse Ogoula' : '🏢 Iboga Lab';
+        var accountType = idea.account;
+
+        var voiceInstructions = '';
+        if (accountType === 'personal') {
+            voiceInstructions = '- Voix : Jesse expert personnel ("Je", direct, incarné, humain, storytelling)\n- Ton : Direct, builder, pas de théorie inutile\n- CTA adapté au niveau de funnel (TOFU: question ouverte / MOFU: sauvegarde / BOFU: DM)';
+        } else {
+            voiceInstructions = '- Voix : Iboga Lab entreprise ("Nous", "Chez Iboga Lab", agence)\n- Ton : Pragmatique, ROI, process, data-driven\n- CTA adapté au niveau de funnel (TOFU: partage / MOFU: ressource / BOFU: Audit IA Gratuit via https://ibogalab.vercel.app/calendly-booking)';
+        }
+
+        var prompt = 'Rédige un post LinkedIn et Facebook pour le compte ' + account + '.\n\n';
+        prompt += 'Sujet : ' + idea.title + '\n';
+        prompt += 'Niveau de funnel : ' + idea.funnel + '\n';
+        prompt += 'Pilier thématique : ' + idea.pillarLabel + '\n';
+        prompt += 'Angle recommandé : ' + angleName + '\n';
+        prompt += 'Format : ' + format + '\n\n';
+        prompt += 'Hook proposé : ' + hook + '\n\n';
+
+        if (points.length > 0) {
+            prompt += 'Points clés à couvrir :\n';
+            points.forEach(function(p, i) { prompt += (i + 1) + '. ' + p + '\n'; });
+            prompt += '\n';
+        }
+
+        if (idea.sources && idea.sources.length > 0) {
+            prompt += 'Sources à citer/utiliser :\n';
+            idea.sources.forEach(function(s) {
+                prompt += '- ' + s.title + ' (' + s.url + ') — ' + s.domain + ' — ' + s.date + '\n';
+            });
+            prompt += '\n';
+        }
+
+        prompt += 'Contraintes :\n' + voiceInstructions + '\n';
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(prompt).then(function() {
+                showCopied(button);
+            }).catch(function() {
+                fallbackCopy(prompt, button);
+            });
+        } else {
+            fallbackCopy(prompt, button);
+        }
+    };
+
+    function showCopied(button) {
+        button.classList.add('copied');
+        button.innerHTML = checkSvg + ' Copié !';
+        setTimeout(function() {
+            button.classList.remove('copied');
+            button.innerHTML = copySvg + ' Copier le prompt';
+        }, 2500);
+    }
+
+    function fallbackCopy(prompt, button) {
+        var textarea = document.createElement('textarea');
+        textarea.value = prompt;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        showCopied(button);
+    }
+
+    // Initialize
+    loadData();
+})();
+</script>
+
+</body>
+</html>
