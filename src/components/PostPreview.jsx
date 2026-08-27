@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const PostPreview = ({ post, image }) => {
+const PostPreview = ({ post }) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -26,21 +26,6 @@ const PostPreview = ({ post, image }) => {
       </div>
       
       <div className="bg-white border border-[#EAEAEA] rounded shadow-sm overflow-hidden">
-        {/* Render Generated Image or Placeholder */}
-        {image ? (
-          <div className="w-full bg-surface border-b border-[#EAEAEA]">
-            <img 
-              src={image} 
-              alt="Généré pour le post" 
-              className="w-full h-auto max-h-96 object-contain"
-            />
-          </div>
-        ) : (
-          <div className="w-full bg-surface border-b border-[#EAEAEA] h-32 flex items-center justify-center">
-            <span className="text-xs text-text-muted">Aucune image générée</span>
-          </div>
-        )}
-        
         {/* Render Text */}
         <div className="p-4 text-sm text-text-main whitespace-pre-wrap font-sans">
           {post || "Le texte du post apparaîtra ici."}

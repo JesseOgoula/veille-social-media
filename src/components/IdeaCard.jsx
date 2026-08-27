@@ -25,6 +25,16 @@ const IdeaCard = ({ idea, onDelete }) => {
             <span className="text-xs font-medium text-text-muted bg-surface border border-[#EAEAEA] px-2 py-0.5 rounded">
               {idea.pillarLabel}
             </span>
+            <span className="text-xs font-semibold px-2 py-0.5 rounded bg-surface border border-[#EAEAEA] text-text-main flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-yellow-500" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              {idea.score}/5
+            </span>
+            <span className={`text-xs font-semibold px-2 py-0.5 rounded flex items-center gap-1 ${idea.draftedPost ? 'bg-green-100 text-green-700 border border-green-200' : 'bg-yellow-100 text-yellow-700 border border-yellow-200'}`}>
+              <div className={`w-1.5 h-1.5 rounded-full ${idea.draftedPost ? 'bg-green-500' : 'bg-yellow-500'}`}></div>
+              {idea.draftedPost ? 'Phase 2 — Rédigé' : 'Phase 1 — Idée'}
+            </span>
           </div>
           <h3 className="text-lg font-bold text-text-main leading-tight">{idea.title}</h3>
         </div>
@@ -95,11 +105,14 @@ const IdeaCard = ({ idea, onDelete }) => {
           {idea.draftedPost ? (
             <PostPreview 
               post={idea.draftedPost[expandedAngle]} 
-              image={idea.generatedImages ? idea.generatedImages[expandedAngle] : null}
             />
           ) : (
-            <div className="bg-surface border border-[#EAEAEA] p-4 rounded text-center text-sm text-text-muted">
-              Le brouillon complet n'a pas encore été généré pour cette idée.
+            <div className="bg-yellow-50/50 border border-yellow-100 p-6 rounded text-center mt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-yellow-400 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div className="text-sm font-medium text-yellow-800 mb-1">En attente de rédaction</div>
+              <div className="text-xs text-yellow-600">Demande la Phase 2 à l'agent pour générer le post complet pour ce sujet.</div>
             </div>
           )}
         </div>

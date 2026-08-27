@@ -7,6 +7,7 @@ const Dashboard = () => {
   const [error, setError] = useState(null);
   const [selectedSessionIndex, setSelectedSessionIndex] = useState(0);
   const [filterAccount, setFilterAccount] = useState('all');
+  const [filterStatus, setFilterStatus] = useState('all'); // 'all', 'phase1', 'phase2'
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [confirmModal, setConfirmModal] = useState({ isOpen: false, message: '', action: null });
   const dropdownRef = useRef(null);
@@ -51,9 +52,16 @@ const Dashboard = () => {
 
   const currentSession = data.sessions[selectedSessionIndex];
   
-  const filteredIdeas = currentSession ? currentSession.ideas.filter(idea => 
-    filterAccount === 'all' || idea.account === filterAccount
-  ) : [];
+  const filteredIdeas = currentSession ? currentSession.ideas.filter(idea => {
+    const matchAccount = filterAccount === 'all' || idea.account === filterAccount;
+    const matchStatus = filterStatus === 'all' || 
+                        (filterStatus === 'phase2' && idea.draftedPost) || 
+                        (filterStatus === 'phase1' && !idea.draftedPost);
+    return matchAccount && matchStatus;
+  }) : [];
+  
+  const totalDrafted = currentSession ? currentSession.ideas.filter(i => i.draftedPost).length : 0;
+  const totalIdeas = currentSession ? currentSession.ideas.length : 0;
 
   const syncWithGitHub = async (newData) => {
     try {
@@ -155,45 +163,93 @@ const Dashboard = () => {
           </button>
         </div>
         
-        <div className="flex items-center gap-2">
-          <button 
-            className={`px-4 py-1.5 text-sm font-medium rounded transition-colors ${filterAccount === 'all' ? 'bg-text-main text-white' : 'bg-white text-text-main border border-[#EAEAEA] hover:bg-surface'}`}
-            onClick={() => setFilterAccount('all')}
-          >
-            Tout
-          </button>
-          <button 
-            className={`px-4 py-1.5 text-sm font-medium rounded transition-colors ${filterAccount === 'personal' ? 'bg-text-main text-white' : 'bg-white text-text-main border border-[#EAEAEA] hover:bg-surface'}`}
-            onClick={() => setFilterAccount('personal')}
-          >
-            👤 Jesse Ogoula
-          </button>
-          <button 
-            className={`px-4 py-1.5 text-sm font-medium rounded transition-colors ${filterAccount === 'business' ? 'bg-text-main text-white' : 'bg-white text-text-main border border-[#EAEAEA] hover:bg-surface'}`}
-            onClick={() => setFilterAccount('business')}
-          >
-            🏢 Iboga Lab
-          </button>
-          <div className="w-px h-6 bg-[#EAEAEA] mx-1"></div>
-          <button 
-            onClick={handleDeleteAll}
-            className="px-3 py-1.5 text-sm font-medium text-red-500 bg-white border border-red-200 rounded hover:bg-red-50 transition-colors"
-            title="Vider toute la base de données"
-          >
-            Tout effacer
-          </button>
+        <div className="flex flex-col xl:flex-row items-start xl:items-center gap-4">
+          {/* Status Filter */}
+          <div className="flex items-center gap-2 bg-surface p-1 rounded border border-[#EAEAEA]">
+            <button 
+              className={`px-3 py-1 text-xs font-medium rounded transition-colors ${filterStatus === 'all' ? 'bg-white text-text-main shadow-sm border border-[#EAEAEA]' : 'text-text-muted hover:text-text-main'}`}
+              onClick={() => setFilterStatus('all')}
+            >
+              Tous statuts
+            </button>
+            <button 
+              className={`px-3 py-1 text-xs font-medium rounded transition-colors flex items-center gap-1 ${filterStatus === 'phase1' ? 'bg-white text-text-main shadow-sm border border-[#EAEAEA]' : 'text-text-muted hover:text-text-main'}`}
+              onClick={() => setFilterStatus('phase1')}
+            >
+              <div className="w-1.5 h-1.5 rounded-full bg-yellow-500"></div>
+              À rédiger
+            </button>
+            <button 
+              className={`px-3 py-1 text-xs font-medium rounded transition-colors flex items-center gap-1 ${filterStatus === 'phase2' ? 'bg-white text-text-main shadow-sm border border-[#EAEAEA]' : 'text-text-muted hover:text-text-main'}`}
+              onClick={() => setFilterStatus('phase2')}
+            >
+              <div className="w-1.5 h-1.5 rounded-full bg-green-500"></div>
+              Rédigées
+            </button>
+          </div>
+
+          <div className="w-px h-6 bg-[#EAEAEA] hidden xl:block"></div>
+
+          {/* Account Filter */}
+          <div className="flex items-center gap-2">
+            <button 
+              className={`px-3 py-1.5 text-sm font-medium rounded transition-colors ${filterAccount === 'all' ? 'bg-text-main text-white' : 'bg-white text-text-main border border-[#EAEAEA] hover:bg-surface'}`}
+              onClick={() => setFilterAccount('all')}
+            >
+              Tout
+            </button>
+            <button 
+              className={`px-3 py-1.5 text-sm font-medium rounded transition-colors ${filterAccount === 'personal' ? 'bg-text-main text-white' : 'bg-white text-text-main border border-[#EAEAEA] hover:bg-surface'}`}
+              onClick={() => setFilterAccount('personal')}
+            >
+              👤 Jesse
+            </button>
+            <button 
+              className={`px-3 py-1.5 text-sm font-medium rounded transition-colors ${filterAccount === 'business' ? 'bg-text-main text-white' : 'bg-white text-text-main border border-[#EAEAEA] hover:bg-surface'}`}
+              onClick={() => setFilterAccount('business')}
+            >
+              🏢 Iboga
+            </button>
+            <div className="w-px h-6 bg-[#EAEAEA] mx-1"></div>
+            <button 
+              onClick={handleDeleteAll}
+              className="px-2 py-1 text-xs font-medium text-red-500 bg-white border border-red-200 rounded hover:bg-red-50 transition-colors"
+              title="Vider toute la base de données"
+            >
+              Effacer tout
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Overview Stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="bg-white p-6 border border-[#EAEAEA] rounded shadow-sm">
-          <div className="text-xs font-semibold text-text-muted uppercase tracking-wider mb-1">Idées de contenu</div>
-          <div className="text-3xl font-bold text-iboga-dark">{currentSession.ideas.length}</div>
+          <div className="text-xs font-semibold text-text-muted uppercase tracking-wider mb-1">Total Idées</div>
+          <div className="flex items-baseline gap-2 mt-1">
+            <span className="text-3xl font-bold text-iboga-dark">{totalIdeas}</span>
+            <span className="text-sm font-medium text-text-muted">cette session</span>
+          </div>
         </div>
         <div className="bg-white p-6 border border-[#EAEAEA] rounded shadow-sm">
-          <div className="text-xs font-semibold text-text-muted uppercase tracking-wider mb-1">Généré le</div>
-          <div className="text-xl font-medium text-text-main mt-2">{currentSession.generatedAt}</div>
+          <div className="text-xs font-semibold text-text-muted uppercase tracking-wider mb-1 flex items-center justify-between">
+            Progression Phase 2
+            <span className="text-xs font-medium text-iboga-light bg-iboga-light/10 px-2 py-0.5 rounded">
+              {totalIdeas > 0 ? Math.round((totalDrafted / totalIdeas) * 100) : 0}%
+            </span>
+          </div>
+          <div className="flex items-baseline gap-1 mt-1">
+            <span className="text-3xl font-bold text-iboga-dark">{totalDrafted}</span>
+            <span className="text-xl font-medium text-text-muted">/ {totalIdeas}</span>
+            <span className="text-sm font-medium text-text-muted ml-1">posts rédigés</span>
+          </div>
+          {/* Progress bar */}
+          <div className="w-full bg-surface h-2 mt-3 rounded-full overflow-hidden">
+            <div 
+              className="bg-iboga-light h-full rounded-full transition-all duration-500" 
+              style={{ width: `${totalIdeas > 0 ? (totalDrafted / totalIdeas) * 100 : 0}%` }}
+            ></div>
+          </div>
         </div>
         <div className="bg-white p-6 border border-l-4 border-l-iboga-light border-[#EAEAEA] rounded shadow-sm">
           <div className="text-xs font-semibold text-iboga-dark uppercase tracking-wider mb-1">Newsjacking Prioritaire</div>
