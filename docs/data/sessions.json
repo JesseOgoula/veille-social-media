@@ -1,0 +1,455 @@
+{
+  "sessions": [
+    {
+      "date": "2026-08-26",
+      "generatedAt": "26/08/2026 à 10h00",
+      "weekLabel": "Semaine du 26 août 2026",
+      "newsjacking": {
+        "title": "L'EU AI Act entre en vigueur générale : Ce que ça change concrètement pour les PME africaines",
+        "deadline": "Avant jeudi 28 août 2026 (le sujet refroidit vite)",
+        "hook": "Depuis le 2 août, l'Union Européenne oblige à étiqueter tout contenu généré par l'IA et encadre les systèmes à haut risque. Tu utilises l'IA pour tes emails clients, tes visuels ou tes devis ? Ton entreprise est peut-être concernée. Voici pourquoi ça te regarde — même à Port-Gentil ou Libreville.",
+        "points": [
+          "L'EU AI Act s'applique de manière extraterritoriale : tout prestataire ou PME dont les livrables touchent des clients ou partenaires européens doit être transparent sur l'usage de l'IA.",
+          "Les obligations de l'Article 50 (transparence et identification du contenu synthétique) sont désormais actives depuis août 2026.",
+          "Angle Jesse Builder : Ce n'est pas un frein bureaucratique, mais une opportunité massive pour les prestataires africains de devenir des partenaires certifiés et fiables.",
+          "Pont Iboga Lab : L'Audit d'Opportunités IA intègre désormais un volet conformité et usage éthique des outils."
+        ],
+        "sources": [
+          {"title": "European Commission — AI Act Implementation & Timelines", "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", "domain": "europa.eu", "date": "02/08/2026"},
+          {"title": "EU AI Act Explorer — General Enforcement Rules August 2026", "url": "https://artificialintelligenceact.eu/developments/enforcement-overview-2026", "domain": "artificialintelligenceact.eu", "date": "05/08/2026"},
+          {"title": "TechCrunch — EU AI Act takes effect: what global businesses must do", "url": "https://techcrunch.com/2026/08/04/eu-ai-act-takes-effect-what-global-businesses-must-do", "domain": "techcrunch.com", "date": "04/08/2026"},
+          {"title": "Reuters — EU begins enforcing landmark AI regulations", "url": "https://www.reuters.com/technology/eu-begins-enforcing-landmark-ai-regulations-2026-08-02/", "domain": "reuters.com", "date": "02/08/2026"},
+          {"title": "Forbes — How Emerging Markets Can Turn AI Regulation Into An Advantage", "url": "https://www.forbes.com/sites/forbestechcouncil/2026/08/10/how-emerging-markets-can-turn-ai-regulation-into-an-advantage/", "domain": "forbes.com", "date": "10/08/2026"}
+        ]
+      },
+      "ideas": [
+        {
+          "id": "2026-08-26-1",
+          "title": "Les agents IA remplacent les chatbots : Le vrai goulot n'est pas l'outil, c'est vos process",
+          "account": "personal",
+          "pillar": "ia",
+          "pillarLabel": "IA Pratique",
+          "funnel": "TOFU",
+          "score": 5,
+          "bridge": "Iboga Process (Audit + Automatisation)",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte long LinkedIn + Reel Facebook 60s",
+              "hook": "En 2024, on demandait à ChatGPT d'écrire un email. En 2026, un agent IA qualifie tes prospects, met à jour ton CRM, génère le devis et envoie la relance. Tout seul. Tu vois le fossé ?",
+              "points": [
+                "Un chatbot se contente de répondre à du texte. Un agent IA exécute une séquence complète d'actions avec des outils connectés.",
+                "L'essor de ChatGPT Work et des assistants autonomes transforme la productivité des équipes réduites.",
+                "Ce que ça change pour un dirigeant africain : faire tourner une entreprise avec une agilité et une vitesse de grand groupe."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Carrousel LinkedIn (7 slides)",
+              "hook": "Gartner prévoit que 40% des logiciels d'entreprise intégreront des agents IA autonomes d'ici fin 2026. Voici les 5 flux à automatiser en priorité dans votre PME.",
+              "points": [
+                "Les 5 workflows les plus rentables : gestion des leads entrants, facturation/relances, reporting hebdo, onboarding client, tri documentaire.",
+                "Le piège de l'Agent-Washing : distinguer les simples wrappers des vrais pipelines automatisés fiables.",
+                "Le cadre méthodologique : Définir le déclencheur (Trigger), les règles de validation humaine, et le livrable final."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte long LinkedIn",
+              "hook": "Tout le monde s'excite sur les agents IA. Personne ne parle du vrai problème : 90% des PME ne connaissent même pas leurs propres processus internes. L'IA ne peut pas automatiser ce que vous ne comprenez pas.",
+              "points": [
+                "Automatiser un mauvais processus produit simplement du désordre 100 fois plus vite.",
+                "Le vrai travail d'un consultant IA n'est pas technique : c'est 70% de cartographie humaine et 30% d'outils.",
+                "Avant de déployer un agent, posez vos flux sur papier avec les rôles clairs."
+              ]
+            }
+          ],
+          "sources": [
+            {"title": "Gartner — Autonomous AI Agents in Enterprise Operations", "url": "https://www.gartner.com/en/newsroom/press-releases/2026-08-autonomous-ai-agents-enterprise", "domain": "gartner.com", "date": "14/08/2026"},
+            {"title": "OpenAI — Enterprise Autonomous Workflows with Agents", "url": "https://openai.com/index/introducing-chatgpt-work-agents/", "domain": "openai.com", "date": "08/08/2026"},
+            {"title": "VentureBeat — Why AI agents are reshaping workplace automation in 2026", "url": "https://venturebeat.com/ai/why-ai-agents-are-reshaping-workplace-automation-in-2026/", "domain": "venturebeat.com", "date": "18/08/2026"},
+            {"title": "ZDNet — AI Agents vs Chatbots: The Enterprise Productivity Shift", "url": "https://www.zdnet.com/article/ai-agents-vs-chatbots-the-business-productivity-shift/", "domain": "zdnet.com", "date": "11/08/2026"},
+            {"title": "Sifted — How startups are replacing middle-office tasks with AI agents", "url": "https://sifted.eu/articles/ai-agents-workflow-tools-startups-2026", "domain": "sifted.eu", "date": "15/08/2026"}
+          ],
+          "existingPosts": [
+            {"platform": "linkedin", "author": "Benoît Malpas", "title": "Pourquoi 80% des agents IA échouent sans audit de process préalable", "url": "https://www.linkedin.com/posts/benoit-malpas-ai-agents-process"},
+            {"platform": "x", "author": "@swyx", "title": "The shift from Copilots to Autonomous Agents in production", "url": "https://x.com/swyx/status/18240958123"}
+          ]
+        },
+        {
+          "id": "2026-08-26-2",
+          "title": "Du Product Manager au Product Builder : Pourquoi le vibe coding et la culture produit changent tout",
+          "account": "personal",
+          "pillar": "product",
+          "pillarLabel": "Product Strategy",
+          "funnel": "MOFU",
+          "score": 5,
+          "bridge": "Iboga Learn (Formation culture Produit)",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte long LinkedIn / Storytelling Facebook",
+              "hook": "Les entreprises ne recrutent plus de 'Product Managers' pour faire des réunions et des slides. Elles recrutent des 'Product Builders'. Du droit à la tech, voici comment ce basculement m'a appris à livrer vite.",
+              "points": [
+                "Un PM traditionnel documente et coordonne. Un Product Builder utilise l'IA et le no-code pour prototyper et tester immédiatement avec des vrais clients.",
+                "Le concept de vibe coding et de prototypage rapide démocratise la création de produits complets en quelques jours.",
+                "Pour l'écosystème tech africain : privilégier les profils pragmatiques qui construisent des solutions rentables dès le jour 1."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Carrousel LinkedIn (8 slides)",
+              "hook": "Les roadmaps rigides à 12 mois sont mortes. Voici le framework 2026 : Passage Projet ➔ Produit orienté Outcomes.",
+              "points": [
+                "Différence clé : Livrer une fonctionnalité (Projet) vs Résoudre un goulet d'étranglement mesurable (Produit).",
+                "La boucle itérative : Problème réel ➔ Prototype IA en 48h ➔ Test utilisateur ➔ Décision de scale.",
+                "L'erreur classique des PME : dépenser des millions en développement avant d'avoir validé l'usage."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte long LinkedIn",
+              "hook": "On vous répète que le Product Manager doit impérativement devenir développeur. C'est faux. Ce qu'il doit maîtriser, c'est le JUGEMENT stratégique. L'IA code, l'humain tranche.",
+              "points": [
+                "Avec l'IA générative de code, la barrière technique s'est effondrée. La vraie compétence rare est le cadrage du problème métier.",
+                "Savoir poser les bonnes contraintes et éliminer les fonctionnalités inutiles crée 80% de la valeur.",
+                "Un portfolio de 3 produits fonctionnels qui génèrent du cash bat n'importe quel master théorique."
+              ]
+            }
+          ],
+          "sources": [
+            {"title": "Product School — The Rise of the AI Product Builder in 2026", "url": "https://www.productschool.com/blog/product-management-trends-2026", "domain": "productschool.com", "date": "10/08/2026"},
+            {"title": "Forbes — From Product Manager to Product Builder: The AI Paradigm Shift", "url": "https://www.forbes.com/sites/forbestechcouncil/2026/08/12/from-product-manager-to-product-builder-the-ai-paradigm-shift/", "domain": "forbes.com", "date": "12/08/2026"},
+            {"title": "Mind the Product — How AI is Transforming Product Roadmaps", "url": "https://www.mindtheproduct.com/how-ai-is-killing-traditional-roadmaps-2026/", "domain": "mindtheproduct.com", "date": "06/08/2026"},
+            {"title": "Harvard Business Review — Why Builders Beat Managers in the AI Era", "url": "https://hbr.org/2026/07/why-builders-beat-managers-in-the-ai-era", "domain": "hbr.org", "date": "28/07/2026"},
+            {"title": "TechCabal — African Tech Builders and the Rise of Lean Product Culture", "url": "https://techcabal.com/2026/08/african-tech-builders-lean-product-culture/", "domain": "techcabal.com", "date": "16/08/2026"}
+          ],
+          "existingPosts": [
+            {"platform": "linkedin", "author": "Lenny Rachitsky", "title": "Why the Next Generation of PMs are Builders, Not Coordinators", "url": "https://www.linkedin.com/posts/lennyrachitsky-ai-product-builders"},
+            {"platform": "x", "author": "@shreyas", "title": "Product execution velocity in the era of AI prototyping", "url": "https://x.com/shreyas/status/182519401"}
+          ]
+        },
+        {
+          "id": "2026-08-26-3",
+          "title": "Moove lève 250M$ et franchit 2,1 Mrds $ : Les leçons d'efficacité opérationnelle pour les bâtisseurs africains",
+          "account": "personal",
+          "pillar": "entreprendre",
+          "pillarLabel": "Entrepreneuriat Afrique",
+          "funnel": "MOFU",
+          "score": 4,
+          "bridge": "Aucun (100% Personal Brand & Mindset)",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Photo + texte Facebook / Post LinkedIn",
+              "hook": "Une startup fondée à Lagos en 2020 pèse aujourd'hui 2,1 milliards de dollars. Moove vient de boucler 250M$. Ce n'est pas un coup de chance : c'est une masterclass d'exécution opérationnelle.",
+              "points": [
+                "Moove a commencé en finançant des véhicules pour les chauffeurs avant de devenir le leader mondial de la mobilité intégrée.",
+                "La preuve éclatante que des solutions conçues pour résoudre des contraintes africaines sévères peuvent conquérir le monde.",
+                "Message clé : Ne méprisez pas les problèmes opérationnels difficiles, c'est là que réside la valeur."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Texte long LinkedIn avec data",
+              "hook": "Au premier semestre 2026, 84% des fonds levés en Afrique sont allés à seulement 30 entreprises. Le capital ne manque pas : ce qui manque, c'est la rigueur des processus.",
+              "points": [
+                "L'ère de l'argent facile est terminée. Les investisseurs n'achètent plus des 'slides', ils achètent des marges et des processus maîtrisés.",
+                "Le nombre de deals a chuté mais la taille moyenne des tours matures augmente.",
+                "Conseil pour les entrepreneurs : structurez vos flux de trésorerie et vos opérations AVANT de chercher des financements extérieurs."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte long LinkedIn",
+              "hook": "On célèbre Moove à 2,1 milliards. Mais personne ne parle des centaines de startups africaines qui meurent en silence parce qu'elles ont confondu lever des fonds et construire une entreprise.",
+              "points": [
+                "Une levée de fonds est une dette envers des attentes, pas une ligne d'arrivée.",
+                "L'obsession de la levée distrait souvent les fondateurs de la seule chose qui compte : le client payant et la rentabilité unitaire.",
+                "La frugalité et l'automatisation interne sont les meilleures armes de résilience."
+              ]
+            }
+          ],
+          "sources": [
+            {"title": "Forbes Africa — Moove Secures $250M at $2.1B Valuation", "url": "https://www.forbesafrica.com/technology/2026/08/05/moove-secures-250m-at-2-1b-valuation/", "domain": "forbesafrica.com", "date": "05/08/2026"},
+            {"title": "TechCabal — Moove becomes Africa's latest mobility mega-unicorn", "url": "https://techcabal.com/2026/08/06/moove-mobility-funding-unicorn-milestone/", "domain": "techcabal.com", "date": "06/08/2026"},
+            {"title": "Disrupt Africa — African Tech Funding H1 2026: Capital Flight to Quality", "url": "https://disrupt-africa.com/2026/08/african-tech-funding-h1-report-consolidation/", "domain": "disrupt-africa.com", "date": "02/08/2026"},
+            {"title": "Agence Ecofin — Afrique : Le capital-risque privilégie la rentabilité opérationnelle", "url": "https://www.agenceecofin.com/gestion-publique/0808-120780-afrique-le-capital-risque-s-oriente-vers-la-rentabilite", "domain": "agenceecofin.com", "date": "08/08/2026"},
+            {"title": "African Business — African Unicorns Navigating Global Expansion", "url": "https://african.business/2026/08/technology-information/african-unicorns-navigating-global-expansion", "domain": "african.business", "date": "14/08/2026"}
+          ],
+          "existingPosts": [
+            {"platform": "linkedin", "author": "Tayo Oviosu", "title": "What Moove's new valuation says about African tech fundamentals", "url": "https://www.linkedin.com/posts/tayo-oviosu-moove-funding"},
+            {"platform": "x", "author": "@victorastafev", "title": "Unit economics of African mobility leaders", "url": "https://x.com/victorastafev/status/182410294"}
+          ]
+        },
+        {
+          "id": "2026-08-26-4",
+          "title": "Snapchat & réseaux sociaux bannissent le '100% IA' : La prime absolue à l'authenticité et au vécu",
+          "account": "personal",
+          "pillar": "ia",
+          "pillarLabel": "IA Pratique",
+          "funnel": "TOFU",
+          "score": 4,
+          "bridge": "Aucun (100% Personal Brand / Débat)",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Reel Facebook 45s + Post LinkedIn",
+              "hook": "Snapchat vient d'interdire les vidéos générées à 100% par IA sur ses flux. YouTube et LinkedIn pénalisent déjà l'AI slop générique. Le message est limpide : l'authenticité brute redevient la monnaie #1.",
+              "points": [
+                "Utiliser l'IA pour structurer ses idées = OUI. Copier-coller du texte sans âme = pénalité algorithmique immédiate.",
+                "Ce que recherchent les décideurs : des retours d'expérience concrets, des chiffres réels, des leçons d'échecs.",
+                "L'avantage des créateurs africains : partager des réalités de terrain uniques que l'IA ne peut pas halluciner."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Texte long LinkedIn",
+              "hook": "Les algorithmes 2026 ont saturé de contenu parfait. Ils récompensent désormais le 'Dwell Time' sur des histoires vécues. Voici ma règle des 70/30 pour créer.",
+              "points": [
+                "La formule : 70% d'expérience personnelle et d'insights terrain + 30% d'amplification et d'optimisation via l'IA.",
+                "L'impact des labels d'identification : les posts authentiques génèrent 3x plus de commentaires qualifiés.",
+                "Construire une marque personnelle durable repose sur la confiance humaine, pas sur le volume automatisé."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte long LinkedIn",
+              "hook": "Les plateformes qui interdisent aujourd'hui l'IA générique sont exactement celles qui ont poussé les créateurs à produire toujours plus de volume. Qui a créé la saturation ? Le modèle publicitaire.",
+              "points": [
+                "L'hypocrisie des algorithmes qui ajustent leurs règles dès que l'engagement baisse.",
+                "La seule protection contre les changements d'algorithme : bâtir une communauté engagée et posséder sa liste de contacts.",
+                "Ne dépendez jamais d'un seul canal de distribution."
+              ]
+            }
+          ],
+          "sources": [
+            {"title": "Social Media Today — Snapchat restricts purely AI-generated clips", "url": "https://www.socialmediatoday.com/news/snapchat-bans-pure-ai-content-from-spotlight/2026/08/", "domain": "socialmediatoday.com", "date": "14/08/2026"},
+            {"title": "The Next Web — Social platforms crack down on AI slop to protect engagement", "url": "https://thenextweb.com/news/social-media-platforms-cracking-down-on-ai-slop-2026", "domain": "thenextweb.com", "date": "11/08/2026"},
+            {"title": "The Verge — AI Content Labeling and the Algorithm Penalty Wave", "url": "https://www.theverge.com/2026/8/8/ai-content-labeling-and-algorithm-penalties", "domain": "theverge.com", "date": "08/08/2026"},
+            {"title": "Adweek — Why Human-First Content Strategies are Winning 2026", "url": "https://www.adweek.com/media/human-first-content-strategy-2026/", "domain": "adweek.com", "date": "15/08/2026"},
+            {"title": "TechCrunch — Creators reclaim authenticity amidst generative AI fatigue", "url": "https://techcrunch.com/2026/08/09/creators-reclaim-authenticity-amidst-generative-ai-fatigue/", "domain": "techcrunch.com", "date": "09/08/2026"}
+          ],
+          "existingPosts": [
+            {"platform": "linkedin", "author": "Matt Navarra", "title": "Snapchat's new policy on AI content marks a major turning point", "url": "https://www.linkedin.com/posts/mattnavarra-snapchat-ai-policy"},
+            {"platform": "x", "author": "@levelsio", "title": "People want raw human stories again, not AI summaries", "url": "https://x.com/levelsio/status/18251029"}
+          ]
+        },
+        {
+          "id": "2026-08-26-5",
+          "title": "SET4Jobs & 18M de jeunes à former : Pourquoi former sans moderniser les PME est un leurre",
+          "account": "personal",
+          "pillar": "formation",
+          "pillarLabel": "Formation",
+          "funnel": "TOFU",
+          "score": 4,
+          "bridge": "Iboga Learn (Formation en entreprise)",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Photo de formation + Storytelling (Facebook & LinkedIn)",
+              "hook": "La Banque mondiale annonce 18 millions de jeunes formés en Afrique d'ici 2034. J'ai formé plus de 300 talents sur le terrain (OIF, Simplon, École 241). Voici ce qui manque cruellement dans ces grands plans.",
+              "points": [
+                "Former à la théorie numérique ne garantit aucun emploi sans cas pratiques tirés des entreprises locales.",
+                "La méthode active : apprendre en résolvant un problème d'une PME réelle avec des livrables exploitables.",
+                "Fierté des parcours : voir des jeunes sans bagage tech structurer des outils pour des commerces locaux."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Carrousel LinkedIn (6 slides)",
+              "hook": "Selon le dernier rapport OIT, 6,1% des emplois jeunes sont directement impactés par l'IA. Voici les 5 compétences de survie professionnelle.",
+              "points": [
+                "Les 5 piliers : Maîtrise des prompts structurés (PIQPACC), intégration d'outils no-code, rigueur de reporting, communication professionnelle, résolution de problèmes.",
+                "L'approche mobile-first : concevoir des compétences exploitables même avec une connectivité instable.",
+                "Le rôle du mentorat individuel : débloquer la posture et l'estime de soi des jeunes talents."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte long LinkedIn",
+              "hook": "On débloque des millions pour former les jeunes. Mais qui forme les PME qui doivent les recruter ? Former des talents pour des entreprises qui fonctionnent encore sur des cahiers papier, c'est remplir un bus sans destination.",
+              "points": [
+                "Le paradoxe africain : les entreprises manquent de bras qualifiés, mais ne sont pas structurées pour intégrer des profils digitaux.",
+                "La solution globale : transformer les processus des PME en parallèle de la formation des jeunes.",
+                "Pont Iboga Learn : accompagner les équipes dirigeantes pour créer les postes à valeur ajoutée."
+              ]
+            }
+          ],
+          "sources": [
+            {"title": "World Bank — SET4Jobs: Empowering 18 Million African Youth with Digital Skills", "url": "https://www.worldbank.org/en/news/press-release/2026/08/01/set4jobs-empowering-18-million-african-youth", "domain": "worldbank.org", "date": "01/08/2026"},
+            {"title": "ILO (OIT) — Global Employment Trends for Youth 2026: Sub-Saharan Africa Focus", "url": "https://www.ilo.org/global/publications/reports/WCMS_youth_employment_africa_2026", "domain": "ilo.org", "date": "12/08/2026"},
+            {"title": "UNESCO — Digital Learning and Employability in Francophone Africa", "url": "https://www.unesco.org/en/articles/digital-learning-and-employability-in-francophone-africa-2026", "domain": "unesco.org", "date": "07/08/2026"},
+            {"title": "Africa Business Communities — EdTech Initiatives and SME Upskilling", "url": "https://africabusinesscommunities.com/tech/edtech-initiatives-and-sme-upskilling-in-central-africa/", "domain": "africabusinesscommunities.com", "date": "13/08/2026"},
+            {"title": "Jeune Afrique — Formation professionnelle en Afrique centrale : combler le fossé", "url": "https://www.jeuneafrique.com/1592010/economie-entreprises/formation-professionnelle-au-gabon-les-defis-de-l-adéquation-emploi/", "domain": "jeuneafrique.com", "date": "15/08/2026"}
+          ],
+          "existingPosts": [
+            {"platform": "linkedin", "author": "Rebecca Enonchong", "title": "Why youth training without local SME integration fails to solve unemployment", "url": "https://www.linkedin.com/posts/rebecca-enonchong-youth-skills"},
+            {"platform": "facebook", "author": "École 241", "title": "Bilan des promotions apprenants du programme D-CLIC au Gabon", "url": "https://www.facebook.com/Ecole241/posts/1029384756"}
+          ]
+        },
+        {
+          "id": "2026-08-26-6",
+          "title": "18 modèles d'IA sortis en 3 semaines : La grille de décision PIQPACC pour PME sans gaspillage",
+          "account": "business",
+          "pillar": "ia",
+          "pillarLabel": "IA Pratique",
+          "funnel": "MOFU",
+          "score": 5,
+          "bridge": "Iboga Learn & Process (Choix d'outils + Audit)",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Reel 60s Facebook + Photo explicative",
+              "hook": "Gemini 3.7 Flash, GPT-5, Qwen, DeepSeek... Plus de 18 nouveaux modèles d'IA lancés ce mois-ci. Vous êtes perdus ? C'est normal. Voici la seule question à vous poser pour choisir le bon outil sans vous ruiner.",
+              "points": [
+                "La surabondance de modèles crée la paralysie décisionnelle dans les entreprises.",
+                "Règle d'or : On ne choisit pas le modèle le plus cher, mais celui qui résout un workflow précis avec le meilleur ratio vitesse/coût.",
+                "Commencez par un cas d'usage unique (ex: rédaction de propositions commerciales) avant d'ajouter d'autres outils."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Carrousel LinkedIn (8 slides)",
+              "hook": "Le coût par unité d'intelligence a baissé de 50% en 2026. Voici la grille PIQPACC que nous utilisons chez Iboga Lab pour auditer les outils de nos clients.",
+              "points": [
+                "La grille PIQPACC : Problème précis ➔ Input nécessaire ➔ Qualité minimale requise ➔ Paramètres de coût ➔ Automatisation ➔ Contrôle humain ➔ Clôture du flux.",
+                "Comparatif d'usage : Modèles ultra-rapides pour l'opérationnel quotidien vs modèles de raisonnement lourd pour l'analyse financière.",
+                "L'importance des modèles exécutables en local pour les données confidentielles des entreprises africaines."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte long LinkedIn",
+              "hook": "18 nouveaux modèles en un mois, et la majorité des PME africaines n'en exploitent même pas un à 20% de sa puissance. Arrêtons de courir après les benchmarks : parlons adoption sur le terrain.",
+              "points": [
+                "Changer d'outil toutes les 3 semaines sabote les habitudes de travail des collaborateurs.",
+                "Le vrai levier de rentabilité réside dans la formation pratique des équipes, pas dans le dernier modèle à la mode.",
+                "Chez Iboga Lab, nous stabilisons vos outils pour vous faire gagner du temps dès la première semaine."
+              ]
+            }
+          ],
+          "sources": [
+            {"title": "Google Blog — Gemini Speed and Reasoning Model Updates", "url": "https://blog.google/technology/ai/google-gemini-next-gen-updates-august-2026/", "domain": "blog.google", "date": "12/08/2026"},
+            {"title": "OpenAI — Frontier Intelligence Benchmarks & Cost Trends", "url": "https://openai.com/index/frontier-model-evaluations-august-2026/", "domain": "openai.com", "date": "10/08/2026"},
+            {"title": "MIT Technology Review — The AI Model Deluge: How Enterprises Pick the Right Tool", "url": "https://www.technologyreview.com/2026/08/11/ai-model-deluge-how-enterprises-choose/", "domain": "technologyreview.com", "date": "11/08/2026"},
+            {"title": "Hugging Face — Open-Weights Local Models for Private Enterprise Deployment", "url": "https://huggingface.co/blog/open-weights-revolution-august-2026", "domain": "huggingface.co", "date": "06/08/2026"},
+            {"title": "CIO Magazine — Managing AI Tool Fatigue in Fast-Growing Companies", "url": "https://www.cio.com/article/ai-tool-fatigue-management-frameworks-2026/", "domain": "cio.com", "date": "14/08/2026"}
+          ],
+          "existingPosts": [
+            {"platform": "linkedin", "author": "Allie K. Miller", "title": "How to choose between 10+ AI models for your business team", "url": "https://www.linkedin.com/posts/alliekmiller-ai-selection-framework"},
+            {"platform": "x", "author": "@bindureddy", "title": "Price-performance breakdown of the latest foundation models", "url": "https://x.com/bindureddy/status/182591039"}
+          ]
+        },
+        {
+          "id": "2026-08-26-7",
+          "title": "Étude de cas Iboga Process : Comment un dirigeant de PME a récupéré 15h/semaine grâce à l'automatisation",
+          "account": "business",
+          "pillar": "entreprendre",
+          "pillarLabel": "Entrepreneuriat Afrique",
+          "funnel": "BOFU",
+          "score": 5,
+          "bridge": "Iboga Process — Audit Gratuit (Lead Magnet)",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte + Données chiffrées LinkedIn / Photo + texte Facebook",
+              "hook": "Un dirigeant de PME passait 15 heures par semaine sur des tâches répétitives : relances d'impayés, reporting de stocks et consolidation de devis. Après un audit Iboga Process, nous avons tout automatisé en 14 jours. Voici les coulisses.",
+              "points": [
+                "Le problème : Un manager surchargé qui devient lui-même le goulot d'étranglement de sa propre croissance.",
+                "La solution déployée : Cartographie des flux en 1h, pipeline no-code connecté aux outils existants, assistant IA de tri automatique.",
+                "Le résultat : 15h/semaine libérées immédiatement, zéro recrutement supplémentaire, une visibilité financière en temps réel."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Carrousel LinkedIn (Avant / Après)",
+              "hook": "Les dirigeants africains perdent en moyenne 12 à 18h/semaine sur des tâches administratives à faible valeur. Voici les 5 processus à auditer immédiatement.",
+              "points": [
+                "Top 5 des fuites de temps : Relances clients, création manuelle de devis, consolidation WhatsApp/Excel, suivi de commandes fournisseurs, rapports hebdo.",
+                "La méthode en 4 étapes : Diagnostic gratuit (30 min) ➔ Cartographie des goulots (2h) ➔ Implémentation (14 jours) ➔ Formation des équipes (1 jour).",
+                "Le ROI mesurable : Un gain de productivité immédiat équivalent à +30% de temps commercial pour la direction."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte long LinkedIn",
+              "hook": "'Je n'ai pas le temps de m'occuper de l'automatisation.' C'est exactement ce que m'a dit ce chef d'entreprise. Courir un marathon avec 20 kg sur le dos et refuser de s'arrêter 2 minutes pour les poser, c'est l'erreur classique du dirigeant surmené.",
+              "points": [
+                "Le piège du faux sentiment d'urgence : être 'occupé' ne signifie pas être 'productif'.",
+                "Les entreprises qui gagnent ne travaillent pas plus d'heures : elles éliminent les frictions opérationnelles.",
+                "CTA Direct : Réservez votre créneau pour un Audit d'Opportunités IA Gratuit de 30 minutes avec Iboga Lab."
+              ]
+            }
+          ],
+          "sources": [
+            {"title": "Iboga Lab — Réservation Audit Gratuit d'Opportunités IA (30 min)", "url": "https://ibogalab.vercel.app/calendly-booking", "domain": "ibogalab.vercel.app", "date": "2026"},
+            {"title": "McKinsey — Productivity Gains through Workflow Automation in Emerging Markets", "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier", "domain": "mckinsey.com", "date": "02/08/2026"},
+            {"title": "Harvard Business Review — The Hidden Cost of Manual Work in Growing Businesses", "url": "https://hbr.org/2026/08/the-hidden-cost-of-manual-work-in-growing-businesses", "domain": "hbr.org", "date": "09/08/2026"},
+            {"title": "Deloitte — Automation Readiness Index for African Enterprises 2026", "url": "https://www2.deloitte.com/za/en/pages/technology/articles/automation-readiness-africa-2026.html", "domain": "deloitte.com", "date": "05/08/2026"},
+            {"title": "Agence Ecofin — Digitalisation des PME africaines : des gains de productivité immédiats", "url": "https://www.agenceecofin.com/gestion-publique/0808-120790-digitalisation-pme-africaines-gains-productivite", "domain": "agenceecofin.com", "date": "08/08/2026"}
+          ],
+          "existingPosts": [
+            {"platform": "linkedin", "author": "Iboga Lab", "title": "Résultats d'audit : +15h libérées pour un dirigeant de PME", "url": "https://www.linkedin.com/posts/ibogalab-case-study-automation"},
+            {"platform": "x", "author": "@McKinsey", "title": "AI automation could save SME leaders 10-20h/week on administrative tasks", "url": "https://x.com/McKinsey/status/182609381"}
+          ]
+        }
+      ],
+      "recommendations": {
+        "linkedinPersonal": [
+          {"rank": 1, "title": "Agents IA & Process : Le fossé 2024→2026", "detail": "Texte long contrarien — Mercredi 07h30"},
+          {"rank": 2, "title": "Product Builder : Du droit à la tech", "detail": "Carrousel 8 slides — Jeudi 07h30"},
+          {"rank": 3, "title": "Moove 250M$ : Leçons pour les bâtisseurs", "detail": "Texte avec data — Vendredi 12h00"}
+        ],
+        "linkedinBusiness": [
+          {"rank": 1, "title": "Grille PIQPACC pour choisir vos outils IA", "detail": "Carrousel 8 slides (MOFU) — Jeudi 12h00"},
+          {"rank": 2, "title": "Étude de cas : 15h/semaine récupérées", "detail": "Texte + CTA Audit Gratuit — Vendredi 08h30"}
+        ],
+        "facebookPersonal": [
+          {"rank": 1, "title": "Newsjacking : EU AI Act & PME d'Afrique", "detail": "Reel 45s (Newsjacking) — Mercredi 12h00"},
+          {"rank": 2, "title": "18 millions de jeunes : Former vs Intégrer", "detail": "Photo de terrain + Storytelling — Vendredi 09h00"},
+          {"rank": 3, "title": "Sondage : Frein #1 avec l'IA en entreprise ?", "detail": "Statut interactif (Engagement) — Samedi 10h00"}
+        ],
+        "facebookBusiness": [
+          {"rank": 1, "title": "Comment choisir son outil IA sans se perdre", "detail": "Reel 60s vulgarisation — Jeudi 18h00"},
+          {"rank": 2, "title": "Coulisses d'une automatisation PME", "detail": "Vidéo démo / Visuel + CTA Audit — Samedi 14h00"}
+        ]
+      },
+      "planning": [
+        {
+          "day": "Mercredi 26",
+          "rows": [
+            {"account": "personal", "linkedin": {"pillarColor": "#a78bfa", "text": "[TOFU] Agents IA & Process — Texte long contrarien (07h30)"}, "facebook": {"pillarColor": "#a78bfa", "text": "[TOFU] EU AI Act — Reel 45s Newsjacking (12h00)"}}
+          ]
+        },
+        {
+          "day": "Jeudi 27",
+          "rows": [
+            {"account": "personal", "linkedin": {"pillarColor": "#6366f1", "text": "[MOFU] Product Builder — Carrousel 8 slides (07h30)"}, "facebook": {"pillarColor": "#a78bfa", "text": "[TOFU] Snapchat ban IA — Reel 45s (12h00)"}},
+            {"account": "business", "linkedin": {"pillarColor": "#a78bfa", "text": "[MOFU] 🏢 Grille PIQPACC — Carrousel (12h00)"}, "facebook": {"pillarColor": "#a78bfa", "text": "[MOFU] 🏢 Choisir son outil IA — Reel 60s (18h00)"}}
+          ]
+        },
+        {
+          "day": "Vendredi 28",
+          "rows": [
+            {"account": "business", "linkedin": {"pillarColor": "#fbbf24", "text": "[BOFU] 🏢 Étude de cas 15h/semaine — Texte + Audit Gratuit (08h30)"}, "facebook": {"pillarColor": "#34d399", "text": "[TOFU] 👤 18M de jeunes à former — Photo + Storytelling (09h00)"}},
+            {"account": "personal", "linkedin": {"pillarColor": "#fbbf24", "text": "[MOFU] 👤 Moove 250M$ — Texte data (12h00)"}, "facebook": {"pillarColor": "", "text": ""}}
+          ]
+        },
+        {
+          "day": "Samedi 29",
+          "rows": [
+            {"account": "personal", "linkedin": {"pillarColor": "", "text": "— (Repos / Échanges commentaires)"}, "facebook": {"pillarColor": "#f87171", "text": "[TOFU] 👤 Sondage : Frein #1 IA ? (10h00)"}},
+            {"account": "business", "linkedin": {"pillarColor": "", "text": ""}, "facebook": {"pillarColor": "#fbbf24", "text": "[BOFU] 🏢 Coulisses Automatisation (14h00)"}}
+          ]
+        },
+        {
+          "day": "Dimanche 30",
+          "rows": [
+            {"account": "personal", "linkedin": {"pillarColor": "#f87171", "text": "[TOFU] Mindset Builder : Bilan & Focus de la semaine (18h00)"}, "facebook": {"pillarColor": "", "text": "—"}}
+          ]
+        }
+      ]
+    }
+  ]
+}

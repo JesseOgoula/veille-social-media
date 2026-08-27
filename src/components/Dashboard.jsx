@@ -21,11 +21,11 @@ const Dashboard = () => {
   }, []);
 
   useEffect(() => {
-    // In development, we can fetch from a local file, or from the public folder.
-    // In production on GitHub Pages, we fetch from the public folder or raw github content.
+    // Fetch directly from the raw GitHub repository to ensure we always get the latest data 
+    // even if GitHub Pages doesn't rebuild.
     const fetchData = async () => {
       try {
-        const response = await fetch(`${import.meta.env.BASE_URL}data/sessions.json`);
+        const response = await fetch(`https://raw.githubusercontent.com/JesseOgoula/veille-social-media/main/public/data/sessions.json?t=${new Date().getTime()}`);
         if (!response.ok) {
           throw new Error('Failed to load data');
         }
