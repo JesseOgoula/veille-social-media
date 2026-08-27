@@ -114,7 +114,7 @@ const Dashboard = () => {
           <label htmlFor="session-select" className="text-sm font-medium text-text-main">Session :</label>
           <div className="relative" ref={dropdownRef}>
             <button 
-              className="appearance-none border border-[#EAEAEA] bg-surface hover:bg-white text-text-main text-sm rounded px-4 py-1.5 pr-8 focus:outline-none focus:border-iboga-dark transition-colors font-medium cursor-pointer w-full sm:w-64 text-left flex items-center justify-between"
+              className="appearance-none border border-[#EAEAEA] bg-surface hover:bg-white text-text-main text-sm rounded px-4 py-1.5 pr-8 focus:outline-none focus:border-iboga-dark transition-colors font-medium cursor-pointer w-full sm:w-40 text-left flex items-center justify-between"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               <span className="truncate">
@@ -222,7 +222,7 @@ const Dashboard = () => {
 
       {/* Custom Confirm Modal */}
       {confirmModal.isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40 backdrop-blur-sm">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/20 backdrop-blur-sm">
           <div className="bg-white rounded shadow-xl p-6 max-w-sm w-full mx-4 border border-[#EAEAEA]">
             <h3 className="text-lg font-semibold text-text-main mb-2">Confirmation</h3>
             <p className="text-sm text-text-muted mb-6">{confirmModal.message}</p>
