@@ -52,16 +52,21 @@ const Dashboard = () => {
 
   const currentSession = data.sessions[selectedSessionIndex];
   
-  const filteredIdeas = currentSession ? currentSession.ideas.filter(idea => {
+  // Separate news from content ideas
+  const allIdeas = currentSession ? currentSession.ideas : [];
+  const newsItems = allIdeas.filter(i => i.type === 'news');
+  const contentIdeas = allIdeas.filter(i => i.type !== 'news');
+  
+  const filteredIdeas = contentIdeas.filter(idea => {
     const matchAccount = filterAccount === 'all' || idea.account === filterAccount;
     const matchStatus = filterStatus === 'all' || 
                         (filterStatus === 'phase2' && idea.draftedPost) || 
                         (filterStatus === 'phase1' && !idea.draftedPost);
     return matchAccount && matchStatus;
-  }) : [];
+  });
   
-  const totalDrafted = currentSession ? currentSession.ideas.filter(i => i.draftedPost).length : 0;
-  const totalIdeas = currentSession ? currentSession.ideas.length : 0;
+  const totalDrafted = contentIdeas.filter(i => i.draftedPost).length;
+  const totalIdeas = contentIdeas.length;
 
   const syncWithGitHub = async (newData) => {
     try {
@@ -259,15 +264,73 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Ideas List */}
+      {/* News Section */}
+      {newsItems.length > 0 && (
+        <div className="space-y-4">
+          <h2 className="text-lg font-semibold text-text-main border-b border-[#EAEAEA] pb-2 flex items-center gap-2">
+            <span>📢</span> Actualités de la semaine ({newsItems.length})
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {newsItems.map((news) => (
+              <div key={news.id} className="bg-white border border-[#EAEAEA] rounded shadow-sm p-5 flex flex-col justify-between group">
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-semibold px-2 py-0.5 rounded bg-blue-100 text-blue-700 border border-blue-200">
+                      Actu
+                    </span>
+                    <span className="text-xs font-medium text-text-muted bg-surface border border-[#EAEAEA] px-2 py-0.5 rounded">
+                      {news.pillarLabel}
+                    </span>
+                    {news.draftedPost && (
+                      <span className="text-xs font-semibold px-2 py-0.5 rounded bg-green-100 text-green-700 border border-green-200 flex items-center gap-1">
+                        <div className="w-1.5 h-1.5 rounded-full bg-green-500"></div>
+                        Prêt
+                      </span>
+                    )}
+                  </div>
+                  <h3 className="text-sm font-bold text-text-main leading-snug mb-2">{news.title}</h3>
+                  {news.sources && news.sources.length > 0 && (
+                    <a href={news.sources[0].url} target="_blank" rel="noopener noreferrer" className="text-xs text-iboga-light hover:text-iboga-dark transition-colors">
+                      {news.sources[0].domain} →
+                    </a>
+                  )}
+                </div>
+                <div className="flex items-center justify-between mt-4 pt-3 border-t border-[#EAEAEA]">
+                  {news.draftedPost ? (
+                    <button 
+                      onClick={() => {
+                        const text = Array.isArray(news.draftedPost) ? news.draftedPost[0] : news.draftedPost;
+                        navigator.clipboard.writeText(text);
+                      }}
+                      className="text-xs font-medium text-iboga-dark hover:text-iboga-light transition-colors"
+                    >
+                      Copier le post
+                    </button>
+                  ) : (
+                    <span className="text-xs text-text-muted">En attente</span>
+                  )}
+                  <button 
+                    onClick={() => handleDeleteIdea(news.id)}
+                    className="text-xs text-text-muted hover:text-red-500 transition-colors"
+                  >
+                    Retirer
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Content Ideas List */}
       <div className="space-y-6">
         <h2 className="text-lg font-semibold text-text-main border-b border-[#EAEAEA] pb-2">
-          Publications ({filteredIdeas.length})
+          Idées de Contenu ({filteredIdeas.length})
         </h2>
         
         {filteredIdeas.length === 0 ? (
           <div className="text-center py-12 text-text-muted bg-white border border-[#EAEAEA] rounded">
-            Aucune publication pour ce filtre.
+            Aucune idée de contenu pour ce filtre.
           </div>
         ) : (
           filteredIdeas.map((idea) => (
