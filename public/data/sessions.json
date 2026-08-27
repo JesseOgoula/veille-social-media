@@ -2,23 +2,24 @@
   "sessions": [
     {
       "date": "2026-08-27",
-      "generatedAt": "27/08/2026 à 11h35",
+      "generatedAt": "27/08/2026 à 11h55",
       "weekLabel": "Semaine du 27 août 2026",
       "newsjacking": {
-        "title": "L'IA comme atout de productivité (pas juste un gadget) pour les PME en 2026",
-        "deadline": "Cette semaine",
-        "hook": "L'IA n'est plus un luxe réservé aux grandes multinationales. Si vous pensez encore que ChatGPT sert juste à écrire des emails, vous ratez l'essentiel.",
+        "title": "L'IA comme atout de productivité (pas juste un gadget)",
+        "deadline": "Avant vendredi 29 août 2026",
+        "hook": "L'IA pour les PME africaines n'est plus un 'nice to have'. C'est une question de survie. Voici comment ceux qui l'adoptent gagnent 40% de productivité là où les autres s'épuisent.",
         "points": [
-          "Les PME qui l'adoptent stratégiquement rapportent des gains de productivité de 40%.",
-          "Le vrai défi n'est pas technologique, mais méthodologique : structurer vos processus avant d'automatiser.",
-          "Pont Iboga Lab : L'Audit d'Opportunités IA vous aide à cartographier cela."
+          "Les récents rapports montrent que l'adoption de l'IA sépare les PME rentables des autres.",
+          "Le problème : l'adoption reste superficielle (ex: générer des images au lieu d'automatiser le support).",
+          "Il faut cibler les goulots d'étranglement spécifiques.",
+          "Pont Iboga Lab : Nous aidons à identifier ces vrais goulots via nos audits."
         ],
         "sources": [
           {
-            "title": "McKinsey - Productivity gains",
-            "url": "https://www.mckinsey.com",
+            "title": "McKinsey — Productivity and AI in 2026",
+            "url": "https://www.mckinsey.com/2026-08-productivity",
             "domain": "mckinsey.com",
-            "date": "15/08/2026"
+            "date": "10/08/2026"
           }
         ]
       },
@@ -34,15 +35,45 @@
           "bridge": "Aucun (Mindset)",
           "angles": [
             {
+              "name": "Débutant",
+              "format": "Texte court LinkedIn",
+              "hook": "Mettre de l'IA sur un mauvais processus, c'est comme mettre un moteur de Ferrari sur un vélo avec des roues carrées.",
+              "points": [
+                "L'IA ne règle pas le chaos, elle l'accélère.",
+                "Si vos données sont éparpillées (Excel, WhatsApp), l'IA ne fera pas de miracles.",
+                "Rangez la maison d'abord."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Carrousel LinkedIn",
+              "hook": "L'accélération de la dette technique par l'IA est le plus grand risque silencieux des PME en 2026.",
+              "points": [
+                "Automatiser des flux non documentés crée des 'boîtes noires'.",
+                "La dette technique devient de la dette organisationnelle.",
+                "La solution : cartographie rigoureuse (SOP) avant toute intégration LLM."
+              ]
+            },
+            {
               "name": "Contrarien",
               "format": "Texte long LinkedIn",
-              "hook": "On pense tous que l'IA va régler le chaos de notre PME. C'est l'inverse : elle va l'accélérer.",
+              "hook": "Arrêtez d'acheter des abonnements d'IA pour votre PME si vous n'avez pas de Procédures Opérationnelles Standard (SOP).",
               "points": [
-                "De nombreuses entreprises gèrent encore leurs opérations via des outils déconnectés.",
-                "L'ajout de l'IA sur des processus désorganisés crée davantage de complexité que d'efficacité.",
-                "La leçon : 'Ranger la maison' d'abord."
+                "Tout le monde vend des abonnements magiques.",
+                "En réalité, 90% de la valeur vient de la standardisation du process, pas de l'IA.",
+                "N'investissez pas dans l'outil, investissez dans la clarté."
               ]
             }
+          ],
+          "draftedPost": [
+            "Mettre de l'IA sur un mauvais processus, c'est comme mettre un moteur de Ferrari sur un vélo avec des roues carrées.\n\nJe vois beaucoup d'entrepreneurs africains espérer que ChatGPT ou des agents IA vont soudainement structurer leur entreprise.\n\nMais voici la dure réalité :\nL'IA ne règle pas le chaos. Elle l'accélère.\n\nSi vos devis sont faits sur Word, vos suivis clients sur WhatsApp et votre facturation sur un Excel que seul le comptable comprend...\n\nAjouter de l'IA ne fera que produire des erreurs plus vite.\n\nLa première étape de la transformation technologique n'est pas technologique. Elle est organisationnelle.\n\nRangez la maison d'abord. L'IA viendra ensuite faire briller le sol.\n\nQu'est-ce qui vous empêche de standardiser vos processus aujourd'hui ?\n\n#IAPratique #Productivité #PMEAfrique #Entrepreneuriat",
+            "L'accélération de la dette technique par l'IA est le plus grand risque silencieux des PME en 2026.\n\nNous avons tous entendu parler de la dette technique. Mais avec l'arrivée des agents IA autonomes, le paradigme change : nous créons de la dette organisationnelle.\n\n👉 Automatiser un flux de travail non documenté crée une \"boîte noire\".\n\nQuand le système casse (et il cassera), personne dans l'équipe ne sait comment le réparer, car personne ne savait exactement comment ça fonctionnait avant l'IA.\n\nPour réussir une implémentation IA chez Iboga Lab, nous imposons une règle stricte :\n\nZéro code, zéro LLM avant d'avoir une Procédure Opérationnelle Standard (SOP) validée et testée humainement.\n\nL'IA est un amplificateur. Assurez-vous d'amplifier l'efficacité, pas le chaos.\n\n#TransformationDigitale #TechAfrica #ProductStrategy",
+            "Arrêtez d'acheter des abonnements d'IA pour votre PME si vous n'avez pas de Procédures Opérationnelles Standard (SOP).\n\nC'est la chose la plus impopulaire à dire en ce moment, mais il faut le dire.\n\nTout le monde veut vous vendre le dernier outil IA magique. Mais la vérité ? 90% de vos gains d'efficacité viendront de la standardisation de vos processus, pas du LLM.\n\nJ'ai vu des équipes doubler leur productivité simplement en écrivant comment elles travaillaient, avant même d'avoir ouvert ChatGPT.\n\nL'IA est la cerise sur le gâteau. Si votre gâteau est fait de boue, la cerise n'y changera rien.\n\nN'investissez pas dans l'outil. Investissez dans la clarté.\n\nÊtes-vous d'accord ?\n\n#Mindset #SME #Processus #Business"
+          ],
+          "generatedImages": [
+            "",
+            "",
+            ""
           ],
           "sources": [
             {
@@ -50,33 +81,8 @@
               "url": "https://techcrunch.com/2026/08/15/ai-illusion-for-smes/",
               "domain": "techcrunch.com",
               "date": "15/08/2026"
-            },
-            {
-              "title": "Forbes — Why AI implementation fails in small business",
-              "url": "https://www.forbes.com/sites/forbesbusinesscouncil/2026/08/10/ai-fails/",
-              "domain": "forbes.com",
-              "date": "10/08/2026"
-            },
-            {
-              "title": "Gartner — AI Adoption in Africa",
-              "url": "https://www.gartner.com/newsroom/2026-08-ai-africa",
-              "domain": "gartner.com",
-              "date": "08/08/2026"
-            },
-            {
-              "title": "Harvard Business Review — Organize before you automate",
-              "url": "https://hbr.org/2026/08/organize-before-automate",
-              "domain": "hbr.org",
-              "date": "05/08/2026"
-            },
-            {
-              "title": "McKinsey — The reality of AI for SMEs",
-              "url": "https://www.mckinsey.com/2026-08-ai-smes",
-              "domain": "mckinsey.com",
-              "date": "01/08/2026"
             }
-          ],
-          "draftedPost": "On pense tous que l'IA va régler le chaos de notre PME. C'est l'inverse : elle va l'accélérer.\n\nBeaucoup d'entreprises traitent l'IA comme un simple outil logiciel magique.\n\nMais sur le terrain, voici ce que j'observe :\nSi vous gérez vos opérations sur des cahiers, des tableurs déconnectés et des fils WhatsApp éparpillés...\n\nL'ajout de l'IA va simplement créer de la complexité 10 fois plus vite.\n\n1️⃣ Un mauvais processus automatisé reste un mauvais processus.\n\n2️⃣ Seulement 5 % des PME africaines qui expérimentent avec l'IA en tirent une vraie valeur.\n\n3️⃣ Le manque de compétences internes n'est qu'un symptôme du manque de clarté.\n\n💡 La leçon ? L'IA n'est pas un remède miracle. C'est un amplificateur. 'Rangez la maison' avant d'automatiser.\n\nEt vous, quel processus avez-vous dû structurer avant d'y intégrer l'IA ?\n\n#IntelligenceArtificielle #Productivité #Afrique #PME"
+          ]
         },
         {
           "id": "2026-08-27-2",
@@ -89,15 +95,45 @@
           "bridge": "Iboga Learn (Formation culture Produit)",
           "angles": [
             {
-              "name": "Expert",
-              "format": "Texte long LinkedIn",
-              "hook": "En 2026, le rôle du Product Manager a radicalement changé. On ne livre plus des fonctionnalités, on architecte des résultats.",
+              "name": "Débutant",
+              "format": "Texte avec image LinkedIn",
+              "hook": "Le rôle du Product Manager a changé. On ne demande plus de livrer des fonctionnalités, mais de livrer des résultats.",
               "points": [
-                "Le PM doit maîtriser la P&L et les métriques business.",
-                "L'insight velocity remplace la vitesse de livraison (ship speed).",
-                "Savoir gérer l'ambiguïté est la compétence numéro 1."
+                "Livrer une app n'est pas un succès si personne ne l'utilise.",
+                "L'évolution vers 'l'Architecte d'Impact'.",
+                "Focus sur le problème business, pas juste le code."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Article LinkedIn",
+              "hook": "Insight Velocity vs Ship Speed : Pourquoi la vitesse de livraison n'est plus la métrique reine en 2026.",
+              "points": [
+                "L'IA a banalisé la création de code.",
+                "La vraie rareté est la vitesse de compréhension utilisateur (Insight Velocity).",
+                "Comment restructurer vos KPIs produit."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte court LinkedIn",
+              "hook": "Coder des fonctionnalités est la partie la plus facile du job. Savoir ce qu'il ne faut PAS construire est le vrai travail.",
+              "points": [
+                "Les roadmaps pleines sont le symptôme d'une mauvaise stratégie.",
+                "Dire 'non' rapporte plus d'argent que de dire 'oui'.",
+                "Le courage managérial dans le Produit."
               ]
             }
+          ],
+          "draftedPost": [
+            "Le rôle du Product Manager a changé. On ne vous demande plus de livrer des fonctionnalités, mais de livrer des résultats.\n\nIl fut un temps où lancer une application à l'heure et sans bugs était considéré comme une victoire. Plus maintenant.\n\nSi vous lancez une fonctionnalité parfaite mais que personne ne l'utilise, vous avez échoué.\n\nLe Product Manager de 2026 est devenu un 'Architecte d'Impact'.\nSon focus n'est pas : \"Comment construire ça vite ?\"\nSon focus est : \"Quel problème business sommes-nous en train de résoudre et comment le mesurer ?\"\n\nChez Iboga Lab, nous formons les équipes à ce changement de paradigme. Car la technologie n'est qu'un moyen. L'impact est la seule destination.\n\n#ProductManagement #CultureProduit #IbogaLab",
+            "Insight Velocity vs Ship Speed : Pourquoi la vitesse de livraison n'est plus la métrique reine en 2026.\n\nAvec les outils d'IA générative et de no-code, la vitesse de production (Ship Speed) est devenue une commodité. Tout le monde peut expédier des fonctionnalités rapidement.\n\nAlors, où se trouve l'avantage concurrentiel ?\n\nDans l'Insight Velocity : la vitesse à laquelle votre équipe peut capturer de la donnée utilisateur, la comprendre, et l'intégrer dans la prochaine itération.\n\nSi vous livrez 10 fois plus vite mais dans la mauvaise direction, vous allez juste dans le mur 10 fois plus vite.\n\nLe vrai Product Manager aujourd'hui est un expert en Insight Velocity.\nIl réduit le temps entre \"l'utilisateur a un problème\" et \"l'équipe a compris la racine du problème\".\n\nC'est la philosophie que nous poussons avec nos clients chez Iboga Lab. \n\nMesurez-vous la vitesse de livraison ou la vitesse d'apprentissage de vos équipes ?\n\n#ProductStrategy #Agile #Innovation",
+            "Coder des fonctionnalités est la partie la plus facile du job. Savoir ce qu'il ne faut PAS construire est le vrai travail.\n\nJe vois trop d'entreprises avec des roadmaps pleines à craquer, pensant que plus elles livrent, plus elles créent de la valeur.\n\nC'est le symptôme numéro un d'une mauvaise stratégie produit.\n\nDire 'oui' à tout satisfait les parties prenantes sur le moment, mais tue votre produit sur le long terme.\nDire 'non' demande du courage, de la data et une vision claire.\n\nLes meilleurs Product Managers que je connais passent 80% de leur temps à tuer de mauvaises idées avant qu'elles ne coûtent un centime en développement.\n\nLe courage managérial est la compétence tech la plus sous-évaluée.\n\n#ProductManager #Leadership #Tech"
+          ],
+          "generatedImages": [
+            "",
+            "",
+            ""
           ],
           "sources": [
             {
@@ -105,54 +141,215 @@
               "url": "https://productleadership.com/2026/pm-evolution/",
               "domain": "productleadership.com",
               "date": "10/08/2026"
+            }
+          ]
+        },
+        {
+          "id": "2026-08-27-3",
+          "title": "La sécurité des données à l'ère de l'IA générative",
+          "account": "business",
+          "pillar": "ia",
+          "pillarLabel": "IA Responsable",
+          "funnel": "MOFU",
+          "score": 4,
+          "bridge": "Audit de Sécurité & IA (Iboga Lab)",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte court",
+              "hook": "Ne collez jamais vos données financières confidentielles dans ChatGPT sans précautions.",
+              "points": [
+                "L'illusion de l'outil privé.",
+                "Les risques de fuite de données.",
+                "Les bonnes pratiques de base."
+              ]
             },
             {
-              "title": "Userpilot — Product Strategy Trends",
-              "url": "https://userpilot.com/2026-strategy-trends",
-              "domain": "userpilot.com",
-              "date": "05/08/2026"
+              "name": "Expert",
+              "format": "Texte long",
+              "hook": "L'alternative pour les PME : Modèles Open Source locaux vs API sécurisées.",
+              "points": [
+                "Le coût de l'hébergement d'un LLM local (Llama 3, Mistral).",
+                "Quand utiliser une API Enterprise.",
+                "La conformité avec les réglementations."
+              ]
             },
             {
-              "title": "Medium — Insight Velocity",
-              "url": "https://medium.com/2026-insight-velocity",
-              "domain": "medium.com",
-              "date": "15/08/2026"
-            },
-            {
-              "title": "CuroHQ — AI as Decision Maker",
-              "url": "https://curohq.com/2026/ai-decision/",
-              "domain": "curohq.com",
-              "date": "01/08/2026"
-            },
-            {
-              "title": "Product School — Product Principles vs Roadmaps",
-              "url": "https://productschool.com/2026-principles",
-              "domain": "productschool.com",
-              "date": "12/08/2026"
+              "name": "Contrarien",
+              "format": "Texte long",
+              "hook": "Innover avec l'IA sans politique de sécurité, c'est comme laisser la porte du coffre-fort ouverte pour aller plus vite.",
+              "points": [
+                "L'innovation 'sauvage' crée des risques légaux massifs.",
+                "La sécurité n'est pas un frein, c'est une fondation."
+              ]
             }
           ],
-          "draftedPost": "En 2026, on ne recrute plus pour 'gérer une roadmap'. On recrute pour architecturer des résultats.\n\nLe rôle du Product Manager traditionnel est en train d'éclater.\n\nLes équipes performantes ont compris une chose : livrer des fonctionnalités ne suffit plus.\n\nVoici les 3 changements majeurs que nous accompagnons chez Iboga Lab :\n\n1️⃣ De l'exécution à la décision : L'IA code et rédige. Le PM doit posséder la stratégie, comprendre le P&L et maîtriser les métriques business.\n\n2️⃣ Insight Velocity > Ship Speed : Ce n'est plus la vitesse de production qui compte, mais la vitesse à laquelle vous transformez la data utilisateur en décisions.\n\n3️⃣ La fin des roadmaps rigides : Les plans à 12 mois sont remplacés par des principes produit et des itérations rapides (en quelques jours).\n\n💡 La leçon ? Formez vos équipes à devenir des 'Architectes d'Impact', pas de simples coordinateurs.\n\nTéléchargez notre guide pour passer de Projet à Produit (lien en commentaire).\n\n#ProductManagement #ProductStrategy #Innovation"
+          "draftedPost": [
+            "Ne collez jamais vos données financières confidentielles ou les données de vos clients dans la version gratuite de ChatGPT.\n\nL'outil est puissant, oui. Mais gardez à l'esprit que ce que vous donnez aux modèles publics peut, potentiellement, être utilisé pour l'entraînement.\n\nPour une PME, une fuite de données n'est pas juste un problème informatique, c'est une perte de confiance qui peut être fatale.\n\nFormez vos employés sur ce qu'ils peuvent et ne peuvent pas partager avec les IA génératives.\n\nChez Iboga Lab, nous aidons les entreprises à définir des politiques d'utilisation claires et sûres.\n\n#Cybersécurité #IA #PME #Data",
+            "L'alternative pour les PME africaines : Modèles Open Source locaux ou API sécurisées ?\n\nAvec les préoccupations liées à la souveraineté des données, beaucoup se demandent s'ils doivent héberger leur propre IA (LLM local).\n\nVoici notre perspective chez Iboga Lab :\n\n1️⃣ Le LLM local (ex: Mistral, Llama) : \nIdéal pour la confidentialité absolue. Mais attention aux coûts d'infrastructure (GPU) et de maintenance. Pour une PME de 10 personnes, le ROI est rarement positif.\n\n2️⃣ Les API Enterprise :\nSouvent le meilleur compromis. Vous signez des accords stricts garantissant que vos données ne sont pas utilisées pour l'entraînement (Zero Data Retention). C'est ce que nous préconisons dans 80% de nos audits.\n\nNe choisissez pas l'infrastructure avant d'avoir qualifié le risque et le besoin réel.\n\n#OpenSource #DataSovereignty #AI",
+            "Innover avec l'IA sans politique de sécurité, c'est comme laisser la porte de votre coffre-fort ouverte parce que ça va plus vite de prendre l'argent.\n\nL'excitation autour de l'IA pousse beaucoup d'équipes à utiliser des outils en mode 'Shadow IT' (sans l'approbation de la direction).\n\nC'est la recette parfaite pour un désastre de conformité.\n\nLa sécurité n'est pas l'ennemie de l'innovation. C'est le cadre qui permet à l'innovation de s'épanouir sans détruire l'entreprise en chemin.\n\nMettez un cadre, pas des barrières.\n\n#IAResponsable #Management #Risque"
+          ],
+          "generatedImages": [
+            "",
+            "",
+            ""
+          ],
+          "sources": [
+            {
+              "title": "TechRadar — Shadow AI in the workplace",
+              "url": "https://techradar.com/news/shadow-ai",
+              "domain": "techradar.com",
+              "date": "18/08/2026"
+            }
+          ]
+        },
+        {
+          "id": "2026-08-27-4",
+          "title": "L'échec de l'adoption des outils technologiques",
+          "account": "business",
+          "pillar": "formation",
+          "pillarLabel": "Formation & Culture",
+          "funnel": "MOFU",
+          "score": 4,
+          "bridge": "Iboga Learn",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte LinkedIn",
+              "hook": "Pourquoi votre équipe n'utilise pas le super logiciel que vous venez de payer très cher ?",
+              "points": [
+                "L'outil ne fait pas la culture.",
+                "Le manque d'accompagnement au changement."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Texte LinkedIn",
+              "hook": "La méthode Iboga pour garantir 90% d'adoption sur un nouvel outil tech.",
+              "points": [
+                "Impliquer l'équipe avant l'achat.",
+                "Gamification et formation continue."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte LinkedIn",
+              "hook": "Envoyer vos équipes à un Bootcamp d'un jour sur l'IA est un gaspillage d'argent.",
+              "points": [
+                "La formation d'un jour ne change pas les habitudes.",
+                "L'apprentissage continu sur le flux de travail est la seule voie."
+              ]
+            }
+          ],
+          "draftedPost": [
+            "Pourquoi votre équipe n'utilise pas ce super logiciel IA que vous venez de payer très cher ?\n\nVous avez fait l'investissement, présenté l'outil lors d'une réunion, et un mois plus tard... tout le monde est retourné sur ses vieux fichiers Excel.\n\nPourquoi ?\nParce qu'un outil ne crée pas une culture. C'est l'inverse.\n\nSi vous ne prenez pas le temps d'accompagner le changement, de montrer concrètement comment ça réduit la charge de travail individuelle, l'outil sera perçu comme une corvée supplémentaire.\n\nNe financez pas des licences, financez l'adoption.\n\n#ChangeManagement #IbogaLearn #CultureTech",
+            "La méthode pour garantir 90% d'adoption sur un nouvel outil technologique dans votre entreprise.\n\nChez Iboga Lab, nous voyons souvent des dirigeants frustrés par la sous-utilisation de leurs outils. Voici notre approche en 3 étapes (Iboga Learn) :\n\n1️⃣ Impliquer avant d'acheter : Le choix de l'outil doit être fait avec les opérationnels, pas seulement par la direction.\n2️⃣ Identifier les \"Champions\" : Formez 2 personnes à fond, et laissez-les infuser le savoir dans l'équipe.\n3️⃣ Formation continue contextuelle : Arrêtez les manuels de 50 pages. Créez des capsules vidéo de 2 minutes intégrées dans le flux de travail.\n\nL'adoption n'est pas un événement, c'est un processus.\n\n#ProductManagement #B2B #Formation",
+            "Envoyer vos équipes à un Bootcamp d'une journée sur l'IA est un gaspillage d'argent.\n\nJe vais me faire des ennemis dans le milieu de la formation, mais c'est la réalité.\n\nVous envoyez vos employés voir des présentations PowerPoint inspirantes. Ils reviennent motivés. Et le lendemain ? Leurs vieilles habitudes reprennent le dessus sous la pression des urgences.\n\nLe développement de compétences ne fonctionne pas par injection.\nIl fonctionne par perfusion.\n\nInvestissez dans du coaching continu, de petites sessions régulières (15 min par semaine) directement liées aux problèmes quotidiens.\n\nC'est l'approche que nous défendons avec Iboga Learn.\n\n#Formation #EdTech #RH"
+          ],
+          "generatedImages": [
+            "",
+            "",
+            ""
+          ],
+          "sources": []
+        },
+        {
+          "id": "2026-08-27-5",
+          "title": "Construire pour la réalité africaine",
+          "account": "personal",
+          "pillar": "entrepreneuriat",
+          "pillarLabel": "Entrepreneuriat Afrique",
+          "funnel": "BOFU",
+          "score": 5,
+          "bridge": "Iboga Process",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte court",
+              "hook": "Scaler une startup tech en Afrique demande des compétences que la Silicon Valley n'enseigne pas.",
+              "points": [
+                "Les défis de l'infrastructure.",
+                "Le contexte d'adoption."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Texte long",
+              "hook": "Pourquoi les frameworks produits européens échouent souvent dans les PME africaines.",
+              "points": [
+                "Le décalage entre la théorie Agile et la réalité des PME locales.",
+                "L'adaptation nécessaire."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte",
+              "hook": "Arrêtez de copier les modèles de la Silicon Valley. Construisez pour Libreville, pour Abidjan, pour Douala.",
+              "points": [
+                "La résilience locale est plus précieuse que la hype mondiale."
+              ]
+            }
+          ],
+          "draftedPost": [
+            "Scaler une startup tech en Afrique demande des compétences que la Silicon Valley n'enseigne pas.\n\nLes livres blancs de Y Combinator sont géniaux. Mais ils ne vous expliquent pas comment faire adopter un produit quand la connexion internet saute tous les jours ou que la confiance dans le paiement en ligne est faible.\n\nEntreprendre ici demande une résilience et une compréhension du contexte terrain (le fameux 'offline-to-online') qui dépassent le simple code.\n\nC'est cette expertise hybride que nous construisons.\n\n#Entrepreneuriat #Afrique #Tech",
+            "Pourquoi les frameworks produits européens (Agile, Scrum pur) échouent souvent quand on tente de les plaquer tels quels sur des PME africaines ?\n\nParce que la culture de l'erreur et de l'itération n'est pas la même.\n\nDans beaucoup de nos PME, l'échec d'une fonctionnalité est vu comme une faute professionnelle, pas comme un apprentissage.\n\nLe rôle du Product Manager en Afrique, c'est aussi d'éduquer la direction au droit à l'erreur (calculée) et à la valeur de la boucle de feedback.\n\nIl faut adapter les méthodes, pas les imposer.\n\n#ProductStrategy #Agile #Management",
+            "Arrêtez de copier les modèles de la Silicon Valley. Construisez pour Libreville, pour Abidjan, pour Douala.\n\nOn passe trop de temps à essayer de faire \"le Uber de l'Afrique\" ou le \"Stripe de l'Afrique\".\n\nEt si on construisait juste la solution exacte au problème très spécifique de notre écosystème, sans chercher à faire une copie américaine ?\n\nL'innovation en Afrique ne viendra pas de l'importation de modèles, mais de la résolution brute et pragmatique de nos propres inefficacités.\n\nSoyons fiers de nos propres modèles.\n\n#Innovation #TechAfrica #Mindset"
+          ],
+          "generatedImages": [
+            "",
+            "",
+            ""
+          ],
+          "sources": []
+        },
+        {
+          "id": "2026-08-27-6",
+          "title": "Le syndrome de l'imposteur face à la Tech",
+          "account": "personal",
+          "pillar": "mindset",
+          "pillarLabel": "Mindset / Leadership",
+          "funnel": "BOFU",
+          "score": 4,
+          "bridge": "Aucun",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte court",
+              "hook": "Pas besoin d'être développeur pour mener la transformation numérique de votre boîte.",
+              "points": [
+                "Le rôle du leader est la vision."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Texte",
+              "hook": "Passer de l'opérateur technique à l'orchestrateur stratégique.",
+              "points": [
+                "La délégation de la complexité technique."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte",
+              "hook": "Votre manque de connaissances techniques est un avantage : il vous empêche de micro-manager les devs.",
+              "points": [
+                "Faites confiance à l'équipe."
+              ]
+            }
+          ],
+          "draftedPost": [
+            "Vous n'avez pas besoin d'être développeur pour mener la transformation numérique de votre entreprise.\n\nBeaucoup de dirigeants se sentent illégitimes face à la tech parce qu'ils ne savent pas coder.\n\nMais le code est une commodité.\nCe dont votre entreprise a besoin, c'est d'une vision stratégique claire : 'Où voulons-nous aller et comment la tech va-t-elle nous y aider ?'\n\nLa technique s'achète, le leadership s'incarne.\n\n#Leadership #Mindset #Transformation",
+            "Le plus grand défi du fondateur tech : passer de l'opérateur technique à l'orchestrateur stratégique.\n\nAu début, vous êtes les mains dans le code ou l'outil. Mais pour passer à l'échelle, vous devez lâcher la machine.\n\nVotre nouveau job ? Créer un système où d'autres peuvent opérer la machine mieux que vous.\n\nL'orchestrateur gère les flux de valeur, l'opérateur gère les tâches. Lequel êtes-vous aujourd'hui ?\n\n#FounderMindset #Scale #Management",
+            "Votre manque de connaissances techniques approfondies est parfois votre plus grand avantage en tant que dirigeant.\n\nPourquoi ? Parce que cela vous empêche physiquement de micro-manager vos développeurs.\n\nVous êtes forcé de gérer par objectifs et par résultats, plutôt que par méthodes.\n\"Voici le problème métier. Trouvez la meilleure solution technique.\"\n\nC'est la définition même de la responsabilisation.\n\n#Management #Leadership #Tech"
+          ],
+          "generatedImages": [
+            "",
+            "",
+            ""
+          ],
+          "sources": []
         }
-      ],
-      "recommendations": {
-        "linkedinPersonal": [
-          {
-            "rank": 1,
-            "title": "L'IA n'est pas un remède miracle",
-            "detail": "Texte long contrarien — Jeudi 07h30"
-          }
-        ],
-        "linkedinBusiness": [
-          {
-            "rank": 1,
-            "title": "Architecte d'Impact",
-            "detail": "Texte long — Vendredi 12h00"
-          }
-        ],
-        "facebookPersonal": [],
-        "facebookBusiness": []
-      },
-      "planning": []
+      ]
     },
     {
       "date": "2026-08-26",
