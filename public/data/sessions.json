@@ -450,6 +450,203 @@
           ]
         }
       ]
+    },
+    {
+      "date": "2026-08-27",
+      "generatedAt": "27/08/2026",
+      "weekLabel": "Semaine du 31 août 2026",
+      "researchStatus": "Sources et publications sociales vérifiées le 27/08/2026. Visuels non générés : service d’image indisponible (HTTP 403).",
+      "newsjacking": {
+        "title": "L’IA agentique arrive dans l’entreprise : le problème n’est plus l’outil, mais le processus",
+        "deadline": "Publier sous 48 h",
+        "hook": "Un agent IA peut faire 10 tâches de plus qu’un chatbot. Mais il ne peut pas deviner un processus que personne n’a documenté.",
+        "points": [
+          "Les sources récentes confirment un basculement vers des usages IA intégrés aux flux de travail et à la gouvernance.",
+          "L’angle local reste différenciant : une PME gabonaise gagne d’abord en supprimant les doubles saisies, les relances manuelles et les validations floues.",
+          "Pont Iboga Lab : un audit de processus doit précéder toute automatisation."
+        ],
+        "sources": [
+          {"title": "Changing landscape of skills in the age of AI", "url": "https://www.ilo.org/publications/changing-landscape-skills-age-ai", "domain": "ilo.org", "date": "13/08/2026"},
+          {"title": "Agentic AI fuelling rise of the autonomous enterprise", "url": "https://news.sap.com/africa/2026/08/itweb-tv-agentic-ai-fuelling-rise-of-the-autonomous-enterprise/", "domain": "news.sap.com", "date": "12/08/2026"},
+          {"title": "The intelligent workplace (part 2)", "url": "https://www.itpro.com/technology/artificial-intelligence/the-intelligent-workplace-part-2-technologys-next-transformation-of-work", "domain": "itpro.com", "date": "12/08/2026"},
+          {"title": "Your Employees Are Winging AI at Work", "url": "https://www.kiplinger.com/personal-finance/careers/ai-in-the-workplace-what-employees-really-need", "domain": "kiplinger.com", "date": "14/08/2026"},
+          {"title": "AI Skills for Product Managers (2026 Data)", "url": "https://aisa.to/blog/ai-skills-for-product-managers", "domain": "aisa.to", "date": "16/08/2026"}
+        ]
+      },
+      "ideas": [
+        {
+          "id": "2026-08-27-1",
+          "title": "L’IA n’automatise pas une PME désorganisée : elle accélère son désordre",
+          "account": "personal",
+          "pillar": "ia",
+          "pillarLabel": "IA Responsable & Pratique",
+          "funnel": "TOFU",
+          "score": 5,
+          "bridge": "Iboga Process — audit des flux avant automatisation",
+          "angles": [
+            {"name": "Débutant", "format": "Reel Facebook 45 s", "hook": "Avant d’acheter un outil IA, dessine ce qui se passe entre la demande client et la facture.", "points": ["Un outil ne remplace pas une étape inexistante.", "Les doublons et validations floues sont les premiers gisements de temps."]},
+            {"name": "Expert", "format": "Carrousel LinkedIn 7 slides", "hook": "Les 4 éléments d’un flux automatisable : déclencheur, données, décision humaine, résultat mesurable.", "points": ["Mesurer le délai et les erreurs avant le pilote.", "Garder un responsable humain à chaque décision sensible."]},
+            {"name": "Contrarien", "format": "Texte long LinkedIn", "hook": "Le problème des PME n’est pas qu’elles n’ont pas encore d’agent IA. C’est qu’elles ne connaissent pas leur propre mode opératoire.", "points": ["La cartographie est l’étape la moins glamour et la plus rentable.", "L’IA doit accélérer un système clair, pas le remplacer."]}
+          ],
+          "sources": [
+            {"title": "Changing landscape of skills in the age of AI", "url": "https://www.ilo.org/publications/changing-landscape-skills-age-ai", "domain": "ilo.org", "date": "13/08/2026"},
+            {"title": "Agentic AI fuelling rise of the autonomous enterprise", "url": "https://news.sap.com/africa/2026/08/itweb-tv-agentic-ai-fuelling-rise-of-the-autonomous-enterprise/", "domain": "news.sap.com", "date": "12/08/2026"},
+            {"title": "The intelligent workplace (part 2)", "url": "https://www.itpro.com/technology/artificial-intelligence/the-intelligent-workplace-part-2-technologys-next-transformation-of-work", "domain": "itpro.com", "date": "12/08/2026"},
+            {"title": "Your Employees Are Winging AI at Work", "url": "https://www.kiplinger.com/personal-finance/careers/ai-in-the-workplace-what-employees-really-need", "domain": "kiplinger.com", "date": "14/08/2026"},
+            {"title": "AI Skills for Product Managers (2026 Data)", "url": "https://aisa.to/blog/ai-skills-for-product-managers", "domain": "aisa.to", "date": "16/08/2026"}
+          ],
+          "existingPosts": [
+            {"platform": "linkedin", "author": "Joy Kasarachi", "title": "The Skill That Made Everything Else Click: Process Mapping", "url": "https://www.linkedin.com/posts/joykasarachi-ai-automation-engineer_workflowautomation-businesssystems-revops-activity-7475442632534622208-Gbsa"},
+            {"platform": "linkedin", "author": "Kallum Nicholson", "title": "Process mapping exposes the joins between people and AI", "url": "https://www.linkedin.com/posts/kallumnicholson_process-mapped-a-new-client-last-week-theyre-activity-7464964298289852416-2CTg"}
+          ],
+          "draftedPost": {
+            "linkedin": "L’IA n’automatise pas une PME désorganisée.\n\nElle accélère son désordre.\n\nJe vois beaucoup d’entreprises commencer par la même question : \"Quel outil IA devons-nous acheter ?\"\n\nC’est rarement la bonne première question.\n\nAvant l’outil, il faut regarder le flux réel :\n→ comment une demande client arrive ;\n→ qui la traite ;\n→ où l’information se perd ;\n→ qui valide ;\n→ et ce qui bloque la facture ou la réponse finale.\n\nSi une même donnée est recopiée trois fois, l’IA peut vous aider.\n\nSi personne ne sait qui décide à la fin, aucun agent ne réglera le problème.\n\nMon cadre est simple : cartographier d’abord, automatiser ensuite, mesurer toujours.\n\nL’outil vient en troisième position. La clarté vient en premier.\n\nQuel processus de votre activité vous fait perdre le plus de temps aujourd’hui ?\n\n#IA #Automatisation #PME #TransformationDigitale #Gabon",
+            "facebook": "L’IA n’automatise pas une PME désorganisée. Elle accélère son désordre.\n\nAvant de chercher le dernier outil, regarde un seul parcours : de la demande client jusqu’à la facture. Où est-ce que l’information est recopiée ? Où attend-on une validation ? Qui relance à la main ?\n\nC’est là que se cache le vrai gain de temps.\n\nMon ordre de travail : 1) comprendre le flux, 2) supprimer les frictions, 3) automatiser ce qui est répétitif.\n\nQuelle tâche te fait perdre le plus de temps chaque semaine ?"
+          },
+          "generatedImages": [{"status": "blocked", "aspectRatio": "4:3", "prompt": "Minimalist vector illustration for a LinkedIn carousel: a messy business workflow gradually becoming a clear flowchart with a human approval point and subtle AI nodes; dark forest green #0E3824, sage green #679D69, white background; clean corporate flat design, no text, no logo, no clutter.", "error": "Adobe Firefly image service returned HTTP 403 on 27/08/2026."}]
+        },
+        {
+          "id": "2026-08-27-2",
+          "title": "Savoir faire un prompt ne suffit plus : la compétence rare est de résoudre un problème métier",
+          "account": "personal",
+          "pillar": "formation",
+          "pillarLabel": "Formation & Mentorat",
+          "funnel": "TOFU",
+          "score": 5,
+          "bridge": "Iboga Learn — formation par métier et cas réel",
+          "angles": [
+            {"name": "Débutant", "format": "Post storytelling", "hook": "Un bon prompt ne sauvera pas une question mal posée.", "points": ["Partir d’une tâche et d’un résultat à obtenir.", "Vérifier la sortie avant de l’envoyer à un client."]},
+            {"name": "Expert", "format": "Carrousel", "hook": "Une formation IA utile doit être liée au métier, pas à une liste d’outils.", "points": ["Identifier les décisions, données et risques du poste.", "Construire un exercice à partir d’un document de travail réel."]},
+            {"name": "Contrarien", "format": "Texte long", "hook": "Former tout le monde à l’IA de la même manière, c’est la façon la plus rapide de ne former personne.", "points": ["Les besoins d’un commercial, d’un RH et d’un gestionnaire de stock diffèrent.", "L’autonomie vient de la pratique répétée, pas des démonstrations spectaculaires."]}
+          ],
+          "sources": [
+            {"title": "Changing landscape of skills in the age of AI", "url": "https://www.ilo.org/publications/changing-landscape-skills-age-ai", "domain": "ilo.org", "date": "13/08/2026"},
+            {"title": "AI skills have become a workplace expectation", "url": "https://kogod.american.edu/news/new-kogod-student-research-shows-ai-skills-have-become-a-workplace-expectation-not-a-differentiator", "domain": "american.edu", "date": "04/08/2026"},
+            {"title": "AI Skills for Product Managers (2026 Data)", "url": "https://aisa.to/blog/ai-skills-for-product-managers", "domain": "aisa.to", "date": "16/08/2026"},
+            {"title": "Your Employees Are Winging AI at Work", "url": "https://www.kiplinger.com/personal-finance/careers/ai-in-the-workplace-what-employees-really-need", "domain": "kiplinger.com", "date": "14/08/2026"},
+            {"title": "The intelligent workplace (part 2)", "url": "https://www.itpro.com/technology/artificial-intelligence/the-intelligent-workplace-part-2-technologys-next-transformation-of-work", "domain": "itpro.com", "date": "12/08/2026"}
+          ],
+          "existingPosts": [
+            {"platform": "linkedin", "author": "Heather Murray", "title": "Ensure AI Literacy for Your Team", "url": "https://www.linkedin.com/posts/accessible-ai_eu-ai-act-guide-activity-7464931691057291268-Uf5I"},
+            {"platform": "linkedin", "author": "Digital Education Council", "title": "Employers Rank AI Skills 2nd Most Important for Graduates", "url": "https://www.linkedin.com/posts/digital-education-council_highereducation-aiinhighered-ai-activity-7472528416131555328-BXFw"}
+          ],
+          "draftedPost": {
+            "linkedin": "Savoir faire un prompt n’est plus un avantage compétitif.\n\nSavoir résoudre un problème métier avec l’IA, oui.\n\nUn commercial n’a pas besoin de la même formation qu’un responsable de stock.\n\nLe premier doit mieux qualifier et relancer.\nLe second doit fiabiliser les mouvements, les alertes et les commandes.\n\nLe piège, c’est la formation générique : on montre dix outils, les participants repartent impressionnés… puis reviennent à leurs anciennes habitudes lundi matin.\n\nUne formation utile commence par une question : \"Quelle tâche de votre métier vous ralentit chaque semaine ?\"\n\nEnsuite seulement, on choisit l’outil, on teste sur un cas réel et on garde une validation humaine.\n\nL’objectif n’est pas d’avoir une équipe qui parle d’IA.\n\nL’objectif est d’avoir une équipe qui livre mieux.\n\nDans votre métier, quelle tâche mériterait d’être repensée en premier ?\n\n#Formation #IA #Compétences #Emploi #Afrique",
+            "facebook": "Faire de bons prompts, c’est utile. Résoudre un vrai problème de travail avec l’IA, c’est ce qui compte.\n\nUn commercial, un RH et un gestionnaire de stock ne doivent pas apprendre la même chose.\n\nLa bonne formation part d’une tâche qui fatigue l’équipe chaque semaine, puis teste une solution simple sur un cas réel.\n\nL’objectif n’est pas d’impressionner avec des outils. C’est de mieux travailler dès lundi.\n\nQuelle tâche aimerais-tu simplifier dans ton activité ?"
+          },
+          "generatedImages": [{"status": "blocked", "aspectRatio": "4:3", "prompt": "Minimalist professional illustration of three African professionals — sales, HR and operations — each using an AI-assisted workflow tailored to their job; dark forest green #0E3824, sage green #679D69, white background, elegant flat vector style, no text, no logos.", "error": "Adobe Firefly image service returned HTTP 403 on 27/08/2026."}]
+        },
+        {
+          "id": "2026-08-27-3",
+          "title": "La gouvernance IA n’est pas un frein : c’est ce qui rend l’automatisation digne de confiance",
+          "account": "personal",
+          "pillar": "ia",
+          "pillarLabel": "IA Responsable & Pratique",
+          "funnel": "MOFU",
+          "score": 4,
+          "bridge": "Iboga Process — règles, responsabilité et validation humaine",
+          "angles": [
+            {"name": "Débutant", "format": "Post pédagogique", "hook": "Avant d’utiliser l’IA dans une tâche client, réponds à quatre questions : qui l’utilise, quelles données, qui vérifie, qui décide ?", "points": ["Créer une liste d’outils approuvés.", "Définir les cas qui exigent une relecture humaine."]},
+            {"name": "Expert", "format": "Carrousel 6 slides", "hook": "La gouvernance opérationnelle en 4 couches : inventaire, responsable, règles, preuve.", "points": ["Tracer les flux où l’IA intervient.", "Prévoir un arrêt simple quand la sortie est anormale."]},
+            {"name": "Contrarien", "format": "Texte opinion", "hook": "L’entreprise qui dit “on verra la gouvernance plus tard” choisit surtout de découvrir ses risques trop tard.", "points": ["La confiance accélère l’adoption interne.", "Des règles simples sont mieux qu’une politique jamais appliquée."]}
+          ],
+          "sources": [
+            {"title": "Agentic AI fuelling rise of the autonomous enterprise", "url": "https://news.sap.com/africa/2026/08/itweb-tv-agentic-ai-fuelling-rise-of-the-autonomous-enterprise/", "domain": "news.sap.com", "date": "12/08/2026"},
+            {"title": "The intelligent workplace (part 2)", "url": "https://www.itpro.com/technology/artificial-intelligence/the-intelligent-workplace-part-2-technologys-next-transformation-of-work", "domain": "itpro.com", "date": "12/08/2026"},
+            {"title": "Changing landscape of skills in the age of AI", "url": "https://www.ilo.org/publications/changing-landscape-skills-age-ai", "domain": "ilo.org", "date": "13/08/2026"},
+            {"title": "Your Employees Are Winging AI at Work", "url": "https://www.kiplinger.com/personal-finance/careers/ai-in-the-workplace-what-employees-really-need", "domain": "kiplinger.com", "date": "14/08/2026"},
+            {"title": "AI skills have become a workplace expectation", "url": "https://kogod.american.edu/news/new-kogod-student-research-shows-ai-skills-have-become-a-workplace-expectation-not-a-differentiator", "domain": "american.edu", "date": "04/08/2026"}
+          ],
+          "existingPosts": [
+            {"platform": "linkedin", "author": "Dan Storbaek", "title": "What Is AI Governance?", "url": "https://www.linkedin.com/posts/storbaek_what-is-ai-governance-everyone-is-building-activity-7475563170573516800-Xr36"},
+            {"platform": "linkedin", "author": "Dr. Josh Stephens", "title": "AI Governance Starts with Inventory and Policy", "url": "https://www.linkedin.com/posts/thejoshstephens_most-ai-governance-programs-start-with-policy-activity-7472475510665527296-Yba_"}
+          ],
+          "draftedPost": {
+            "linkedin": "La gouvernance IA n’est pas un frein.\n\nC’est ce qui permet de l’utiliser sans perdre la confiance de vos clients et de vos équipes.\n\nDans une PME, elle ne doit pas commencer par un document de 40 pages.\n\nElle commence par 4 questions simples :\n1. Quels outils IA utilisons-nous réellement ?\n2. Quelles données leur transmettons-nous ?\n3. Qui vérifie les sorties sensibles ?\n4. Qui est responsable si une erreur arrive ?\n\nCe n’est pas de la bureaucratie.\n\nC’est ce qui évite qu’un devis erroné parte à un client, qu’une donnée confidentielle circule au mauvais endroit ou qu’une équipe utilise cinq outils sans règle commune.\n\nUne IA utile est une IA dont le rôle, les limites et le responsable sont clairs.\n\nLa confiance ne ralentit pas l’automatisation. Elle la rend déployable.\n\nQuelle règle simple ajouteriez-vous en premier dans votre équipe ?\n\n#IAResponsable #Gouvernance #PME #Automatisation",
+            "facebook": "La gouvernance IA, ce n’est pas un frein. C’est ce qui évite les erreurs et protège la confiance.\n\nPour commencer, pose simplement 4 questions : quels outils utilisez-vous, quelles données y entrent, qui valide les sorties importantes, et qui est responsable ?\n\nPas besoin d’un gros document. Il faut des règles qui vivent dans le travail quotidien.\n\nQuelle règle ajouterais-tu dans ton équipe avant d’utiliser davantage l’IA ?"
+          },
+          "generatedImages": [{"status": "blocked", "aspectRatio": "4:3", "prompt": "Clean corporate vector illustration of a transparent AI workflow with four visible checkpoints: tool inventory, data protection, human review and accountable owner; dark forest green #0E3824, sage green #679D69 and white only; no text, no logo, minimalist.", "error": "Adobe Firefly image service returned HTTP 403 on 27/08/2026."}]
+        },
+        {
+          "id": "2026-08-27-4",
+          "title": "Le financement africain se resserre : la meilleure stratégie reste un problème métier que quelqu’un paie pour résoudre",
+          "account": "personal",
+          "pillar": "entreprendre",
+          "pillarLabel": "Entrepreneuriat & Transformation Afrique",
+          "funnel": "MOFU",
+          "score": 5,
+          "bridge": "Aucun — point de vue fondateur/builder",
+          "angles": [
+            {"name": "Débutant", "format": "Post data", "hook": "Quand le capital devient plus sélectif, le deck ne suffit plus : le client devient votre meilleure preuve.", "points": ["Chercher un problème coûteux et fréquent.", "Mesurer une première preuve de valeur avant de chercher à scaler."]},
+            {"name": "Expert", "format": "Carrousel", "hook": "Les 3 métriques à maîtriser avant une levée : rétention, délai de livraison, marge par client.", "points": ["Séparer la croissance du volume de la croissance saine.", "Mettre l’opérationnel au cœur du récit investisseur."]},
+            {"name": "Contrarien", "format": "Texte long", "hook": "Lever des fonds ne construit pas une entreprise. Cela achète seulement le droit de prouver qu’elle peut tenir.", "points": ["La frugalité force la priorisation.", "Les problèmes opérationnels difficiles constituent souvent le meilleur avantage défendable."]}
+          ],
+          "sources": [
+            {"title": "State of Tech in Africa H1 2026 recap", "url": "https://insights.techcabal.com/state-of-tech-in-africa-h1-2026-recap-is-consolidation-the-new-growth-story/", "domain": "techcabal.com", "date": "17/07/2026"},
+            {"title": "African startups raise $102 million in July", "url": "https://nairametrics.com/2026/08/03/african-startups-raise-102-million-in-july-as-equity-funding-hits-seven-year-low/", "domain": "nairametrics.com", "date": "03/08/2026"},
+            {"title": "Africa’s start-ups raise $102m in July", "url": "https://guardian.ng/business-services/africas-start-ups-raise-102m-from-debt-equity-funding-in-july/", "domain": "guardian.ng", "date": "04/08/2026"},
+            {"title": "Terra Industries reveals $52 million funding", "url": "https://www.techradar.com/pro/african-defense-tech-startup-reveals-usd52-million-funding-as-it-looks-to-take-on-ukraine-and-us-giants", "domain": "techradar.com", "date": "21/08/2026"},
+            {"title": "African technology funding tracker", "url": "https://nook.africa/section/funding", "domain": "nook.africa", "date": "26/08/2026"}
+          ],
+          "existingPosts": [
+            {"platform": "linkedin", "author": "Ibrahim Ibrahim", "title": "Africa Funding Opportunities for Startups and Founders", "url": "https://www.linkedin.com/posts/ibrahim-ibrahim-a58b7018a_building-in-africa-and-looking-for-funding-activity-7482318850722783233-lA7Q"},
+            {"platform": "linkedin", "author": "M Kapital Consulting", "title": "Africa’s Innovation Economy Sees $1.3B in Funding", "url": "https://www.linkedin.com/posts/mkapitalconsulting_africa-tech-funding-hits-13b-will-2026-activity-7468901927221673984-xNP5"}
+          ],
+          "draftedPost": {
+            "linkedin": "Le financement africain ne récompense plus seulement les belles présentations.\n\nIl devient plus sélectif.\n\nCe n’est pas une mauvaise nouvelle pour les builders.\n\nC’est un rappel utile : une entreprise solide commence par un problème que quelqu’un est prêt à payer pour résoudre.\n\nAvant de chercher une levée, posez-vous trois questions :\n→ Est-ce que le problème est fréquent ?\n→ Est-ce qu’il coûte réellement du temps ou de l’argent au client ?\n→ Est-ce que notre solution améliore une métrique observable ?\n\nLa traction ne se résume pas aux téléchargements ou aux likes.\n\nElle se voit dans la rétention, le délai de livraison, la marge et la capacité à répéter un service sans épuiser l’équipe.\n\nLes contraintes de capital peuvent devenir un avantage : elles forcent à choisir, à simplifier et à construire ce qui compte.\n\nLe meilleur deck reste souvent un client qui revient.\n\nD’accord ou pas ?\n\n#Entrepreneuriat #Afrique #Startup #Produit #Exécution",
+            "facebook": "Quand le financement se resserre, une chose ne change pas : une entreprise solide résout un problème pour lequel un client est prêt à payer.\n\nAvant de chercher des fonds, vérifie : le problème est-il fréquent ? coûteux ? et peux-tu prouver que ta solution améliore quelque chose ?\n\nLes contraintes obligent à mieux choisir. Et parfois, c’est exactement ce qui permet de construire plus durablement.\n\nPour toi, quelle est la preuve la plus forte qu’un projet répond à un vrai besoin ?"
+          },
+          "generatedImages": [{"status": "blocked", "aspectRatio": "4:3", "prompt": "Editorial business illustration: an African founder examining a clear operational dashboard and a paying customer handshake, with abstract funding arrows secondary; dark forest green #0E3824, sage green #679D69, white background, premium minimal flat design, no text or logos.", "error": "Adobe Firefly image service returned HTTP 403 on 27/08/2026."}]
+        },
+        {
+          "id": "2026-08-27-5",
+          "title": "Avant d’acheter un autre outil IA, trouvez les trois tâches qui coûtent réellement du temps à votre équipe",
+          "account": "business",
+          "pillar": "ia",
+          "pillarLabel": "IA Responsable & Pratique",
+          "funnel": "BOFU",
+          "score": 5,
+          "bridge": "Iboga Process — Audit d’Opportunités IA gratuit de 30 minutes",
+          "angles": [
+            {"name": "Débutant", "format": "Vidéo face caméra 45 s", "hook": "Vous n’avez pas besoin de dix outils IA. Vous avez besoin d’identifier trois tâches répétitives.", "points": ["Lister les tâches répétées chaque semaine.", "Choisir celles dont la sortie est simple à vérifier."]},
+            {"name": "Expert", "format": "Carrousel avant/après", "hook": "Notre audit cible le délai, les erreurs, les relances et les doubles saisies avant de choisir une technologie.", "points": ["Démarrer par un seul pilote mesurable.", "Accompagner l’équipe pendant le changement."]},
+            {"name": "Contrarien", "format": "Post offre", "hook": "‘Je n’ai pas le temps d’automatiser’ signifie souvent : je n’ai pas encore vu le coût de mes tâches manuelles.", "points": ["L’audit est un temps court pour clarifier les priorités.", "Aucune promesse de gain universel : chaque flux est évalué à partir des données de l’entreprise."]}
+          ],
+          "sources": [
+            {"title": "Changing landscape of skills in the age of AI", "url": "https://www.ilo.org/publications/changing-landscape-skills-age-ai", "domain": "ilo.org", "date": "13/08/2026"},
+            {"title": "Agentic AI fuelling rise of the autonomous enterprise", "url": "https://news.sap.com/africa/2026/08/itweb-tv-agentic-ai-fuelling-rise-of-the-autonomous-enterprise/", "domain": "news.sap.com", "date": "12/08/2026"},
+            {"title": "The intelligent workplace (part 2)", "url": "https://www.itpro.com/technology/artificial-intelligence/the-intelligent-workplace-part-2-technologys-next-transformation-of-work", "domain": "itpro.com", "date": "12/08/2026"},
+            {"title": "Your Employees Are Winging AI at Work", "url": "https://www.kiplinger.com/personal-finance/careers/ai-in-the-workplace-what-employees-really-need", "domain": "kiplinger.com", "date": "14/08/2026"},
+            {"title": "AI Skills for Product Managers (2026 Data)", "url": "https://aisa.to/blog/ai-skills-for-product-managers", "domain": "aisa.to", "date": "16/08/2026"}
+          ],
+          "existingPosts": [
+            {"platform": "linkedin", "author": "SIMARA.AI", "title": "90-Day Automation Plan for SMEs to Prove ROI", "url": "https://www.linkedin.com/posts/simara-ai_a-40-person-firm-in-london-asked-us-a-simple-activity-7471471443873103873-m1e_"},
+            {"platform": "linkedin", "author": "Strategic Workflows", "title": "The state of AI in small business in 2026", "url": "https://www.linkedin.com/posts/strategic-workflows_the-state-of-ai-in-small-business-in-2026-activity-7438177056624054272-35Ig"}
+          ],
+          "draftedPost": {
+            "linkedin": "Avant d’acheter un autre outil IA, trouvez les trois tâches qui coûtent réellement du temps à votre équipe.\n\nChez Iboga Lab, nous ne commençons pas par une démonstration d’outil.\n\nNous commençons par le travail réel.\n\nLes questions sont simples :\n→ quelle tâche revient chaque semaine ?\n→ combien de personnes la touchent ?\n→ où apparaissent les erreurs ou les retards ?\n→ quel résultat peut être vérifié par un humain ?\n\nLes premiers bons candidats sont souvent très ordinaires : relances, consolidation d’informations, tri de demandes, préparation de comptes rendus, suivi d’un dossier.\n\nPas besoin d’automatiser toute l’entreprise en une fois.\n\nUn pilote clair, mesurable et adopté par l’équipe vaut mieux que dix abonnements inutilisés.\n\nVous voulez identifier les trois priorités dans votre activité ?\n\nRéservez un Audit d’Opportunités IA gratuit de 30 minutes : lien en premier commentaire ou en DM.\n\n#IbogaLab #IA #Automatisation #PME #TransformationDigitale",
+            "facebook": "Avant d’acheter un nouvel outil IA, trouve d’abord les 3 tâches qui font vraiment perdre du temps à ton équipe.\n\nRelances manuelles, informations recopiées, demandes mal triées, comptes rendus qui prennent une heure… les meilleures automatisations commencent souvent là.\n\nChez Iboga Lab, l’audit gratuit de 30 minutes sert à repérer ces priorités, puis à définir un premier pilote réaliste.\n\nEnvoie “AUDIT” en message pour en parler."
+          },
+          "generatedImages": [{"status": "blocked", "aspectRatio": "4:3", "prompt": "Minimalist corporate illustration of a small African business team identifying three repetitive manual tasks on a clean workflow board, one subtle AI assistant node, dark forest green #0E3824, sage green #679D69, white background, no text, no logos, no clutter.", "error": "Adobe Firefly image service returned HTTP 403 on 27/08/2026."}]
+        }
+      ],
+      "recommendations": {
+        "linkedinPersonal": [
+          {"rank": 1, "title": "L’IA accélère le désordre", "detail": "Lundi 31/08 — 07h30 — texte long contrarien"},
+          {"rank": 2, "title": "Le prompt ne suffit plus", "detail": "Mercredi 02/09 — 07h30 — post pédagogique"},
+          {"rank": 3, "title": "Construire avant de lever", "detail": "Vendredi 04/09 — 12h00 — post data"}
+        ],
+        "linkedinBusiness": [
+          {"rank": 1, "title": "Audit des trois tâches chronophages", "detail": "Jeudi 03/09 — 12h00 — post BOFU"}
+        ],
+        "facebookPersonal": [
+          {"rank": 1, "title": "Processus avant outil", "detail": "Lundi 31/08 — 19h00 — Reel 45 s"},
+          {"rank": 2, "title": "Former par métier", "detail": "Mercredi 02/09 — 19h00 — photo + texte"}
+        ],
+        "facebookBusiness": [
+          {"rank": 1, "title": "Audit IA gratuit", "detail": "Jeudi 03/09 — 19h00 — vidéo face caméra"}
+        ]
+      }
     }
   ]
 }
