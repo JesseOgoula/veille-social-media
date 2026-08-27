@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="720" height="520" rx="16" fill="#F8FAF9" stroke="#E2EAE5" stroke-width="2"/>
+  
+  <rect x="70" y="70" width="660" height="60" rx="8" fill="#0E3824"/>
+  <circle cx="105" cy="100" r="14" fill="#679D69"/>
+  <text x="135" y="106" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">FORMATION NUMERIQUE : DE L'EXECUTANT AU BATISSEUR</text>
+
+  <rect x="70" y="160" width="660" height="120" rx="12" fill="#0E3824"/>
+  <text x="100" y="200" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#679D69">RAPPORT OIT DU 11 AOUT 2026 : LE PARADOXE AFRICAIN</text>
+  <text x="100" y="235" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">8,4% de chomage vs 90% dans l'informel</text>
+  <text x="100" y="260" font-family="system-ui, sans-serif" font-size="13" fill="#A4C2AD">Le diplome theorique ne protege plus : il faut former des createurs de valeur concrets.</text>
+
+  <rect x="70" y="305" width="315" height="215" rx="12" fill="#FFFFFF" stroke="#E2EAE5" stroke-width="1.5"/>
+  <rect x="90" y="325" width="275" height="30" rx="6" fill="#FAECEB"/>
+  <text x="105" y="345" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#C53030">Le Modele Depasse</text>
+  <text x="105" y="385" font-family="system-ui, sans-serif" font-size="12" fill="#4A5568">- Syntaxe de code brute sans contexte</text>
+  <text x="105" y="415" font-family="system-ui, sans-serif" font-size="12" fill="#4A5568">- Attente passive d'un contrat de bureau</text>
+  <text x="105" y="445" font-family="system-ui, sans-serif" font-size="12" fill="#4A5568">- Chomage qualifie et decouragement</text>
+
+  <rect x="415" y="305" width="315" height="215" rx="12" fill="#FFFFFF" stroke="#679D69" stroke-width="2"/>
+  <rect x="435" y="325" width="275" height="30" rx="6" fill="#0E3824"/>
+  <text x="450" y="345" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#679D69">Le Product Builder (Iboga Learn)</text>
+  <text x="450" y="385" font-family="system-ui, sans-serif" font-size="12" fill="#0E3824">- Resolution de problemes reels de PME</text>
+  <text x="450" y="415" font-family="system-ui, sans-serif" font-size="12" fill="#0E3824">- Maitrise du No-Code, de l'IA &amp; des flux</text>
+  <text x="450" y="445" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#679D69">- +300 talents deja accompagnes</text>
+</svg>

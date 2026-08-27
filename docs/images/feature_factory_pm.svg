@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="720" height="520" rx="16" fill="#F8FAF9" stroke="#E2EAE5" stroke-width="2"/>
+  
+  <rect x="70" y="70" width="660" height="60" rx="8" fill="#0E3824"/>
+  <circle cx="105" cy="100" r="14" fill="#679D69"/>
+  <text x="135" y="106" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">CULTURE PRODUIT : SHIP SPEED vs INSIGHT VELOCITY</text>
+  
+  <rect x="70" y="160" width="315" height="360" rx="12" fill="#FFFFFF" stroke="#E2EAE5" stroke-width="1.5"/>
+  <rect x="90" y="185" width="275" height="35" rx="6" fill="#FAECEB"/>
+  <text x="105" y="208" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#C53030">L'Usine a Features (Output)</text>
+  
+  <rect x="90" y="240" width="275" height="60" rx="8" fill="#F8FAF9" stroke="#E2EAE5"/>
+  <text x="105" y="265" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#0E3824">1. Tickets Jira a la chaine</text>
+  <text x="105" y="285" font-family="system-ui, sans-serif" font-size="11" fill="#718096">Empiler des fonctions sans usage</text>
+
+  <rect x="90" y="315" width="275" height="60" rx="8" fill="#F8FAF9" stroke="#E2EAE5"/>
+  <text x="105" y="340" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#0E3824">2. Vitesse de livraison seule</text>
+  <text x="105" y="360" font-family="system-ui, sans-serif" font-size="11" fill="#718096">L'IA accelere la dette technique</text>
+
+  <rect x="90" y="390" width="275" height="100" rx="8" fill="#FFF5F5" stroke="#FEB2B2"/>
+  <text x="105" y="425" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#C53030">Resultat :</text>
+  <text x="105" y="450" font-family="system-ui, sans-serif" font-size="12" fill="#4A5568">Produit lourd, utilisateurs perdus,</text>
+  <text x="105" y="470" font-family="system-ui, sans-serif" font-size="12" fill="#4A5568">tresorerie brulee sans impact.</text>
+
+  <rect x="415" y="160" width="315" height="360" rx="12" fill="#FFFFFF" stroke="#679D69" stroke-width="2"/>
+  <rect x="435" y="185" width="275" height="35" rx="6" fill="#0E3824"/>
+  <text x="450" y="208" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF">L'Impact Reel (Outcome)</text>
+
+  <rect x="435" y="240" width="275" height="60" rx="8" fill="#F3F7F4" stroke="#679D69"/>
+  <text x="450" y="265" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#0E3824">1. Insight Velocity</text>
+  <text x="450" y="285" font-family="system-ui, sans-serif" font-size="11" fill="#679D69">Comprendre le probleme reel</text>
+
+  <rect x="435" y="315" width="275" height="60" rx="8" fill="#F3F7F4" stroke="#679D69"/>
+  <text x="450" y="340" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#0E3824">2. Le Pouvoir du NON</text>
+  <text x="450" y="360" font-family="system-ui, sans-serif" font-size="11" fill="#679D69">Tuer 90% des idees non viables</text>
+
+  <rect x="435" y="390" width="275" height="100" rx="8" fill="#0E3824"/>
+  <text x="450" y="425" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#679D69">Resultat :</text>
+  <text x="450" y="450" font-family="system-ui, sans-serif" font-size="12" fill="#FFFFFF">Produit epure, retention forte,</text>
+  <text x="450" y="470" font-family="system-ui, sans-serif" font-size="12" fill="#FFFFFF">croissance rentable et perenne.</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="720" height="520" rx="16" fill="#F8FAF9" stroke="#E2EAE5" stroke-width="2"/>
+  
+  <rect x="70" y="70" width="660" height="60" rx="8" fill="#0E3824"/>
+  <circle cx="105" cy="100" r="14" fill="#679D69"/>
+  <text x="135" y="106" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">FLUX AUTOMATISE PME : DU CONTACT AU PAIEMENT</text>
+
+  <rect x="80" y="180" width="160" height="120" rx="10" fill="#FFFFFF" stroke="#679D69" stroke-width="2"/>
+  <circle cx="160" cy="225" r="20" fill="#25D366"/>
+  <text x="160" y="231" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">WA</text>
+  <text x="160" y="270" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#0E3824" text-anchor="middle">Demande Client</text>
+  <text x="160" y="285" font-family="system-ui, sans-serif" font-size="10" fill="#679D69" text-anchor="middle">WhatsApp Business</text>
+
+  <rect x="305" y="180" width="180" height="120" rx="10" fill="#0E3824"/>
+  <circle cx="395" cy="225" r="20" fill="#679D69"/>
+  <text x="395" y="231" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#0E3824" text-anchor="middle">N8N</text>
+  <text x="395" y="270" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Pipeline N8n / IA</text>
+  <text x="395" y="285" font-family="system-ui, sans-serif" font-size="10" fill="#A4C2AD" text-anchor="middle">Devis &amp; traitement auto</text>
+
+  <rect x="550" y="180" width="160" height="120" rx="10" fill="#FFFFFF" stroke="#679D69" stroke-width="2"/>
+  <circle cx="630" cy="225" r="20" fill="#0E3824"/>
+  <text x="630" y="231" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">CRM</text>
+  <text x="630" y="270" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#0E3824" text-anchor="middle">Facture &amp; CRM</text>
+  <text x="630" y="285" font-family="system-ui, sans-serif" font-size="10" fill="#679D69" text-anchor="middle">Enregistrement direct</text>
+
+  <rect x="80" y="340" width="630" height="170" rx="12" fill="#F3F7F4" stroke="#E2EAE5"/>
+  <text x="110" y="375" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#0E3824">IMPACTS MESURES CHEZ NOS CLIENTS (IBOGA PROCESS)</text>
+  
+  <rect x="110" y="395" width="180" height="95" rx="8" fill="#FFFFFF" stroke="#E2EAE5"/>
+  <text x="130" y="435" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" fill="#679D69">-15h</text>
+  <text x="130" y="465" font-family="system-ui, sans-serif" font-size="12" fill="#0E3824">par semaine de saisie manuelle</text>
+
+  <rect x="305" y="395" width="180" height="95" rx="8" fill="#FFFFFF" stroke="#E2EAE5"/>
+  <text x="325" y="435" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" fill="#679D69">0</text>
+  <text x="325" y="465" font-family="system-ui, sans-serif" font-size="12" fill="#0E3824">erreur de facturation / perte</text>
+
+  <rect x="500" y="395" width="180" height="95" rx="8" fill="#0E3824"/>
+  <text x="520" y="435" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" fill="#679D69">30 min</text>
+  <text x="520" y="465" font-family="system-ui, sans-serif" font-size="12" fill="#FFFFFF">Audit gratuit d'opportunite</text>
+</svg>
