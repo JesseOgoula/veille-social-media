@@ -1,3 +1,323 @@
 {
-  "sessions": []
+  "sessions": [
+    {
+      "id": "session-2026-08-27",
+      "date": "2026-08-27",
+      "title": "Semaine du 28 Août au 3 Septembre 2026",
+      "summary": "3 actualités + 7 idées de contenu couvrant IA Appliquée, Terrain & PME, et recherche exploratoire (sciences cognitives). Mix TOFU/MOFU/BOFU équilibré.",
+      "ideas": [
+        {
+          "id": "news-1",
+          "type": "news",
+          "title": "MTN lance 'Africa Data Hub' — 150 MW de data centers IA-ready sur le continent",
+          "pillar": "terrain",
+          "pillarLabel": "💼 Terrain & PME Africaines",
+          "funnel": "TOFU",
+          "targetAccount": "jesse",
+          "targetAccountLabel": "👤 Jesse Ogoula",
+          "eventDate": "2026-08-27",
+          "source": {
+            "title": "MTN Digital Infrastructure partners to establish AI-ready data center platform",
+            "domain": "mtn.com",
+            "url": "https://mtn.com"
+          },
+          "score": null,
+          "draftedPost": "🔴 L'Afrique héberge moins de 1% des data centers IA du monde.\n\nCe chiffre devrait interpeller chaque dirigeant du continent.\n\nAujourd'hui, MTN Group annonce un partenariat avec Gulf Data Hub pour créer \"Africa Data Hub Holding\" — 150 MW de capacité data center IA-ready, en commençant par le Nigeria et l'Afrique du Sud.\n\nPourquoi c'est important ?\n\nTant que nos données sont traitées à des milliers de km, sur des serveurs qui ne nous appartiennent pas, la \"transformation digitale africaine\" reste un slogan.\n\nCe partenariat est un signal :\n→ Les telcos africains deviennent des infrastructures IA, pas juste des réseaux\n→ Les solutions cloud locales vont devenir plus rapides et moins chères\n→ Les PME qui structurent leurs process aujourd'hui seront les premières à en bénéficier\n\nLa question n'est plus \"est-ce que l'IA va arriver en Afrique ?\"\nLa question, c'est : \"est-ce que votre entreprise sera prête quand l'infrastructure sera là ?\"\n\nEt vous, vous attendez quoi pour commencer à structurer vos process ?"
+        },
+        {
+          "id": "news-2",
+          "type": "news",
+          "title": "Alibaba open-source Qwen 3.8-Max — le plus gros modèle IA ouvert jamais publié (2 400 milliards de paramètres)",
+          "pillar": "ia",
+          "pillarLabel": "🤖 IA Appliquée",
+          "funnel": "TOFU",
+          "targetAccount": "jesse",
+          "targetAccountLabel": "👤 Jesse Ogoula",
+          "eventDate": "2026-08-12",
+          "source": {
+            "title": "Qwen 3.8-Max open weight release",
+            "domain": "qwen.ai",
+            "url": "https://qwen.ai"
+          },
+          "score": null,
+          "draftedPost": "Le modèle IA le plus puissant du monde est maintenant gratuit. 🤯\n\nAlibaba vient d'ouvrir les poids de Qwen 3.8-Max :\n→ 2 400 milliards de paramètres\n→ 1 million de tokens de contexte\n→ Capacités de raisonnement et de code de niveau \"flagship\"\n\nC'est la première fois qu'un modèle de cette catégorie est en open-source.\n\nConcrètement, ça veut dire quoi ?\n\nPour un développeur ou une startup africaine :\n→ Plus besoin de payer des milliers d'euros/mois en API propriétaires\n→ Possibilité de construire des assistants IA métier sur mesure\n→ Automatiser des tâches complexes sans dépendre de Google ou OpenAI\n\nMais attention au piège :\nUn outil gratuit ne remplace pas une stratégie.\nSi vous ne savez pas QUEL process automatiser, le modèle le plus puissant du monde ne servira à rien.\n\nLa vraie question : avez-vous identifié les 3 tâches les plus chronophages de votre entreprise ?\n\nC'est toujours là que ça commence. 👇"
+        },
+        {
+          "id": "news-3",
+          "type": "news",
+          "title": "Innovate Africa Challenge 2026 — 50 000$ pour des solutions IA en agriculture africaine (deadline 31 août !)",
+          "pillar": "terrain",
+          "pillarLabel": "💼 Terrain & PME Africaines",
+          "funnel": "TOFU",
+          "targetAccount": "jesse",
+          "targetAccountLabel": "👤 Jesse Ogoula",
+          "eventDate": "2026-08-27",
+          "source": {
+            "title": "Innovate Africa Challenge 2026 – 3rd Edition",
+            "domain": "fao.org",
+            "url": "https://fao.org"
+          },
+          "score": null,
+          "draftedPost": "⏰ Il reste 4 jours.\n\nLa FAO + Smart Africa cherchent LA solution IA qui va transformer l'agriculture africaine.\n\n🎯 Innovate Africa Challenge 2026 (3ème édition)\n💰 50 000 USD pour le gagnant\n📅 Deadline : 31 août 2026\n\nLe thème cette année : \"From Ideation to Deployment\"\n\nTraduction : on ne veut plus de PowerPoint.\nOn veut des solutions IA qui fonctionnent DÉJÀ sur le terrain.\n\nAgriculture de précision, prédiction de rendement, surveillance des maladies, gestion de l'eau…\n\nCe que ça dit sur l'écosystème africain :\n→ Les bailleurs passent du financement d'idées au financement de résultats\n→ L'IA appliquée n'est plus un concept — c'est un outil de travail\n→ Les startups qui savent DÉPLOYER (pas juste pitcher) vont gagner\n\nVous connaissez une startup agritech africaine qui mérite ce prix ?\nTaguez-la en commentaire 👇"
+        },
+        {
+          "id": "idea-1",
+          "type": "content",
+          "title": "88% des entreprises utilisent l'IA — mais seules 6% en tirent un vrai ROI",
+          "pillar": "ia",
+          "pillarLabel": "🤖 IA Appliquée",
+          "funnel": "MOFU",
+          "targetAccount": "ibogalab",
+          "targetAccountLabel": "🏢 Iboga Lab",
+          "ibogaBridge": "Opportunité Audit — Le problème n'est pas l'outil, c'est le process",
+          "score": 5,
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte long LinkedIn",
+              "hook": "88% des grandes entreprises utilisent l'IA. Mais 56% des PDG n'en voient aucun résultat financier. Bienvenue dans le 'Pilot Purgatory'."
+            },
+            {
+              "name": "Expert",
+              "format": "Carrousel LinkedIn (5-7 slides)",
+              "hook": "45% du budget IA est brûlé AVANT de déployer la moindre application. Voici pourquoi votre audit de process est plus urgent que votre audit technologique."
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte long LinkedIn",
+              "hook": "L'IA ne donne pas de ROI. C'est normal. Et c'est la faute des dirigeants, pas de la technologie."
+            }
+          ],
+          "sources": [
+            {"title": "AI adoption scaling data", "domain": "aibusiness.com"},
+            {"title": "Only 6% of orgs are AI high performers", "domain": "McKinsey"},
+            {"title": "45% of AI budgets consumed pre-deployment", "domain": "Infrastructure studies"},
+            {"title": "37% report EBIT impact from AI", "domain": "McKinsey"},
+            {"title": "56% of CEOs report no measurable revenue", "domain": "CEO surveys"}
+          ],
+          "draftedPost": null
+        },
+        {
+          "id": "idea-2",
+          "type": "content",
+          "title": "Le 'citizen developer' — 80% des automatisations IA sont créées HORS du département IT",
+          "pillar": "ia",
+          "pillarLabel": "🤖 IA Appliquée",
+          "funnel": "TOFU",
+          "targetAccount": "jesse",
+          "targetAccountLabel": "👤 Jesse Ogoula",
+          "ibogaBridge": "Iboga Learn — Formation des équipes au no-code/IA",
+          "score": 4,
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte long LinkedIn",
+              "hook": "En 2026, il y a 4 fois plus de 'citizen developers' que de développeurs professionnels. Et ce n'est pas un problème — c'est une révolution."
+            },
+            {
+              "name": "Expert",
+              "format": "Carrousel (6 slides)",
+              "hook": "Votre département IT est un goulot d'étranglement. Voici comment libérer vos équipes métier avec le no-code IA."
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte long",
+              "hook": "Arrêtez de recruter des développeurs. Formez plutôt vos managers à l'IA no-code."
+            }
+          ],
+          "sources": [
+            {"title": "Citizen developers outnumber pro devs 4:1", "domain": "Industry reports"},
+            {"title": "80% automation outside IT", "domain": "Enterprise surveys"},
+            {"title": "No-code reduces dev time by 90%", "domain": "Platform benchmarks"},
+            {"title": "AI-native vs AI-assisted builders", "domain": "Sanalabs"},
+            {"title": "From coding to prompting", "domain": "Industry trends"}
+          ],
+          "draftedPost": null
+        },
+        {
+          "id": "idea-3",
+          "type": "content",
+          "title": "L'UE AI Act entre en vigueur — et il impacte les startups africaines sans qu'elles le sachent",
+          "pillar": "ia",
+          "pillarLabel": "🤖 IA Appliquée",
+          "funnel": "TOFU",
+          "targetAccount": "jesse",
+          "targetAccountLabel": "👤 Jesse Ogoula",
+          "ibogaBridge": "Iboga Process — Audit de conformité IA",
+          "score": 4,
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte long LinkedIn",
+              "hook": "Vous êtes une startup africaine ? L'UE AI Act vous concerne aussi. Même si vous n'avez jamais mis les pieds en Europe."
+            },
+            {
+              "name": "Expert",
+              "format": "Carrousel (5 slides)",
+              "hook": "L'UE AI Act est actif depuis le 2 août. Voici les 3 obligations qui impactent directement les entreprises africaines."
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte long",
+              "hook": "L'Afrique ne devrait PAS copier la réglementation IA de l'Europe. Voici pourquoi."
+            }
+          ],
+          "sources": [
+            {"title": "EU AI Act enforcement August 2, 2026", "domain": "EU official"},
+            {"title": "Extraterritorial impact on African companies", "domain": "Policy studies"},
+            {"title": "22/55 AU states have AI strategies", "domain": "AU Continental Strategy"},
+            {"title": "Kenya drafting AI bill", "domain": "Policy trackers"},
+            {"title": "Brussels Effect on African tech", "domain": "Academic analyses"}
+          ],
+          "draftedPost": null
+        },
+        {
+          "id": "idea-4",
+          "type": "content",
+          "title": "$330 milliards — le gap de financement des PME africaines que la fintech n'a toujours pas comblé",
+          "pillar": "terrain",
+          "pillarLabel": "💼 Terrain & PME Africaines",
+          "funnel": "MOFU",
+          "targetAccount": "jesse",
+          "targetAccountLabel": "👤 Jesse Ogoula",
+          "ibogaBridge": "Iboga Process — Structuration des process pour accéder au financement",
+          "score": 4,
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte long LinkedIn",
+              "hook": "330 milliards de dollars. C'est le montant que les PME africaines ne reçoivent PAS chaque année en financement. Pourtant, la solution existe déjà dans vos transactions Mobile Money."
+            },
+            {
+              "name": "Expert",
+              "format": "Carrousel (6 slides)",
+              "hook": "Votre historique Mobile Money vaut plus qu'un business plan. Voici comment la fintech change l'accès au crédit pour les PME africaines."
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte long",
+              "hook": "La fintech ne sauvera pas les PME africaines. Pas sans process internes solides."
+            }
+          ],
+          "sources": [
+            {"title": "SME financing gap $330B", "domain": "BCG / Forbes Africa"},
+            {"title": "Debt financing +37% YoY H1 2026", "domain": "African startup reports"},
+            {"title": "AI-powered credit decisioning", "domain": "TransUnion Africa"},
+            {"title": "PAPSS cross-border interoperability", "domain": "Swift"}
+          ],
+          "draftedPost": null
+        },
+        {
+          "id": "idea-5",
+          "type": "content",
+          "title": "Les agents IA remplacent les chatbots — mais 40% des projets vont échouer d'ici 2027",
+          "pillar": "ia",
+          "pillarLabel": "🤖 IA Appliquée",
+          "funnel": "BOFU",
+          "targetAccount": "ibogalab",
+          "targetAccountLabel": "🏢 Iboga Lab",
+          "ibogaBridge": "Iboga Process — Audit + déploiement d'agents IA métier",
+          "score": 5,
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte long LinkedIn",
+              "hook": "Les chatbots, c'est fini. En 2026, les entreprises déploient des 'agents IA' qui exécutent des tâches de A à Z. Mais attention au piège."
+            },
+            {
+              "name": "Expert",
+              "format": "Texte long + CTA Audit",
+              "hook": "40% des projets d'agents IA vont être annulés d'ici 2027. Voici les 3 erreurs qui tuent ces projets — et comment les éviter."
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte long",
+              "hook": "Vous n'avez pas besoin d'agents IA. Vous avez besoin de SOP claires."
+            }
+          ],
+          "sources": [
+            {"title": "40% enterprise apps embed AI agents by end 2026", "domain": "Gartner"},
+            {"title": "40% agentic projects cancelled by 2027", "domain": "Gartner"},
+            {"title": "Multi-agent orchestration", "domain": "CrewAI / LangGraph"},
+            {"title": "Process redesign before AI yields best results", "domain": "Enterprise best practices"},
+            {"title": "Agent sprawl and silent errors", "domain": "Blue Prism"}
+          ],
+          "draftedPost": null
+        },
+        {
+          "id": "idea-6",
+          "type": "content",
+          "title": "La 'fatigue décisionnelle' — le tueur silencieux de productivité des managers (et comment l'IA peut aider)",
+          "pillar": "ia",
+          "pillarLabel": "🤖 IA Appliquée (Exploratoire : Sciences cognitives)",
+          "funnel": "TOFU",
+          "targetAccount": "jesse",
+          "targetAccountLabel": "👤 Jesse Ogoula",
+          "ibogaBridge": "Iboga Process — Automatiser les décisions à faible enjeu",
+          "score": 4,
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte long LinkedIn (storytelling)",
+              "hook": "Vous prenez combien de décisions par jour ? Si vous êtes manager, probablement +300. Et c'est pour ça que vous êtes épuisé à 15h."
+            },
+            {
+              "name": "Expert",
+              "format": "Carrousel (5 slides)",
+              "hook": "60% du temps d'un manager est consacré au 'travail sur le travail'. Voici comment un audit cognitif peut libérer 15h par semaine."
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte long",
+              "hook": "Le problème des managers africains, ce n'est pas le manque de compétences. C'est le trop-plein de micro-décisions."
+            }
+          ],
+          "sources": [
+            {"title": "45% of managers consistently exhausted", "domain": "Workplace reports"},
+            {"title": "60% time on work about work", "domain": "Productivity studies"},
+            {"title": "Context switching consumes 40% productive time", "domain": "Cognitive load research"},
+            {"title": "AI Cognitive Fatigue brain fry", "domain": "2026 trend reports"},
+            {"title": "Decision fatigue debt", "domain": "Management science"}
+          ],
+          "draftedPost": null
+        },
+        {
+          "id": "idea-7",
+          "type": "content",
+          "title": "$1.44 milliard en H1 2026 — mais le capital se concentre sur une élite de startups",
+          "pillar": "terrain",
+          "pillarLabel": "💼 Terrain & PME Africaines",
+          "funnel": "BOFU",
+          "targetAccount": "ibogalab",
+          "targetAccountLabel": "🏢 Iboga Lab",
+          "ibogaBridge": "Iboga Process — Aider les PME à devenir investissables via des process solides",
+          "score": 4,
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte long",
+              "hook": "1.44 milliard de dollars investis dans les startups africaines en 6 mois. Bonne nouvelle ? Pas vraiment. Voici pourquoi."
+            },
+            {
+              "name": "Expert",
+              "format": "Carrousel (6 slides)",
+              "hook": "L'écosystème startup africain se consolide : 63 fusions en 6 mois. Voici ce que ça change pour les PME qui veulent lever."
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte long",
+              "hook": "Arrêtez de chercher des investisseurs. Construisez un business rentable d'abord."
+            }
+          ],
+          "sources": [
+            {"title": "$1.44B H1 2026 Africa startup funding", "domain": "AfroTech Horizon"},
+            {"title": "Debt financing +37% YoY", "domain": "African Startups"},
+            {"title": "63 M&A deals H1 2026 vs 29", "domain": "Consolidation data"},
+            {"title": "Barbell effect capital concentration", "domain": "Ecosystem analysis"}
+          ],
+          "draftedPost": null
+        }
+      ]
+    }
+  ]
 }
