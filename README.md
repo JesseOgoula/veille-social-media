@@ -1,30 +1,16 @@
-# 📊 Veille Stratégique — Jesse Ogoula & Iboga Lab
+# React + Vite
 
-Tableau de bord de veille stratégique et idées de publications pour le personal branding de Jesse Ogoula et la visibilité d'Iboga Lab.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## 🔗 Accès
+Currently, two official plugins are available:
 
-**[Voir le tableau de bord →](https://jesseogoula.github.io/veille-social-media/)**
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Architecture
+## React Compiler
 
-- `index.html` — Application web SPA (Single Page App)
-- `data/sessions.json` — Données cumulatives de toutes les sessions de veille
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Fonctionnalités
+## Expanding the Oxlint configuration
 
-- **Historique cumulatif** : Chaque session de veille est conservée et consultable
-- **Sélecteur de dates** : Navigation instantanée entre les sessions
-- **Filtres** : Par compte (👤 Jesse / 🏢 Iboga Lab)
-- **3 angles par sujet** : Débutant, Expert, Contrarien
-- **Copier le prompt** : Génération automatique du brief de rédaction
-- **Sources vérifiées** : 5 sources minimum par sujet
-- **Publications existantes** : Liens vers des posts similaires pour s'inspirer
-
-## Mise à jour
-
-Le tableau de bord est mis à jour automatiquement via le skill `social-media-topic-researcher` dans l'IDE Antigravity.
-
----
-
-*Généré automatiquement pour Jesse Ogoula & Iboga Lab*
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
