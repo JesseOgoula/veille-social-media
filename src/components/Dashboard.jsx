@@ -8,6 +8,7 @@ const Dashboard = () => {
   const [selectedSessionIndex, setSelectedSessionIndex] = useState(0);
   const [filterAccount, setFilterAccount] = useState('all');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [confirmModal, setConfirmModal] = useState({ isOpen: false, message: '', action: null });
   const dropdownRef = useRef(null);
 
   useEffect(() => {
@@ -74,31 +75,35 @@ const Dashboard = () => {
     }
   };
 
+  const confirmAction = (message, action) => {
+    setConfirmModal({ isOpen: true, message, action });
+  };
+
   const handleDeleteSession = () => {
-    if (window.confirm("Êtes-vous sûr de vouloir supprimer cette session ?")) {
+    confirmAction("Êtes-vous sûr de vouloir supprimer cette session ?", () => {
       const newData = { ...data };
       newData.sessions = newData.sessions.filter((_, idx) => idx !== selectedSessionIndex);
       setData(newData);
       setSelectedSessionIndex(0);
       syncWithGitHub(newData);
-    }
+    });
   };
 
   const handleDeleteAll = () => {
-    if (window.confirm("Voulez-vous vraiment supprimer TOUTE la base de données ?")) {
+    confirmAction("Voulez-vous vraiment supprimer TOUTE la base de données ?", () => {
       const newData = { sessions: [] };
       setData(newData);
       syncWithGitHub(newData);
-    }
+    });
   };
 
   const handleDeleteIdea = (ideaId) => {
-    if (window.confirm("Supprimer cette idée ?")) {
+    confirmAction("Supprimer cette idée ?", () => {
       const newData = { ...data };
       newData.sessions[selectedSessionIndex].ideas = newData.sessions[selectedSessionIndex].ideas.filter(i => i.id !== ideaId);
       setData(newData);
       syncWithGitHub(newData);
-    }
+    });
   };
 
   return (
@@ -113,7 +118,7 @@ const Dashboard = () => {
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               <span className="truncate">
-                {data.sessions[selectedSessionIndex]?.weekLabel} ({data.sessions[selectedSessionIndex]?.date})
+                {data.sessions[selectedSessionIndex]?.date}
               </span>
               <svg className="fill-current h-4 w-4 text-text-muted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
@@ -135,7 +140,7 @@ const Dashboard = () => {
                       setIsDropdownOpen(false);
                     }}
                   >
-                    {session.weekLabel} ({session.date})
+                    {session.date}
                   </div>
                 ))}
               </div>
@@ -214,6 +219,33 @@ const Dashboard = () => {
           ))
         )}
       </div>
+
+      {/* Custom Confirm Modal */}
+      {confirmModal.isOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40 backdrop-blur-sm">
+          <div className="bg-white rounded shadow-xl p-6 max-w-sm w-full mx-4 border border-[#EAEAEA]">
+            <h3 className="text-lg font-semibold text-text-main mb-2">Confirmation</h3>
+            <p className="text-sm text-text-muted mb-6">{confirmModal.message}</p>
+            <div className="flex justify-end gap-3">
+              <button 
+                onClick={() => setConfirmModal({ isOpen: false, message: '', action: null })} 
+                className="px-4 py-2 text-sm font-medium text-text-main bg-surface hover:bg-[#EAEAEA] rounded transition-colors"
+              >
+                Annuler
+              </button>
+              <button 
+                onClick={() => {
+                  if (confirmModal.action) confirmModal.action();
+                  setConfirmModal({ isOpen: false, message: '', action: null });
+                }} 
+                className="px-4 py-2 text-sm font-medium text-white bg-red-500 hover:bg-red-600 rounded transition-colors"
+              >
+                Confirmer
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

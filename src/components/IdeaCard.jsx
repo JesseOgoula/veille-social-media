@@ -4,6 +4,12 @@ import PostPreview from './PostPreview';
 const IdeaCard = ({ idea, onDelete }) => {
   const [expandedAngle, setExpandedAngle] = useState(0);
 
+  const formatUrl = (url) => {
+    if (!url) return '#';
+    if (url.startsWith('http://') || url.startsWith('https://')) return url;
+    return `https://${url}`;
+  };
+
   return (
     <div className="bg-white border border-[#EAEAEA] rounded shadow-sm overflow-hidden flex flex-col group">
       {/* Header */}
@@ -107,7 +113,7 @@ const IdeaCard = ({ idea, onDelete }) => {
             <div className="space-y-3">
               {idea.sources.map((source, idx) => (
                 <div key={idx} className="text-sm">
-                  <a href={source.url} target="_blank" rel="noopener noreferrer" className="font-medium text-text-main hover:text-iboga-dark transition-colors line-clamp-2">
+                  <a href={formatUrl(source.url)} target="_blank" rel="noopener noreferrer" className="font-medium text-text-main hover:text-iboga-dark transition-colors line-clamp-2">
                     {source.title}
                   </a>
                   <div className="text-xs text-text-muted mt-0.5 flex gap-2">
@@ -126,7 +132,7 @@ const IdeaCard = ({ idea, onDelete }) => {
               <div className="space-y-3">
                 {idea.existingPosts.map((post, idx) => (
                   <div key={idx} className="text-sm">
-                    <a href={post.url} target="_blank" rel="noopener noreferrer" className="font-medium text-text-main hover:text-iboga-dark transition-colors line-clamp-2">
+                    <a href={formatUrl(post.url)} target="_blank" rel="noopener noreferrer" className="font-medium text-text-main hover:text-iboga-dark transition-colors line-clamp-2">
                       {post.title}
                     </a>
                     <div className="text-xs text-text-muted mt-0.5 flex gap-2 capitalize">
