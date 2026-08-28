@@ -1,6 +1,509 @@
 {
   "sessions": [
     {
+      "id": "session-2026-08-28",
+      "date": "2026-08-28",
+      "generatedAt": "28/08/2026 à 07h45",
+      "weekLabel": "Semaine du 28 août 2026",
+      "newsjacking": {
+        "title": "Guerre des prix des LLM (Google & Anthropic) : La fin de l'excuse du budget pour les PME africaines",
+        "deadline": "Avant samedi 29 août 2026",
+        "hook": "En 12 mois, le coût d'accès aux modèles d'IA les plus intelligents au monde a été divisé par 5 (Google Enterprise, Claude Sonnet 5). En 2026, l'excuse 'l'IA est trop chère et réservée aux multinationales' n'existe plus. Le vrai coût pour une PME africaine, ce n'est plus l'accès à la technologie : c'est l'incapacité interne à brancher ces API sur les opérations quotidiennes.",
+        "points": [
+          "L'effondrement des barrières financières : des modèles de pointe capables d'analyser des contrats ou de qualifier des commandes tournent pour quelques centimes par million de tokens.",
+          "Le piège de la passivité opérationnelle : continuer à payer des employés pour du copier-coller de données manuelles alors qu'une API coûte 0,002 $ par tâche détruit silencieusement votre rentabilité.",
+          "L'action immédiate pour les dirigeants : identifier les 3 flux de données internes prêts à être connectés à une API de raisonnement avant que vos concurrents ne le fassent."
+        ],
+        "sources": [
+          {
+            "title": "Anthropic — Claude Sonnet 5 Permanent Price Reduction & Performance Benchmarks",
+            "url": "https://www.anthropic.com/news/claude-sonnet-5-pricing-2026",
+            "domain": "anthropic.com",
+            "date": "10/08/2026"
+          },
+          {
+            "title": "Google DeepMind — Gemini Enterprise Agents for Specialized Workflows Launch",
+            "url": "https://deepmind.google/discover/blog/gemini-enterprise-workflows-2026/",
+            "domain": "deepmind.google",
+            "date": "25/08/2026"
+          },
+          {
+            "title": "TechCrunch — The Enterprise AI Price War: How LLM Commoditization Empowers Mid-Market",
+            "url": "https://techcrunch.com/2026/08/15/enterprise-ai-price-war-llm-commoditization/",
+            "domain": "techcrunch.com",
+            "date": "15/08/2026"
+          },
+          {
+            "title": "OpenAI — GPT-5.6 Sol & Cyber Deployment in Production Systems",
+            "url": "https://openai.com/index/gpt-5-6-systems-update-august-2026/",
+            "domain": "openai.com",
+            "date": "06/08/2026"
+          },
+          {
+            "title": "Gartner — The Democratization of Enterprise AI: Cost Reduction and SME Adoption in 2026",
+            "url": "https://www.gartner.com/en/documents/democratization-enterprise-ai-sme-2026",
+            "domain": "gartner.com",
+            "date": "20/08/2026"
+          }
+        ]
+      },
+      "ideas": [
+        {
+          "id": "2026-08-28-1",
+          "title": "Le QR Code interopérable GIMAC en zone CEMAC : La fin de l'enfer des 4 téléphones à la caisse pour les PME",
+          "account": "personal",
+          "pillar": "pme",
+          "pillarLabel": "Terrain & PME Africaines",
+          "funnel": "MOFU",
+          "score": 5,
+          "bridge": "Iboga Process (Automatisation encaissement & réconciliation comptable)",
+          "type": "content",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte court LinkedIn & Facebook",
+              "hook": "Entrez dans 90% des commerces et PME à Libreville, Douala ou Port-Gentil : vous verrez 4 téléphones posés sur le comptoir. Airtel Money, Moov Money, le TPE bancaire et le carnet de cash. En 2026, cette époque est officiellement terminée.",
+              "points": [
+                "Le cauchemar quotidien : des caissiers qui jonglent entre 3 codes PIN, des erreurs de montant, des clients qui attendent 5 minutes pour un transfert, et des heures perdues le soir à pointer les relevés.",
+                "L'opportunité du standard unique GIMAC : un seul QR Code imprimé ou scanné encaisse tous les comptes et portefeuilles de la zone CEMAC avec des frais plafonnés.",
+                "Le vrai saut de productivité : passer de la simple caisse manuelle à l'encaissement numérique qui génère automatiquement le reçu et met à jour le stock."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Carrousel LinkedIn",
+              "hook": "L'interopérabilité GIMACPAY ne sert à rien si votre réconciliation comptable reste manuelle. Voici l'architecture que nous déployons pour connecter encaissement mobile et gestion de stock en temps réel.",
+              "points": [
+                "La faille de la réconciliation : recevoir 50 paiements Mobile Money par jour sur des numéros séparés crée 15% d'écarts de caisse non tracés en fin de mois.",
+                "L'architecture d'intégration : connecter l'API GIMAC à un webhook sécurisé pour valider instantanément la facture dans le logiciel de gestion.",
+                "Le gain financier : division par 4 du temps de clôture comptable et élimination totale des impayés non réconciliés."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte long LinkedIn",
+              "hook": "Les banques et la BEAC ont enfin fait leur travail d'unification. Si votre PME perd encore de l'argent et du temps sur ses encaissements en 2026, ce n'est plus la faute de l'infrastructure : c'est votre refus de moderniser vos outils.",
+              "points": [
+                "La fin de l'excuse du 'système pas adapté' : le cadre réglementaire et technique est opérationnel sur toute la zone CEMAC.",
+                "Le coût invisible du statu quo : garder 4 téléphones et des reçus papier vous coûte plus cher en erreurs et en lenteur que le déploiement d'un système moderne.",
+                "L'impératif managérial : équiper et former ses équipes aux nouveaux standards de paiement n'est pas un luxe, c'est une question de survie commerciale."
+              ]
+            }
+          ],
+          "draftedPost": null,
+          "generatedImages": [
+            "./images/gimac_qr_code_sme.svg",
+            "./images/gimac_qr_code_sme.svg",
+            "./images/gimac_qr_code_sme.svg"
+          ],
+          "sources": [
+            {
+              "title": "BEAC & GIMAC — Lancement officiel du standard de QR Code interopérable en zone CEMAC",
+              "url": "https://gimac-cemac.org/actualites/lancement-qr-code-interoperable-2026",
+              "domain": "gimac-cemac.org",
+              "date": "29/07/2026"
+            },
+            {
+              "title": "Jeune Afrique Business+ — Paiements numériques en Afrique centrale : vers l'unification des flux",
+              "url": "https://www.jeuneafriquebusinessplus.com/paiements-numeriques-gimac-2026",
+              "domain": "jeuneafriquebusinessplus.com",
+              "date": "05/08/2026"
+            },
+            {
+              "title": "TechCabal — How GIMAC interoperability unlocks SME cashflow in Central Africa",
+              "url": "https://techcabal.com/2026/08/12/gimac-interoperability-cemac-sme-payments/",
+              "domain": "techcabal.com",
+              "date": "12/08/2026"
+            }
+          ],
+          "existingPosts": [
+            {
+              "title": "Le QR code unique en CEMAC va changer la vie des PME et commerçants locaux.",
+              "url": "https://www.linkedin.com/posts/beac-officiel_gimacpay-interoperabilite-cemac",
+              "platform": "linkedin",
+              "author": "BEAC Insights"
+            }
+          ]
+        },
+        {
+          "id": "2026-08-28-2",
+          "title": "L'automatisation WhatsApp en 2026 : Pourquoi les chatbots génériques font fuir vos clients (et comment déployer un agent métier)",
+          "account": "business",
+          "pillar": "ia",
+          "pillarLabel": "IA Appliquée pour Dirigeants",
+          "funnel": "MOFU",
+          "score": 5,
+          "bridge": "Iboga Process / Lead Magnet Audit Gratuit",
+          "type": "content",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte avec image LinkedIn & Facebook",
+              "hook": "88% des transactions commerciales en Afrique subsaharienne passent par WhatsApp. Mais si votre réponse automatique ressemble encore à 'Bonjour, un conseiller va vous répondre dans les 24h', vous venez de donner ce client à votre concurrent.",
+              "points": [
+                "L'exigence de l'instantanéité : sur WhatsApp, un prospect non répondu dans les 3 minutes est un prospect perdu.",
+                "L'échec des chatbots rigides : les arbres de choix 'Tapez 1 pour le prix, tapez 2 pour l'adresse' frustrent les clients et détruisent l'expérience humaine.",
+                "La solution 2026 : l'agent IA métier capable de comprendre les notes vocales, de vérifier les stocks en direct et d'envoyer le lien de paiement sans intervention humaine."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Carrousel LinkedIn",
+              "hook": "WhatsApp Cloud API + Modèle Whisper + Base de données synchronisée : L'architecture exacte que nous intégrons pour convertir 3 fois plus de prospects sur WhatsApp sans surcharger vos commerciaux.",
+              "points": [
+                "Le traitement des notes vocales : transcrire et analyser le besoin client exprimé à l'oral en moins de 2 secondes.",
+                "La qualification assistée : l'IA récupère les informations clés (localisation, quantité, budget) et ne passe la main à l'humain que pour l'étape de clôture.",
+                "La sécurité et la conformité : utilisation exclusive des API officielles WhatsApp Business pour éviter le bannissement de numéro."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte percutant LinkedIn",
+              "hook": "Payer un collaborateur diplômé du supérieur pour faire du copier-coller de grilles tarifaires et d'adresses toute la journée dans des conversations WhatsApp n'est pas un job : c'est un gaspillage de talent et d'argent.",
+              "points": [
+                "Le syndrome du 'commercial secrétaire' : 70% du temps de vos vendeurs est bouffé par des questions répétitives à faible valeur ajoutée.",
+                "L'IA comme bouclier opérationnel : automatiser le niveau 1 permet à vos équipes de se concentrer sur la négociation à haute valeur et le suivi terrain.",
+                "La rentabilité mesurée : dès le premier mois, le coût de l'automatisation est compensé par les ventes sauvées en dehors des heures de bureau."
+              ]
+            }
+          ],
+          "draftedPost": null,
+          "generatedImages": [
+            "./images/whatsapp_ai_agent_sme.svg",
+            "./images/whatsapp_ai_agent_sme.svg",
+            "./images/whatsapp_ai_agent_sme.svg"
+          ],
+          "sources": [
+            {
+              "title": "Avoda Group — WhatsApp as the Commercial OS of African SMEs in 2026",
+              "url": "https://avodagroup.org/whatsapp-commercial-os-africa-2026/",
+              "domain": "avodagroup.org",
+              "date": "12/08/2026"
+            },
+            {
+              "title": "Meta Business Insights — Guidelines for Scoped Business AI Agents on WhatsApp API",
+              "url": "https://www.facebook.com/business/news/whatsapp-business-ai-guidelines-2026",
+              "domain": "facebook.com",
+              "date": "04/08/2026"
+            },
+            {
+              "title": "AbsiTech — Voice Notes to Structured CRM Data: The African Leapfrog",
+              "url": "https://absitech.dev/insights/voice-notes-crm-automation-africa-2026/",
+              "domain": "absitech.dev",
+              "date": "18/08/2026"
+            },
+            {
+              "title": "Harvard Business Review — Why Generic Chatbots Destroy Customer Trust in Conversational Commerce",
+              "url": "https://hbr.org/2026/08/conversational-commerce-trust-ai",
+              "domain": "hbr.org",
+              "date": "08/08/2026"
+            },
+            {
+              "title": "ITvities Africa — Converting Conversational Traffic on WhatsApp with Tailored AI Workflows",
+              "url": "https://itvities.com/whatsapp-conversion-ai-africa-smes-2026/",
+              "domain": "itvities.com",
+              "date": "21/08/2026"
+            }
+          ],
+          "existingPosts": [
+            {
+              "title": "If your WhatsApp sales channel doesn't process voice notes and instant checkout in 2026, you're leaving 40% revenue on the table.",
+              "url": "https://www.linkedin.com/posts/african-fintech-voice-commerce",
+              "platform": "linkedin",
+              "author": "African Commerce Weekly"
+            }
+          ]
+        },
+        {
+          "id": "2026-08-28-3",
+          "title": "L'effet 'AI Brain Fry' et la fatigue décisionnelle : Pourquoi les dirigeants s'épuisent à force de micro-arbitrages",
+          "account": "personal",
+          "pillar": "ia",
+          "pillarLabel": "Sciences Cognitives & Leadership",
+          "funnel": "TOFU",
+          "score": 5,
+          "bridge": "Aucun (Personal Branding / Mindset & Leadership)",
+          "type": "content",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte incarné LinkedIn & Facebook",
+              "hook": "Si à 15h vous vous sentez vidé mentalement sans avoir fait avancer aucun projet stratégique majeur, vous ne manquez pas d'énergie : vous payez la taxe invisible des 150 micro-décisions inutiles de votre matinée.",
+              "points": [
+                "La science du capital mental : la volonté et la lucidité décisionnelle sont des ressources biologiques limitées chaque jour.",
+                "Le piège de l'hyper-sollicitation : répondre à 40 messages WhatsApp, valider 5 devis à 10 000 FCFA et trancher des broutilles d'équipe épuise votre cerveau avant même que la vraie journée commence.",
+                "La règle des 3 priorités : sanctuariser ses 2 premières heures du matin pour la réflexion profonde sans écran ni notification."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Texte long LinkedIn",
+              "hook": "L'arrivée massive des outils IA crée un nouveau syndrome documenté en 2026 : l'AI Brain Fry. À force de superviser des flux continus de prompts et de validations, les dirigeants s'épuisent cognitivement. Voici le protocole d'architecture managériale pour y remédier.",
+              "points": [
+                "Le coût cognitif de la validation : relire et corriger 50 propositions IA imparfaites fatigue plus que d'exécuter une tâche claire soi-même.",
+                "La délégation algorithmique par seuils : définir des règles de tolérance strictes (ex: toute décision sous 50 000 FCFA est validée automatiquement par le système ou le manager sans validation DG).",
+                "La protection du jugement : réduire le nombre total d'arbitrages quotidiens pour préserver 100% de sa lucidité sur les 3 choix critiques du mois."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte court percutant LinkedIn",
+              "hook": "Si vos collaborateurs doivent vous demander votre accord pour changer une virgule sur un bon de commande ou valider un email client, vous n'êtes pas un dirigeant rigoureux : vous êtes le goulot d'étranglement numéro 1 de votre propre entreprise.",
+              "points": [
+                "La fausse sécurité du micro-contrôle : vouloir tout vérifier nourrit votre ego mais paralyse l'agilité de vos équipes.",
+                "Le désengagement des équipes : un collaborateur qui sait que le patron va tout revoir cesse de réfléchir par lui-même.",
+                "Le vrai rôle du dirigeant : concevoir le système et les procédures (SOPs), donner l'autonomie, et n'intervenir que sur les anomalies hors cadre."
+              ]
+            }
+          ],
+          "draftedPost": null,
+          "generatedImages": [
+            "./images/cognitive_overload_leader.svg",
+            "./images/cognitive_overload_leader.svg",
+            "./images/cognitive_overload_leader.svg"
+          ],
+          "sources": [
+            {
+              "title": "Forbes — Decision Fatigue and the Cognitive Cost of Hyper-Connectivity in Executive Roles",
+              "url": "https://www.forbes.com/sites/leadership/2026/08/14/decision-fatigue-cognitive-overload-leaders/",
+              "domain": "forbes.com",
+              "date": "14/08/2026"
+            },
+            {
+              "title": "Blanchard Leadership Institute — Navigating the 180% Increase in Operational Decisions",
+              "url": "https://www.blanchard.com/research/operational-decisions-overload-2026",
+              "domain": "blanchard.com",
+              "date": "02/08/2026"
+            },
+            {
+              "title": "Bricoleur Consulting — The Psychology of Delegation in the Age of Algorithmic Workflows",
+              "url": "https://bricoleurconsulting.com/delegation-psychology-decision-architecture-2026/",
+              "domain": "bricoleurconsulting.com",
+              "date": "19/08/2026"
+            },
+            {
+              "title": "Speakwise Research — Attention Fragmentation and the 23-Minute Cognitive Penalty",
+              "url": "https://speakwiseapp.com/research/attention-fragmentation-workplace-2026/",
+              "domain": "speakwiseapp.com",
+              "date": "11/08/2026"
+            },
+            {
+              "title": "MIT Sloan Review — Preserving Executive Cognitive Capital in High-Velocity Environments",
+              "url": "https://sloanreview.mit.edu/article/preserving-executive-cognitive-capital-2026/",
+              "domain": "sloanreview.mit.edu",
+              "date": "22/08/2026"
+            }
+          ],
+          "existingPosts": [
+            {
+              "title": "Great leaders don't make 100 good decisions a day. They build systems so they only have to make 3 great ones.",
+              "url": "https://www.linkedin.com/posts/executive-mental-models-2026",
+              "platform": "linkedin",
+              "author": "Leadership Digest"
+            }
+          ]
+        },
+        {
+          "id": "2026-08-28-4",
+          "title": "Bootstrapping & Frugalité : Pourquoi le manque de capital est la meilleure école de rentabilité pour un bâtisseur africain",
+          "account": "personal",
+          "pillar": "parcours",
+          "pillarLabel": "Parcours Builder",
+          "funnel": "TOFU",
+          "score": 4,
+          "bridge": "Iboga Dev / Iboga Process",
+          "type": "content",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Storytelling LinkedIn & Facebook",
+              "hook": "Quand vous lancez un projet tech à Port-Gentil ou Libreville sans 1 million de dollars de fonds d'investissement, vous apprenez une règle simple : si votre produit ne résout pas un problème douloureux dès le premier jour, vous ne mangez pas à la fin du mois.",
+              "points": [
+                "La bénédiction de la contrainte : l'absence de cash facile oblige à une clarté impitoyable sur les besoins réels des clients.",
+                "Du bricolage à l'ingénierie frugale : empiler des outils no-code et des automatisations légères pour livrer un produit rentable en 48 heures au lieu de passer 6 mois à coder une usine à gaz.",
+                "Le vrai trophée : un client fidèle qui paie sa facture d'avance vaut 100 fois plus que 10 investisseurs qui vous imposent leur calendrier."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Texte long LinkedIn",
+              "hook": "La fin de l'ère du 'Growth at all costs' en Afrique : pourquoi les modèles bootstrapped et rentables surclassent désormais les startups sur-financées en résilience opérationnelle.",
+              "points": [
+                "L'anatomie d'une structure légère : charges fixes réduites, marges nettes confortables et adaptation ultra-rapide aux réalités locales.",
+                "La maîtrise de la chaîne de valeur : construire des solutions autour des outils existants (WhatsApp, mobile money, tableurs sécurisés) plutôt que de réinventer la roue.",
+                "La culture du livrable : mesurer le succès à la valeur encaissée et non au nombre d'employés affichés sur un organigramme."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte court percutant LinkedIn",
+              "hook": "Célébrer une levée de fonds sur LinkedIn comme une victoire, c'est comme applaudir un athlète qui vient d'emprunter des chaussures pour courir. En Afrique, la seule victoire qui compte, c'est l'autonomie financière par la valeur client.",
+              "points": [
+                "Le mirage du VC Funding : trop de startups africaines meurent non pas par manque d'argent, mais d'indigestion de capital mal dépensé.",
+                "L'obsession du client payant : bâtir un business sain, c'est convaincre 50 entreprises de vous payer chaque mois pour un service irréprochable.",
+                "Le mantra builder : 'On n'attend pas la prochaine révolution, on la build' — pas à pas, euro par euro, franc par franc."
+              ]
+            }
+          ],
+          "draftedPost": null,
+          "generatedImages": [
+            "./images/frugal_builder_africa.svg",
+            "./images/frugal_builder_africa.svg",
+            "./images/frugal_builder_africa.svg"
+          ],
+          "sources": [
+            {
+              "title": "Disrupt Africa — The African Tech Funding Winter and the Rise of Profitable Bootstrappers",
+              "url": "https://disrupt-africa.com/2026/08/15/african-tech-funding-winter-bootstrapping-rise/",
+              "domain": "disrupt-africa.com",
+              "date": "15/08/2026"
+            },
+            {
+              "title": "TechCabal — From VC Hype to Operational Cashflow: The New Playbook for African Founders",
+              "url": "https://techcabal.com/2026/08/10/operational-cashflow-african-founders-playbook-2026/",
+              "domain": "techcabal.com",
+              "date": "10/08/2026"
+            },
+            {
+              "title": "African Business Magazine — Frugal Innovation as a Strategic Advantage in Emerging Markets",
+              "url": "https://african.business/2026/08/frugal-innovation-strategic-advantage-africa/",
+              "domain": "african.business",
+              "date": "20/08/2026"
+            }
+          ],
+          "existingPosts": [
+            {
+              "title": "Revenue is vanity, profit is sanity, cash flow is reality. Build for cash flow from day one.",
+              "url": "https://www.linkedin.com/posts/bootstrapping-africa-2026",
+              "platform": "linkedin",
+              "author": "Founders Africa Network"
+            }
+          ]
+        },
+        {
+          "id": "2026-08-28-5",
+          "title": "Étude de cas Iboga Process : Comment un distributeur a éliminé 16h de saisie manuelle par semaine sans changer d'équipe",
+          "account": "business",
+          "pillar": "pme",
+          "pillarLabel": "Terrain & Croissance PME",
+          "funnel": "BOFU",
+          "score": 5,
+          "bridge": "Lead Magnet — Audit d'Opportunités IA Gratuit (30 min)",
+          "type": "content",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Étude de cas LinkedIn & Facebook",
+              "hook": "3 assistants commerciaux, 150 bons de commande papier par semaine, et un fichier Excel corrompu tous les vendredis à 17h. Voici comment nous avons transformé la logistique d'une PME de distribution en 10 jours chrono.",
+              "points": [
+                "La situation de départ : 16 heures perdues chaque semaine en ressaisie manuelle de commandes, 12% d'erreurs d'expédition et des clients mécontents.",
+                "L'intervention Iboga Process : cartographie des flux, mise en place d'un formulaire mobile simple pour les commerciaux terrain et synchronisation automatique avec le stock.",
+                "Les résultats mesurés : zéro ressaisie, 100% de conformité de livraison, et 16h réallouées à la prospection téléphonique de nouveaux clients."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Texte long LinkedIn",
+              "hook": "La transformation digitale d'une PME n'a pas besoin de coûter 20 millions de FCFA ni de durer 6 mois. Voici la méthodologie en 3 étapes que nous appliquons pour rentabiliser un audit dès la première semaine.",
+              "points": [
+                "Étape 1 : Cartographie des micro-frictions et calcul du coût de l'inefficacité (Taux horaire × Heures perdues).",
+                "Étape 2 : Déploiement d'une brique légère No-Code/IA sans perturber les habitudes des équipes.",
+                "Étape 3 : Accompagnement terrain et formation des opérateurs (70% humain, 30% technique)."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte court LinkedIn",
+              "hook": "Vous n'avez pas besoin de recruter 2 personnes de plus pour gérer votre pic d'activité. Vous avez simplement besoin d'arrêter de forcer vos talents à accomplir des tâches de robot.",
+              "points": [
+                "Le réflexe coûteux de l'embauche pansement : recruter pour compenser le désordre d'un processus ne fait qu'augmenter votre masse salariale sans régler la fuite.",
+                "Le levier de la modernisation des flux : doubler la capacité de traitement de votre équipe actuelle en supprimant les goulets d'étranglement.",
+                "Passez à l'action : réservez votre créneau d'Audit d'Opportunités IA Gratuit de 30 minutes avec Iboga Lab (lien en commentaire)."
+              ]
+            }
+          ],
+          "draftedPost": null,
+          "generatedImages": [
+            "./images/distribution_process_case_study.svg",
+            "./images/distribution_process_case_study.svg",
+            "./images/distribution_process_case_study.svg"
+          ],
+          "sources": [
+            {
+              "title": "Iboga Lab — Retours d'expériences audits opérationnels PME Gabon",
+              "url": "https://ibogalab.vercel.app/case-studies/distribution-process-optimization",
+              "domain": "ibogalab.vercel.app",
+              "date": "24/08/2026"
+            },
+            {
+              "title": "Deloitte Africa — Operational Bottlenecks in FMCG Distribution Networks Across Sub-Saharan Africa",
+              "url": "https://www2.deloitte.com/za/en/insights/fmcg-distribution-bottlenecks-africa-2026",
+              "domain": "deloitte.com",
+              "date": "18/08/2026"
+            },
+            {
+              "title": "Jeune Afrique Business+ — Moderniser la supply chain africaine par la digitalisation légère",
+              "url": "https://www.jeuneafriquebusinessplus.com/supply-chain-digitalisation-legere-2026",
+              "domain": "jeuneafriquebusinessplus.com",
+              "date": "12/08/2026"
+            }
+          ],
+          "existingPosts": [
+            {
+              "title": "Automation isn't about firing people. It's about giving them their time back to do actual business development.",
+              "url": "https://www.linkedin.com/posts/sme-growth-operations-2026",
+              "platform": "linkedin",
+              "author": "SME Operations Forum"
+            }
+          ]
+        },
+        {
+          "id": "2026-08-28-news-1",
+          "title": "BEAC & GIMAC : Lancement officiel du standard de QR Code unique en zone CEMAC",
+          "account": "personal",
+          "pillar": "pme",
+          "pillarLabel": "Terrain & PME Africaines",
+          "funnel": "TOFU",
+          "score": 5,
+          "bridge": "Iboga Process (Encaissements)",
+          "type": "news",
+          "sources": [
+            {
+              "title": "BEAC & GIMAC — Lancement officiel du standard de QR Code interopérable en zone CEMAC",
+              "url": "https://gimac-cemac.org/actualites/lancement-qr-code-interoperable-2026",
+              "domain": "gimac-cemac.org",
+              "date": "29/07/2026"
+            }
+          ],
+          "draftedPost": "📢 Actu Tech & Business CEMAC : La fin des 4 téléphones à la caisse !\n\nLe GIMAC et la BEAC viennent de lancer officiellement le standard de QR Code interopérable unique pour toute la zone CEMAC (Gabon, Cameroun, Congo, Tchad, RCA, Guinée Équatoriale).\n\nConcrètement : un commerçant ou une PME n'a plus besoin d'afficher 4 numéros distincts (Airtel Money, Moov Money, banques). Un seul QR Code permet à n'importe quel client de payer instantanément depuis son portefeuille habituel avec des frais encadrés.\n\n💡 Ce que ça change pour les dirigeants de PME :\nC'est la fin du casse-tête des erreurs de saisie manuelle et des heures perdues le soir à pointer les relevés de différents opérateurs. Les entreprises qui connectent dès maintenant ce standard à leur gestion de caisse vont gagner un temps fou et sécuriser leur trésorerie.\n\nCommerçants et gérants de PME : êtes-vous prêts à unifier vos encaissements ou restez-vous sur les 4 téléphones à la caisse ?\n\n#Fintech #CEMAC #GIMAC #PMEAfrique #TransformationDigitale #Gabon",
+          "angles": [],
+          "generatedImages": []
+        },
+        {
+          "id": "2026-08-28-news-2",
+          "title": "Guerre des prix de l'IA : Anthropic fige le tarif bas de Claude Sonnet 5 et Google déploie ses agents métiers",
+          "account": "personal",
+          "pillar": "ia",
+          "pillarLabel": "IA Appliquée pour Dirigeants",
+          "funnel": "TOFU",
+          "score": 5,
+          "bridge": "Iboga Learn / Process",
+          "type": "news",
+          "sources": [
+            {
+              "title": "TechCrunch — The Enterprise AI Price War: Claude Sonnet 5 & Gemini Enterprise",
+              "url": "https://techcrunch.com/2026/08/15/enterprise-ai-price-war-llm-commoditization/",
+              "domain": "techcrunch.com",
+              "date": "15/08/2026"
+            }
+          ],
+          "draftedPost": "📢 Actu IA Mondiale : La puissance de l'IA n'a jamais été aussi bon marché !\n\nCe mois d'août 2026 marque un tournant majeur : Anthropic a rendu permanente la baisse de prix agressive de son modèle Claude Sonnet 5 ($2 / million de tokens), pendant que Google DeepMind déploie ses agents Gemini Enterprise spécialisés pour les flux financiers et juridiques.\n\nEn clair : la puissance brute d'analyse et de raisonnement qui coûtait une fortune il y a 18 mois est devenue une commodité accessible à n'importe quelle petite structure pour quelques centimes d'euro.\n\n💡 Ce que ça change pour nos PME :\nL'argument du 'l'IA est trop chère' n'est plus valable. Aujourd'hui, une PME de 10 personnes a la même capacité d'automatisation qu'un grand groupe du CAC 40 il y a 2 ans. Le seul frein restant, c'est la volonté d'apprendre et de structurer ses processus internes.\n\nQuel est le premier processus que vous allez automatiser maintenant que le coût n'est plus un obstacle ?\n\n#IntelligenceArtificielle #Innovation #Productivite #PME #Tech2026 #IbogaLab",
+          "angles": [],
+          "generatedImages": []
+        }
+      ]
+    },
+    {
       "date": "2026-08-27",
       "generatedAt": "27/08/2026 à 12h15",
       "weekLabel": "Semaine du 27 août 2026",
