@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import IdeaCard from './IdeaCard';
+import { supabase } from '../lib/supabase';
 
 const Dashboard = () => {
   const [data, setData] = useState(null);
@@ -23,19 +24,38 @@ const Dashboard = () => {
   }, []);
 
   useEffect(() => {
-    // Fetch directly from the raw GitHub repository to ensure we always get the latest data 
-    // even if GitHub Pages doesn't rebuild.
     const fetchData = async () => {
       try {
-        const response = await fetch(`https://raw.githubusercontent.com/JesseOgoula/veille-social-media/main/public/data/sessions.json?t=${new Date().getTime()}`);
-        if (!response.ok) {
-          throw new Error('Failed to load data');
-        }
-        const json = await response.json();
-        
-        // Sort sessions by date descending
-        json.sessions.sort((a, b) => new Date(b.date) - new Date(a.date));
-        setData(json);
+        const { data: sessions, error: sessionError } = await supabase
+          .from('sessions')
+          .select('*')
+          .order('date', { ascending: false });
+
+        if (sessionError) throw sessionError;
+
+        const { data: ideas, error: ideaError } = await supabase
+          .from('ideas')
+          .select('*');
+
+        if (ideaError) throw ideaError;
+
+        const reconstructedSessions = sessions.map(session => {
+          const sessionIdeas = ideas.filter(idea => idea.session_id === session.id);
+          return {
+            ...session,
+            generatedAt: session.generated_at,
+            weekLabel: session.week_label,
+            ideas: sessionIdeas.map(idea => ({
+              ...idea,
+              pillarLabel: idea.pillar_label,
+              draftedPost: idea.drafted_post,
+              generatedImages: idea.generated_images,
+              existingPosts: idea.existing_posts
+            }))
+          };
+        });
+
+        setData({ sessions: reconstructedSessions });
       } catch (err) {
         setError(err.message);
       } finally {
@@ -68,72 +88,58 @@ const Dashboard = () => {
   const totalDrafted = contentIdeas.filter(i => i.draftedPost).length;
   const totalIdeas = contentIdeas.length;
 
-  const syncWithGitHub = async (newData) => {
-    try {
-      const response = await fetch('https://mvpktddjqheyrrxvcoqp.supabase.co/functions/v1/github-sync-sessions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im12cGt0ZGRqcWhleXJyeHZjb3FwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAxMzMzNjgsImV4cCI6MjA2NTcwOTM2OH0.1iZHm0QaYU78IQFiKrwBjUCMycJa3Jyl_Wovr-CysCI`
-        },
-        body: JSON.stringify({ sessions: newData.sessions })
-      });
-      if (!response.ok) {
-        console.error('Erreur de synchronisation GitHub:', await response.text());
-      } else {
-        console.log('Synchronisation réussie avec GitHub.');
-      }
-    } catch (err) {
-      console.error('Erreur réseau lors de la synchro:', err);
-    }
-  };
+
 
   const confirmAction = (message, action) => {
     setConfirmModal({ isOpen: true, message, action });
   };
 
   const handleDeleteSession = () => {
-    confirmAction("Êtes-vous sûr de vouloir supprimer cette session ?", () => {
+    confirmAction("Êtes-vous sûr de vouloir supprimer cette session ?", async () => {
+      const sessionToDelete = data.sessions[selectedSessionIndex];
+      const sessionId = sessionToDelete.id || sessionToDelete.date;
+      
       const newData = { ...data };
       newData.sessions = newData.sessions.filter((_, idx) => idx !== selectedSessionIndex);
       setData(newData);
       setSelectedSessionIndex(0);
-      syncWithGitHub(newData);
+      
+      await supabase.from('sessions').delete().eq('id', sessionId);
     });
   };
 
   const handleDeleteAll = () => {
-    confirmAction("Voulez-vous vraiment supprimer TOUTE la base de données ?", () => {
-      const newData = { sessions: [] };
-      setData(newData);
-      syncWithGitHub(newData);
+    confirmAction("Voulez-vous vraiment supprimer TOUTE la base de données ?", async () => {
+      setData({ sessions: [] });
+      await supabase.from('sessions').delete().neq('id', 'dummy'); // Deletes all
     });
   };
 
   const handleDeleteIdea = (ideaId) => {
-    confirmAction("Supprimer cette idée ?", () => {
+    confirmAction("Supprimer cette idée ?", async () => {
       const newData = { ...data };
       newData.sessions[selectedSessionIndex].ideas = newData.sessions[selectedSessionIndex].ideas.filter(i => i.id !== ideaId);
       setData(newData);
-      syncWithGitHub(newData);
+      
+      await supabase.from('ideas').delete().eq('id', ideaId);
     });
   };
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 sm:space-y-8 px-2 sm:px-0">
       {/* Controls */}
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-white p-4 border border-[#EAEAEA] rounded shadow-sm">
-        <div className="flex items-center gap-3">
-          <label htmlFor="session-select" className="text-sm font-medium text-text-main">Session :</label>
-          <div className="relative" ref={dropdownRef}>
+      <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-4 bg-white p-3 sm:p-4 border border-[#EAEAEA] rounded shadow-sm">
+        <div className="flex flex-wrap items-center gap-3 w-full xl:w-auto">
+          <label htmlFor="session-select" className="text-sm font-medium text-text-main whitespace-nowrap">Session :</label>
+          <div className="relative flex-1 min-w-[150px] max-w-sm" ref={dropdownRef}>
             <button 
-              className="appearance-none border border-[#EAEAEA] bg-surface hover:bg-white text-text-main text-sm rounded px-4 py-1.5 pr-8 focus:outline-none focus:border-iboga-dark transition-colors font-medium cursor-pointer w-full sm:w-40 text-left flex items-center justify-between"
+              className="appearance-none border border-[#EAEAEA] bg-surface hover:bg-white text-text-main text-sm rounded px-4 py-1.5 pr-8 focus:outline-none focus:border-iboga-dark transition-colors font-medium cursor-pointer w-full text-left flex items-center justify-between"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               <span className="truncate">
                 {data.sessions[selectedSessionIndex]?.date}
               </span>
-              <svg className="fill-current h-4 w-4 text-text-muted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <svg className="fill-current h-4 w-4 text-text-muted shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
               </svg>
             </button>
@@ -161,31 +167,31 @@ const Dashboard = () => {
           </div>
           <button 
             onClick={handleDeleteSession}
-            className="text-xs text-red-500 hover:text-red-700 font-medium px-2 py-1 rounded border border-transparent hover:border-red-200 hover:bg-red-50 transition-colors"
+            className="text-xs text-red-500 hover:text-red-700 font-medium px-2 py-1 rounded border border-transparent hover:border-red-200 hover:bg-red-50 transition-colors whitespace-nowrap"
             title="Supprimer la session"
           >
             Supprimer
           </button>
         </div>
         
-        <div className="flex flex-col xl:flex-row items-start xl:items-center gap-4">
+        <div className="flex flex-wrap items-center gap-3 w-full xl:w-auto">
           {/* Status Filter */}
-          <div className="flex items-center gap-2 bg-surface p-1 rounded border border-[#EAEAEA]">
+          <div className="flex flex-wrap items-center gap-1 sm:gap-2 bg-surface p-1 rounded border border-[#EAEAEA] flex-1 min-w-[280px]">
             <button 
-              className={`px-3 py-1 text-xs font-medium rounded transition-colors ${filterStatus === 'all' ? 'bg-white text-text-main shadow-sm border border-[#EAEAEA]' : 'text-text-muted hover:text-text-main'}`}
+              className={`flex-1 sm:flex-none px-2 sm:px-3 py-1 text-xs font-medium rounded transition-colors whitespace-nowrap ${filterStatus === 'all' ? 'bg-white text-text-main shadow-sm border border-[#EAEAEA]' : 'text-text-muted hover:text-text-main'}`}
               onClick={() => setFilterStatus('all')}
             >
               Tous statuts
             </button>
             <button 
-              className={`px-3 py-1 text-xs font-medium rounded transition-colors flex items-center gap-1 ${filterStatus === 'phase1' ? 'bg-white text-text-main shadow-sm border border-[#EAEAEA]' : 'text-text-muted hover:text-text-main'}`}
+              className={`flex-1 sm:flex-none px-2 sm:px-3 py-1 text-xs font-medium rounded transition-colors flex items-center justify-center gap-1 whitespace-nowrap ${filterStatus === 'phase1' ? 'bg-white text-text-main shadow-sm border border-[#EAEAEA]' : 'text-text-muted hover:text-text-main'}`}
               onClick={() => setFilterStatus('phase1')}
             >
               <div className="w-1.5 h-1.5 rounded-full bg-yellow-500"></div>
               À rédiger
             </button>
             <button 
-              className={`px-3 py-1 text-xs font-medium rounded transition-colors flex items-center gap-1 ${filterStatus === 'phase2' ? 'bg-white text-text-main shadow-sm border border-[#EAEAEA]' : 'text-text-muted hover:text-text-main'}`}
+              className={`flex-1 sm:flex-none px-2 sm:px-3 py-1 text-xs font-medium rounded transition-colors flex items-center justify-center gap-1 whitespace-nowrap ${filterStatus === 'phase2' ? 'bg-white text-text-main shadow-sm border border-[#EAEAEA]' : 'text-text-muted hover:text-text-main'}`}
               onClick={() => setFilterStatus('phase2')}
             >
               <div className="w-1.5 h-1.5 rounded-full bg-green-500"></div>
@@ -193,32 +199,32 @@ const Dashboard = () => {
             </button>
           </div>
 
-          <div className="w-px h-6 bg-[#EAEAEA] hidden xl:block"></div>
+          <div className="w-full h-px xl:w-px xl:h-6 bg-[#EAEAEA] block"></div>
 
           {/* Account Filter */}
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2 flex-1 min-w-[280px]">
             <button 
-              className={`px-3 py-1.5 text-sm font-medium rounded transition-colors ${filterAccount === 'all' ? 'bg-text-main text-white' : 'bg-white text-text-main border border-[#EAEAEA] hover:bg-surface'}`}
+              className={`flex-1 sm:flex-none px-2 sm:px-3 py-1.5 text-xs sm:text-sm font-medium rounded transition-colors whitespace-nowrap ${filterAccount === 'all' ? 'bg-text-main text-white' : 'bg-white text-text-main border border-[#EAEAEA] hover:bg-surface'}`}
               onClick={() => setFilterAccount('all')}
             >
               Tout
             </button>
             <button 
-              className={`px-3 py-1.5 text-sm font-medium rounded transition-colors ${filterAccount === 'personal' ? 'bg-text-main text-white' : 'bg-white text-text-main border border-[#EAEAEA] hover:bg-surface'}`}
+              className={`flex-1 sm:flex-none px-2 sm:px-3 py-1.5 text-xs sm:text-sm font-medium rounded transition-colors whitespace-nowrap ${filterAccount === 'personal' ? 'bg-text-main text-white' : 'bg-white text-text-main border border-[#EAEAEA] hover:bg-surface'}`}
               onClick={() => setFilterAccount('personal')}
             >
               👤 Jesse
             </button>
             <button 
-              className={`px-3 py-1.5 text-sm font-medium rounded transition-colors ${filterAccount === 'business' ? 'bg-text-main text-white' : 'bg-white text-text-main border border-[#EAEAEA] hover:bg-surface'}`}
+              className={`flex-1 sm:flex-none px-2 sm:px-3 py-1.5 text-xs sm:text-sm font-medium rounded transition-colors whitespace-nowrap ${filterAccount === 'business' ? 'bg-text-main text-white' : 'bg-white text-text-main border border-[#EAEAEA] hover:bg-surface'}`}
               onClick={() => setFilterAccount('business')}
             >
               🏢 Iboga
             </button>
-            <div className="w-px h-6 bg-[#EAEAEA] mx-1"></div>
+            <div className="w-px h-6 bg-[#EAEAEA] mx-1 hidden sm:block"></div>
             <button 
               onClick={handleDeleteAll}
-              className="px-2 py-1 text-xs font-medium text-red-500 bg-white border border-red-200 rounded hover:bg-red-50 transition-colors"
+              className="px-2 py-1 text-xs font-medium text-red-500 bg-white border border-red-200 rounded hover:bg-red-50 transition-colors whitespace-nowrap mt-2 sm:mt-0 ml-auto"
               title="Vider toute la base de données"
             >
               Effacer tout

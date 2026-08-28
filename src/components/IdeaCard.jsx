@@ -61,12 +61,12 @@ const IdeaCard = ({ idea, onDelete }) => {
 
       <div className="flex flex-col lg:flex-row">
         {/* Left Column: Angles & Drafts */}
-        <div className="flex-1 p-5 border-b lg:border-b-0 lg:border-r border-[#EAEAEA]">
-          <div className="flex space-x-1 border-b border-[#EAEAEA] mb-4">
+        <div className="flex-1 p-4 sm:p-5 border-b lg:border-b-0 lg:border-r border-[#EAEAEA] min-w-0">
+          <div className="flex flex-wrap gap-2 border-b border-[#EAEAEA] mb-4 pb-2">
             {idea.angles.map((angle, index) => (
               <button
                 key={index}
-                className={`px-4 py-2 text-sm font-medium transition-colors ${
+                className={`px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium rounded-t-sm transition-colors ${
                   expandedAngle === index 
                     ? 'border-b-2 border-iboga-dark text-iboga-dark' 
                     : 'text-text-muted hover:text-text-main'
@@ -118,7 +118,7 @@ const IdeaCard = ({ idea, onDelete }) => {
         </div>
 
         {/* Right Column: Sources & Existing Posts */}
-        <div className="w-full lg:w-80 p-5 bg-[#FAFAFA]">
+        <div className="w-full lg:w-80 p-4 sm:p-5 bg-[#FAFAFA]">
           <div className="mb-6">
             <div className="text-xs font-semibold text-text-muted uppercase tracking-wide mb-3 flex items-center justify-between">
               <span>Sources ({idea.sources.length})</span>
@@ -126,13 +126,13 @@ const IdeaCard = ({ idea, onDelete }) => {
             <div className="space-y-3">
               {idea.sources.map((source, idx) => (
                 <div key={idx} className="text-sm">
-                  <a href={formatUrl(source.url)} target="_blank" rel="noopener noreferrer" className="font-medium text-text-main hover:text-iboga-dark transition-colors line-clamp-2">
+                  <a href={formatUrl(source.url)} target="_blank" rel="noopener noreferrer" className="font-medium text-text-main hover:text-iboga-dark transition-colors line-clamp-2 break-words">
                     {source.title}
                   </a>
-                  <div className="text-xs text-text-muted mt-0.5 flex gap-2">
-                    <span>{source.domain}</span>
+                  <div className="text-xs text-text-muted mt-0.5 flex gap-2 flex-wrap">
+                    <span className="truncate">{source.domain}</span>
                     <span>•</span>
-                    <span>{source.date}</span>
+                    <span className="whitespace-nowrap">{source.date}</span>
                   </div>
                 </div>
               ))}
@@ -145,13 +145,13 @@ const IdeaCard = ({ idea, onDelete }) => {
               <div className="space-y-3">
                 {idea.existingPosts.map((post, idx) => (
                   <div key={idx} className="text-sm">
-                    <a href={formatUrl(post.url)} target="_blank" rel="noopener noreferrer" className="font-medium text-text-main hover:text-iboga-dark transition-colors line-clamp-2">
+                    <a href={formatUrl(post.url)} target="_blank" rel="noopener noreferrer" className="font-medium text-text-main hover:text-iboga-dark transition-colors line-clamp-2 break-words">
                       {post.title}
                     </a>
-                    <div className="text-xs text-text-muted mt-0.5 flex gap-2 capitalize">
+                    <div className="text-xs text-text-muted mt-0.5 flex gap-2 capitalize flex-wrap">
                       <span>{post.platform}</span>
                       <span>•</span>
-                      <span>{post.author}</span>
+                      <span className="truncate">{post.author}</span>
                     </div>
                   </div>
                 ))}
