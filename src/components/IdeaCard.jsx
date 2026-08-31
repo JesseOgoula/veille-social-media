@@ -73,7 +73,7 @@ const IdeaCard = ({ idea, onDelete }) => {
                 }`}
                 onClick={() => setExpandedAngle(index)}
               >
-                {angle.name}
+                {angle.label || angle.name}
               </button>
             ))}
           </div>
