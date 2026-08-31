@@ -1,6 +1,291 @@
 {
   "sessions": [
     {
+      "id": "session-2026-08-31",
+      "date": "2026-08-31",
+      "generatedAt": "31/08/2026 à 12h50",
+      "weekLabel": "Semaine du 31 août 2026",
+      "newsjacking": null,
+      "ideas": [
+        {
+          "id": "2026-08-31-news-1",
+          "title": "Cybersécurité et PME Africaines : L'IA comme arme à double tranchant",
+          "account": "personal",
+          "pillar": "ia",
+          "pillarLabel": "IA Appliquée pour Dirigeants",
+          "funnel": "TOFU",
+          "score": 5,
+          "bridge": "Iboga Learn",
+          "type": "news",
+          "sources": [
+            {
+              "title": "INTERPOL - AI-driven cybercrimes in Africa 2026",
+              "url": "https://www.interpol.int/News-and-Events/News/2026/AI-cybercrime-Africa-2026",
+              "domain": "interpol.int",
+              "date": "15/08/2026"
+            },
+            {
+              "title": "ITWeb Africa - SME Cybersecurity Threats in the Age of Generative AI",
+              "url": "https://itweb.africa/content/cybersecurity-sme-ai-2026",
+              "domain": "itweb.africa",
+              "date": "22/08/2026"
+            }
+          ],
+          "draftedPost": "📢 Actu Cyber & PME : L'IA abaisse la barrière d'entrée pour les cybercriminels.\n\nSelon INTERPOL, 55% des cybercrimes signalés en Afrique en 2026 impliquent l'IA (deepfakes, phishing automatisé, ingénierie sociale). Le vrai danger ne vient pas des hackers en sweat à capuche, mais des campagnes massives ultra-ciblées générées par IA qui visent spécifiquement les PME, souvent moins protégées.\n\n💡 Ce que ça change pour un dirigeant africain :\nVos collaborateurs utilisent peut-être ChatGPT pour rédiger des mails, mais les escrocs l'utilisent pour simuler votre voix sur WhatsApp et demander des virements urgents. La sécurité n'est plus une affaire d'informaticien, c'est une question de survie et de politique interne. La priorité absolue de cette rentrée ? Former vos équipes (le fameux 'Shadow AI').\n\nAvez-vous mis en place une charte d'utilisation de l'IA dans votre entreprise ?\n\n#Cybersecurite #PME #IA #Afrique #Dirigeant #IbogaLab",
+          "angles": [],
+          "generatedImages": []
+        },
+        {
+          "id": "2026-08-31-1",
+          "title": "L'IA frugale : Pourquoi les plus petites entreprises africaines gagnent sans le Cloud",
+          "account": "business",
+          "pillar": "ia",
+          "pillarLabel": "IA Appliquée pour Dirigeants",
+          "funnel": "MOFU",
+          "score": 4,
+          "bridge": "Iboga Process",
+          "type": "content",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte court LinkedIn",
+              "hook": "Vous pensez que l'IA nécessite une connexion fibre optique et un budget cloud de 1000$/mois ? Faux. En 2026, la vraie révolution pour les PME africaines s'appelle l'IA frugale.",
+              "points": [
+                "L'enjeu de la connectivité : 1.2 milliard de personnes manquent d'un internet stable. Les gros LLMs ne sont pas adaptés au terrain.",
+                "L'IA Frugale : des modèles légers, tournant hors-ligne sur des téléphones portables ou des serveurs locaux, dédiés à des tâches spécifiques (gestion de stock, requêtes clients).",
+                "La leçon : commencez petit. Automatisez une seule tâche répétitive avant de penser au cloud."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Carrousel LinkedIn",
+              "hook": "Le piège financier du Cloud IA pour les PME : comment déployer des modèles frugaux on-premise pour sécuriser vos marges.",
+              "points": [
+                "La dépendance au Cloud : payer à chaque requête API détruit la rentabilité quand le volume augmente.",
+                "L'alternative de l'IA Frugale : utiliser des modèles open-source légers (SLMs) sur des infrastructures locales ou hybrides.",
+                "Le déploiement par Iboga Lab : nous intégrons des solutions qui fonctionnent même lors des coupures internet, garantissant la continuité des opérations."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte percutant LinkedIn",
+              "hook": "Payer OpenAI tous les mois pour résumer 3 factures est un non-sens économique. Vous n'avez pas besoin d'une IA surpuissante, vous avez besoin d'une IA utile.",
+              "points": [
+                "Le mythe de l'AGI (Intelligence Artificielle Générale) pour les PME : 95% des entreprises n'ont besoin que d'automatiser des flux simples, pas de générer de la poésie.",
+                "La souveraineté des données : en utilisant des modèles locaux, vous gardez la main sur vos informations clients stratégiques.",
+                "Le focus ROI : investissez dans l'intégration de la donnée, pas dans la puissance de calcul externe."
+              ]
+            }
+          ],
+          "draftedPost": null,
+          "generatedImages": [],
+          "sources": [
+            {
+              "title": "Frugal AI and the developing world",
+              "url": "https://www.weforum.org/agenda/2026/08/frugal-ai-africa-sme-tech/",
+              "domain": "weforum.org",
+              "date": "10/08/2026"
+            },
+            {
+              "title": "Offline AI solutions in African markets",
+              "url": "https://techcabal.com/2026/08/05/offline-ai-africa-innovation-sme/",
+              "domain": "techcabal.com",
+              "date": "05/08/2026"
+            }
+          ]
+        },
+        {
+          "id": "2026-08-31-2",
+          "title": "La digitalisation de la logistique du dernier kilomètre : Le vrai combat du E-commerce africain",
+          "account": "personal",
+          "pillar": "pme",
+          "pillarLabel": "Terrain & PME Africaines",
+          "funnel": "MOFU",
+          "score": 5,
+          "bridge": "Iboga Process (Optimisation logistique)",
+          "type": "content",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Texte avec image LinkedIn",
+              "hook": "Vous pouvez avoir le meilleur site e-commerce du monde, si le livreur n'arrive pas à trouver la maison du client à cause d'une adresse imprécise, votre vente est perdue.",
+              "points": [
+                "Le cauchemar du dernier kilomètre : en Afrique, la livraison finale peut représenter jusqu'à 60% du coût total du produit.",
+                "L'importance des adresses informelles : la nécessité de s'adapter aux repères locaux ('derrière la pharmacie') via des coordonnées GPS et WhatsApp.",
+                "L'impact sur l'expérience client : la livraison est souvent le seul contact physique entre la marque et le client."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Article LinkedIn",
+              "hook": "Comment l'IA et les modèles hybrides transforment la logistique du dernier kilomètre pour les PME en Afrique en 2026.",
+              "points": [
+                "Optimisation dynamique des routes : utiliser l'IA pour calculer les trajets en temps réel face aux embouteillages imprévisibles, réduisant le carburant de 20%.",
+                "Fulfillment hybride : abandonner l'entrepôt unique pour des micro-hubs de quartier, rapprochant le stock du client.",
+                "L'intégration API complète : connecter directement la prise de commande WhatsApp au logiciel du livreur pour supprimer les doubles saisies (l'approche Iboga Process)."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte court LinkedIn",
+              "hook": "Essayer de copier le modèle d'Amazon Prime en Afrique est la meilleure façon de faire faillite. La logistique africaine nécessite une approche de guérilla.",
+              "points": [
+                "L'échec du copier-coller : les infrastructures et systèmes d'adresses occidentaux n'existent pas ici. Les drones ne remplaceront pas de sitôt les motos bien organisées.",
+                "La flexibilité prime sur la vitesse : les clients préfèrent souvent la transparence (savoir exactement où est le livreur) à la livraison en 2h chrono.",
+                "Le modèle gagnant : combiner technologie de pointe (algorithmes d'optimisation) avec une connaissance hyper-locale du terrain."
+              ]
+            }
+          ],
+          "draftedPost": null,
+          "generatedImages": [],
+          "sources": [
+            {
+              "title": "Logistics Update Africa - Last Mile Delivery Trends 2026",
+              "url": "https://www.logupdateafrica.com/last-mile-delivery-africa-trends-2026",
+              "domain": "logupdateafrica.com",
+              "date": "14/08/2026"
+            },
+            {
+              "title": "Straits Research - Africa E-commerce Logistics 2026",
+              "url": "https://straitsresearch.com/report/africa-ecommerce-logistics-2026",
+              "domain": "straitsresearch.com",
+              "date": "20/08/2026"
+            },
+            {
+              "title": "iCargos - AI in African Logistics",
+              "url": "https://icargos.com/ai-logistics-africa-2026",
+              "domain": "icargos.com",
+              "date": "05/08/2026"
+            }
+          ]
+        },
+        {
+          "id": "2026-08-31-3",
+          "title": "L'Agritech ne concerne pas que les agriculteurs : L'enjeu de l'agro-transformation pour les PME",
+          "account": "business",
+          "pillar": "pme",
+          "pillarLabel": "Terrain & PME Africaines",
+          "funnel": "TOFU",
+          "score": 4,
+          "bridge": "Aucun (Sensibilisation)",
+          "type": "content",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Storytelling LinkedIn",
+              "hook": "Nous avons des terres arables incroyables, mais nous importons nos jus de fruits. Le vrai potentiel de l'agritech en 2026, ce n'est plus juste d'aider le paysan, c'est d'aider la PME qui transforme la récolte.",
+              "points": [
+                "Le problème des pertes post-récolte : des tonnes de produits pourrissent avant d'arriver au marché.",
+                "Le virage de l'agro-processing : la création de valeur ajoutée (transformer le cacao en chocolat, le manioc en farine) est le véritable moteur économique.",
+                "Le rôle du digital : tracer les produits de la ferme à l'usine pour garantir la qualité et rassurer les investisseurs."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Texte long LinkedIn",
+              "hook": "L'Agritech 2.0 en Afrique a pivoté. Les startups ne vendent plus seulement des applications météo, elles s'intègrent dans la chaîne de valeur complète : financement, transformation, et accès au marché.",
+              "points": [
+                "L'évolution des modèles d'affaires : passer d'applications isolées à des plateformes intégrées (Mobile Money + Achat d'intrants + Garantie d'achat).",
+                "L'impact du climat : l'utilisation croissante d'outils digitaux pour promouvoir l'agriculture intelligente face au changement climatique (assurances indicielles).",
+                "La structuration des filières : comment les PME agro-industrielles peuvent utiliser ces données pour sécuriser leur approvisionnement."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte court LinkedIn",
+              "hook": "Donner un smartphone à un agriculteur ne le rendra pas riche. Lui garantir l'achat de sa récolte par une PME locale de transformation, oui.",
+              "points": [
+                "La tech solutionniste a échoué : les applis inutilisées se comptent par centaines.",
+                "L'économie réelle prime : la technologie doit faciliter la transaction financière et logistique, pas juste informer.",
+                "L'opportunité pour les dirigeants : investir dans l'agro-transformation avec une couche digitale légère (suivi de stock, paiements mobiles) est la meilleure opportunité de la décennie."
+              ]
+            }
+          ],
+          "draftedPost": null,
+          "generatedImages": [],
+          "sources": [
+            {
+              "title": "FAO - Innovate Africa Challenge 2026",
+              "url": "https://www.fao.org/africa/innovate-2026",
+              "domain": "fao.org",
+              "date": "12/08/2026"
+            },
+            {
+              "title": "Agrocentric - Value Addition and Agritech 2026",
+              "url": "https://agrocentric.com/value-addition-agritech-africa-2026",
+              "domain": "agrocentric.com",
+              "date": "19/08/2026"
+            },
+            {
+              "title": "StartupMapHub - The Agritech Funding Rebound",
+              "url": "https://startupmaphub.com/agritech-funding-rebound-africa",
+              "domain": "startupmaphub.com",
+              "date": "08/08/2026"
+            }
+          ]
+        },
+        {
+          "id": "2026-08-31-4",
+          "title": "Le Stoïcisme du Bâtisseur : Pourquoi accepter l'échec d'un process libère la croissance",
+          "account": "personal",
+          "pillar": "parcours",
+          "pillarLabel": "Parcours Builder",
+          "funnel": "TOFU",
+          "score": 4,
+          "bridge": "Aucun (Mindset)",
+          "type": "content",
+          "angles": [
+            {
+              "name": "Débutant",
+              "format": "Storytelling LinkedIn",
+              "hook": "Aujourd'hui, j'ai vu un process que nous avons mis 2 semaines à concevoir s'effondrer dès son premier jour d'utilisation par les équipes. Ma réaction d'il y a 3 ans ? Colère. Ma réaction aujourd'hui ? Fascination.",
+              "points": [
+                "La réalité du terrain : un plan parfait sur papier survit rarement au contact des utilisateurs finaux.",
+                "La philosophie du bâtisseur : l'échec d'un système n'est pas une faute professionnelle, c'est de la donnée gratuite pour s'améliorer.",
+                "Le détachement émotionnel : ne pas prendre l'échec de son outil personnellement, mais le corriger objectivement."
+              ]
+            },
+            {
+              "name": "Expert",
+              "format": "Texte long LinkedIn",
+              "hook": "Sénèque disait : 'Nous souffrons plus souvent en imagination qu'en réalité'. Dans le management des systèmes d'information, cette citation résume parfaitement l'anxiété du dirigeant face au changement.",
+              "points": [
+                "L'anticipation de l'échec paralyse : les PME refusent de digitaliser par peur que 'le système plante', restant dans des habitudes dysfonctionnelles mais familières.",
+                "L'ingénierie du chaos (Chaos Engineering) : assumer que tout va casser et construire des systèmes résilients plutôt que des systèmes parfaits.",
+                "Le stoïcisme appliqué : concentrez-vous uniquement sur ce que vous contrôlez (les SOPs, la formation) et acceptez les impondérables (coupures internet, bugs externes)."
+              ]
+            },
+            {
+              "name": "Contrarien",
+              "format": "Texte court LinkedIn",
+              "hook": "Si tous vos projets de digitalisation se passent parfaitement bien du premier coup, c'est que vous n'avez pris aucun risque ou que vous résolvez des problèmes insignifiants.",
+              "points": [
+                "Le confort est l'ennemi de l'innovation : les 'quick wins' faciles ne transforment pas une entreprise.",
+                "La valeur de la friction : c'est dans la douleur de l'adoption d'un nouvel outil que l'on découvre les vraies failles de l'entreprise.",
+                "Acceptez le chaos temporaire : la transition vers une PME data-driven nécessite de passer par une phase d'inconfort. C'est le prix de la clarté."
+              ]
+            }
+          ],
+          "draftedPost": null,
+          "generatedImages": [],
+          "sources": [
+            {
+              "title": "Stoicism in modern entrepreneurship",
+              "url": "https://hbr.org/2026/08/stoicism-entrepreneurial-resilience",
+              "domain": "hbr.org",
+              "date": "25/08/2026"
+            },
+            {
+              "title": "Cognitive flexibility in business leadership",
+              "url": "https://sloanreview.mit.edu/2026/08/cognitive-flexibility-leadership",
+              "domain": "sloanreview.mit.edu",
+              "date": "12/08/2026"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "session-2026-08-28",
       "date": "2026-08-28",
       "generatedAt": "28/08/2026 à 07h45",
