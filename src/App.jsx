@@ -35,14 +35,20 @@ function App() {
 
   const handleInstallClick = async () => {
     if (deferredPrompt) {
-      deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-      if (outcome === 'accepted') {
-        setIsInstalled(true);
+      try {
+        await deferredPrompt.prompt();
+        const choice = await deferredPrompt.userChoice;
+        if (choice && choice.outcome === 'accepted') {
+          setIsInstalled(true);
+        }
+      } catch (err) {
+        console.warn('Install prompt error:', err);
+        setShowIosGuide(true);
+      } finally {
+        setDeferredPrompt(null);
       }
-      setDeferredPrompt(null);
     } else {
-      // For iOS or unsupported browsers, show the manual instruction modal
+      // For iOS or desktop browsers without direct prompt event, open guide
       setShowIosGuide(true);
     }
   };
