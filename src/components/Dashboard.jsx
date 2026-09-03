@@ -37,7 +37,8 @@ const Dashboard = () => {
         const { data: sessions, error: sessionError } = await supabase
           .from('sessions')
           .select('*')
-          .order('date', { ascending: false });
+          .order('date', { ascending: false })
+          .order('generated_at', { ascending: false });
 
         if (sessionError) throw sessionError;
 
