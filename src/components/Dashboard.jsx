@@ -101,7 +101,13 @@ const Dashboard = () => {
 
   const currentSession = data.sessions[selectedSessionIndex];
   const allIdeas = currentSession ? currentSession.ideas : [];
-  const newsItems = allIdeas.filter(i => i.type === 'news');
+  const rawNewsItems = allIdeas.filter(i => i.type === 'news');
+  const filteredNewsItems = rawNewsItems.filter(news => {
+    if (filterAccount === 'all') return true;
+    if (filterAccount === 'personal') return isPersonalAccount(news.account);
+    if (filterAccount === 'business') return isBusinessAccount(news.account);
+    return true;
+  });
   const contentIdeas = allIdeas.filter(i => i.type !== 'news');
   
   const filteredIdeas = contentIdeas.filter(idea => {
@@ -344,7 +350,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="bg-white p-5 sm:p-6 border-l-4 border-l-[#0E3824] border-t border-r border-b border-[#E3E8E3] rounded-md shadow-xs flex flex-col justify-between">
+        <div className="bg-white p-5 sm:p-6 border border-[#E3E8E3] rounded-md shadow-xs flex flex-col justify-between">
           <div>
             <div className="text-xs font-bold text-[#0E3824] uppercase tracking-wider mb-1">
               Newsjacking Prioritaire
@@ -360,19 +366,21 @@ const Dashboard = () => {
       </div>
 
       {/* News Section (Curation Hebdomadaire) */}
-      {newsItems.length > 0 && (
+      {filteredNewsItems.length > 0 && (
         <div className="space-y-4">
           <div className="border-b border-[#E3E8E3] pb-2.5 flex items-center justify-between">
             <h2 className="text-base sm:text-lg font-bold text-[#0E3824] uppercase tracking-wide">
-              Actualités de la semaine ({newsItems.length})
+              Actualités de la semaine ({filteredNewsItems.length})
             </h2>
             <span className="text-xs text-[#586A5F] font-medium">Curation factuelle prête à relayer</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {newsItems.map((news) => {
+            {filteredNewsItems.map((news) => {
               const cleanNewsTitle = stripEmojis(news.title);
               const pillarClean = cleanPillarLabel(news.pillarLabel);
+              const isBusiness = isBusinessAccount(news.account);
+              const targetAccountLabel = isBusiness ? 'Iboga Lab (Entreprise)' : 'Jesse Ogoula (Personnel)';
               const firstSource = news.sources && news.sources.length > 0 ? news.sources[0] : null;
               const directUrl = firstSource ? formatUrl(firstSource.url) : null;
               const searchUrl = firstSource ? getSourceSearchUrl(firstSource.title, firstSource.domain) : null;
@@ -380,9 +388,12 @@ const Dashboard = () => {
               return (
                 <div key={news.id} className="bg-white border border-[#E3E8E3] rounded-md shadow-xs p-5 flex flex-col justify-between transition-shadow hover:shadow-sm">
                   <div>
-                    <div className="flex flex-wrap items-center gap-2 mb-3">
+                    <div className="flex flex-wrap items-center gap-1.5 mb-3">
                       <span className="text-xs font-semibold px-2 py-0.5 rounded bg-[#F0F5F1] text-[#0E3824] border border-[#C2CFC4]">
                         Actualité
+                      </span>
+                      <span className="text-xs font-semibold px-2 py-0.5 rounded bg-[#FAFBF9] border border-[#E3E8E3] text-[#0E3824]">
+                        {targetAccountLabel}
                       </span>
                       <span className="text-xs font-medium text-[#586A5F] bg-[#FAFBF9] border border-[#E3E8E3] px-2 py-0.5 rounded">
                         {pillarClean}
@@ -394,9 +405,16 @@ const Dashboard = () => {
                       )}
                     </div>
 
-                    <h3 className="text-sm font-bold text-[#0E3824] leading-snug mb-2.5">
+                    <h3 className="text-sm font-bold text-[#0E3824] leading-snug mb-2">
                       {cleanNewsTitle}
                     </h3>
+
+                    <div className="text-xs text-[#586A5F] mb-3 flex items-center gap-1.5 font-medium">
+                      <span>Canal recommandé :</span>
+                      <span className="font-semibold text-[#0E3824]">
+                        {isBusiness ? 'Page Entreprise (Iboga Lab)' : 'Compte Personnel (Jesse Ogoula)'}
+                      </span>
+                    </div>
 
                     {firstSource && (
                       <div className="text-xs text-[#586A5F] mb-3 flex items-center justify-between gap-2 pt-1 border-t border-[#FAFBF9]">

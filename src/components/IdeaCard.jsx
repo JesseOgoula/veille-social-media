@@ -144,7 +144,7 @@ const IdeaCard = ({ idea, onDelete }) => {
                   <div className="text-xs font-bold text-[#0E3824] uppercase tracking-wider mb-1.5">
                     Accroche Proposée (Hook)
                   </div>
-                  <div className="text-xs sm:text-sm text-[#0E3824] border-l-2 border-[#679D69] pl-3 py-1 italic bg-[#FAFBF9] rounded-r">
+                  <div className="text-xs sm:text-sm text-[#0E3824] px-3.5 py-2 italic bg-[#FAFBF9] border border-[#E3E8E3] rounded">
                     "{stripEmojis(idea.angles[expandedAngle].hook)}"
                   </div>
                 </div>

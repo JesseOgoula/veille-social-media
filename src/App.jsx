@@ -76,25 +76,40 @@ function App() {
               <p className="text-xs text-[#586A5F] font-medium">Jesse Ogoula & Iboga Lab</p>
             </div>
           </div>
-          <div className="flex items-center gap-3 sm:gap-4">
+          <div className="flex items-center gap-2.5 sm:gap-4">
             {!isInstalled && (
-              <button
-                onClick={handleInstallClick}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded bg-[#0E3824] text-white hover:bg-[#679D69] transition-colors shadow-xs"
-                title="Installer sur votre téléphone ou ordinateur"
-              >
-                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-                <span>Installer l'application</span>
-              </button>
+              <>
+                {/* Desktop: slim outline pill button */}
+                <button
+                  onClick={handleInstallClick}
+                  className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium rounded-full border border-[#0E3824] text-[#0E3824] hover:bg-[#0E3824] hover:text-white transition-all shrink-0 cursor-pointer shadow-2xs"
+                  title="Installer sur votre ordinateur ou téléphone"
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  <span>Installer l'application</span>
+                </button>
+
+                {/* Mobile: very thin, compact pill with icon and 'Installer' */}
+                <button
+                  onClick={handleInstallClick}
+                  className="sm:hidden inline-flex items-center gap-1 px-2 py-0.5 text-[11px] font-semibold rounded-full border border-[#C2CFC4] bg-[#F0F5F1] text-[#0E3824] hover:bg-[#E3E8E3] transition-colors shrink-0 cursor-pointer shadow-2xs"
+                  title="Installer l'application"
+                >
+                  <svg className="w-3 h-3 text-[#0E3824]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  <span>Installer</span>
+                </button>
+              </>
             )}
 
             <a 
               href="https://ibogalab.vercel.app" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-xs sm:text-sm font-semibold text-[#0E3824] hover:text-[#679D69] transition-colors flex items-center gap-1.5"
+              className="text-xs sm:text-sm font-semibold text-[#0E3824] hover:text-[#679D69] transition-colors flex items-center gap-1 shrink-0"
             >
               <span>ibogalab.com</span>
               <span className="text-[#679D69]">→</span>
