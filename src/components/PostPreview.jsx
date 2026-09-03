@@ -12,23 +12,26 @@ const PostPreview = ({ post }) => {
   };
 
   return (
-    <div className="mt-6 border-t border-[#EAEAEA] pt-6">
-      <div className="flex items-center justify-between mb-4">
-        <div className="text-xs font-semibold text-iboga-dark uppercase tracking-wide">
-          Brouillon Final Rédigé
+    <div className="mt-6 border-t border-[#E3E8E3] pt-5">
+      <div className="flex items-center justify-between mb-3">
+        <div className="text-xs font-bold text-[#0E3824] uppercase tracking-wider">
+          Publication Rédigée (Prête à diffuser)
         </div>
         <button 
           onClick={handleCopy}
-          className="btn btn-outline text-xs py-1 px-3"
+          className={`text-xs font-semibold px-3 py-1.5 rounded transition-all border ${
+            copied 
+              ? 'bg-[#0E3824] text-white border-[#0E3824]' 
+              : 'bg-white text-[#0E3824] border-[#0E3824] hover:bg-[#0E3824] hover:text-white cursor-pointer'
+          }`}
         >
-          {copied ? 'Copié !' : 'Copier le post complet'}
+          {copied ? 'Texte copié' : 'Copier le texte complet'}
         </button>
       </div>
       
-      <div className="bg-white border border-[#EAEAEA] rounded shadow-sm overflow-hidden">
-        {/* Render Text */}
-        <div className="p-4 text-sm text-text-main whitespace-pre-wrap font-sans">
-          {post || "Le texte du post apparaîtra ici."}
+      <div className="bg-white border border-[#E3E8E3] rounded-md shadow-xs overflow-hidden">
+        <div className="p-4 sm:p-5 text-sm text-[#0E3824] whitespace-pre-wrap font-sans leading-relaxed select-text">
+          {post || "Le texte rédigé apparaîtra ici."}
         </div>
       </div>
     </div>

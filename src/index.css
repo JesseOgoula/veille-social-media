@@ -4,24 +4,27 @@
   --color-iboga-dark: #0e3824;
   --color-iboga-light: #679d69;
   --color-background: #ffffff;
-  --color-surface: #fafafa;
-  --color-border: #eaeaea;
-  --color-text-main: #1a1a1a;
-  --color-text-muted: #666666;
+  --color-surface: #f7f9f7;
+  --color-surface-subtle: #edf3ee;
+  --color-border: #e3e8e3;
+  --color-border-strong: #c2cfc4;
+  --color-text-main: #0e3824;
+  --color-text-muted: #586a5f;
 }
 
 body {
-  @apply bg-background text-text-main font-sans antialiased;
+  @apply bg-[#FAFBF9] text-[#0E3824] font-sans antialiased selection:bg-[#679D69]/20 selection:text-[#0E3824];
 }
 
 @layer components {
   .btn {
-    @apply px-4 py-2 text-sm font-medium transition-colors border;
+    @apply px-4 py-2 text-sm font-medium transition-colors border rounded;
   }
   .btn-primary {
-    @apply bg-iboga-dark text-white border-transparent hover:opacity-90;
+    @apply bg-iboga-dark text-white border-transparent hover:bg-[#164831];
   }
   .btn-outline {
-    @apply bg-transparent text-iboga-dark border-iboga-dark hover:bg-surface;
+    @apply bg-transparent text-iboga-dark border-iboga-dark hover:bg-surface-subtle;
   }
 }
+
