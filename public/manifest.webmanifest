@@ -1,0 +1,32 @@
+{
+  "id": "veille-social-media-ibogalab",
+  "name": "Veille Social Media — Jesse Ogoula & Iboga Lab",
+  "short_name": "Veille Iboga",
+  "description": "Tableau de bord de veille stratégique, curation d'actualités et génération de publications pour Jesse Ogoula & Iboga Lab.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0E3824",
+  "theme_color": "#0E3824",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
