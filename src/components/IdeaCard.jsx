@@ -10,6 +10,7 @@ import {
 
 const IdeaCard = ({ idea, onDelete }) => {
   const [expandedAngle, setExpandedAngle] = useState(0);
+  const [bridgeExpanded, setBridgeExpanded] = useState(false);
 
   // Safely extract the drafted post for the selected angle (handles both string and array)
   const getDraftedPost = (draftedPost, index) => {
@@ -38,7 +39,7 @@ const IdeaCard = ({ idea, onDelete }) => {
     <div className="bg-white border border-[#E3E8E3] rounded-md shadow-xs overflow-hidden flex flex-col transition-shadow hover:shadow-sm">
       {/* Header */}
       <div className="p-4 sm:p-5 border-b border-[#E3E8E3] flex flex-col md:flex-row md:items-start justify-between gap-4">
-        <div className="space-y-2 max-w-3xl">
+        <div className="flex-1 min-w-0 space-y-2">
           <div className="flex flex-wrap items-center gap-2">
             {/* Account Badge */}
             <span className={`text-xs font-semibold px-2.5 py-0.5 rounded border ${
@@ -79,22 +80,45 @@ const IdeaCard = ({ idea, onDelete }) => {
           </h3>
         </div>
         
-        <div className="flex flex-col items-start md:items-end gap-2.5 shrink-0">
-          <button 
-            onClick={onDelete}
-            className="text-xs font-medium text-[#586A5F] hover:text-[#0E3824] transition-colors flex items-center gap-1.5 bg-[#FAFBF9] px-2.5 py-1 rounded border border-[#E3E8E3] hover:border-[#0E3824] cursor-pointer"
-            title="Supprimer cette publication de la veille"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-            </svg>
-            <span>Retirer</span>
-          </button>
+        <div className="w-full md:w-72 lg:w-80 shrink-0 flex flex-col items-start md:items-end gap-2.5">
+          <div className="w-full flex justify-end">
+            <button 
+              onClick={onDelete}
+              className="text-xs font-medium text-[#586A5F] hover:text-[#0E3824] transition-colors flex items-center gap-1.5 bg-[#FAFBF9] px-2.5 py-1 rounded border border-[#E3E8E3] hover:border-[#0E3824] cursor-pointer"
+              title="Supprimer cette publication de la veille"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+              </svg>
+              <span>Retirer</span>
+            </button>
+          </div>
           
           {cleanBridge && (
-            <div className="text-left md:text-right mt-1">
-              <div className="text-xs font-bold text-[#0E3824] uppercase tracking-wider">Pont Business</div>
-              <div className="text-xs sm:text-sm font-medium text-[#586A5F]">{cleanBridge}</div>
+            <div className="w-full bg-[#FAFBF9] border border-[#E3E8E3] rounded-md p-2.5 text-left transition-all">
+              <div className="text-[10px] font-bold text-[#0E3824] uppercase tracking-wider mb-1 flex items-center justify-between gap-1">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#679D69]"></span>
+                  <span>Pont Business</span>
+                </div>
+                {cleanBridge.length > 90 && (
+                  <button
+                    type="button"
+                    onClick={() => setBridgeExpanded(!bridgeExpanded)}
+                    className="text-[10px] text-[#679D69] hover:text-[#0E3824] font-semibold cursor-pointer underline transition-colors"
+                  >
+                    {bridgeExpanded ? 'Réduire' : 'Voir plus'}
+                  </button>
+                )}
+              </div>
+              <div 
+                className={`text-xs font-medium text-[#586A5F] leading-relaxed break-words ${
+                  bridgeExpanded ? '' : 'line-clamp-2'
+                }`}
+                title={cleanBridge}
+              >
+                {cleanBridge}
+              </div>
             </div>
           )}
         </div>
