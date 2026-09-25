@@ -121,7 +121,8 @@ const Dashboard = () => {
     const isDrafted = Boolean(
       idea.draftedPost && 
       ((Array.isArray(idea.draftedPost) && idea.draftedPost.length > 0) ||
-       (typeof idea.draftedPost === 'string' && idea.draftedPost.trim().length > 0))
+       (typeof idea.draftedPost === 'string' && idea.draftedPost.trim().length > 0) ||
+       (typeof idea.draftedPost === 'object' && Object.keys(idea.draftedPost).length > 0))
     );
 
     const matchStatus = 
@@ -135,7 +136,8 @@ const Dashboard = () => {
   const totalDrafted = contentIdeas.filter(i => 
     Boolean(i.draftedPost && (
       (Array.isArray(i.draftedPost) && i.draftedPost.length > 0) ||
-      (typeof i.draftedPost === 'string' && i.draftedPost.trim().length > 0)
+      (typeof i.draftedPost === 'string' && i.draftedPost.trim().length > 0) ||
+      (typeof i.draftedPost === 'object' && Object.keys(i.draftedPost).length > 0)
     ))
   ).length;
 

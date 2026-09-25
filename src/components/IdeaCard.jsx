@@ -12,7 +12,7 @@ const IdeaCard = ({ idea, onDelete }) => {
   const [expandedAngle, setExpandedAngle] = useState(0);
   const [bridgeExpanded, setBridgeExpanded] = useState(false);
 
-  // Safely extract the drafted post for the selected angle (handles both string and array)
+  // Safely extract the drafted post for the selected angle (handles string, array, and object)
   const getDraftedPost = (draftedPost, index) => {
     if (!draftedPost) return null;
     if (Array.isArray(draftedPost)) {
@@ -21,12 +21,16 @@ const IdeaCard = ({ idea, onDelete }) => {
     if (typeof draftedPost === 'string' && draftedPost.trim().length > 0) {
       return draftedPost;
     }
+    if (typeof draftedPost === 'object') {
+      return draftedPost.linkedin || draftedPost.text || draftedPost.content || Object.values(draftedPost)[0] || null;
+    }
     return null;
   };
 
   const hasDraftedPost = Boolean(idea.draftedPost && (
     (Array.isArray(idea.draftedPost) && idea.draftedPost.length > 0) ||
-    (typeof idea.draftedPost === 'string' && idea.draftedPost.trim().length > 0)
+    (typeof idea.draftedPost === 'string' && idea.draftedPost.trim().length > 0) ||
+    (typeof idea.draftedPost === 'object' && Object.keys(idea.draftedPost).length > 0)
   ));
 
   const currentDraft = getDraftedPost(idea.draftedPost, expandedAngle);
