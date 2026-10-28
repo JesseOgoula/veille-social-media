@@ -250,72 +250,114 @@ Votre système d'encaissement est-il prêt à absorber des flux instantanés uni
     pillar_label: 'IA Appliquée pour Dirigeants',
     funnel: 'TOFU',
     score: 5,
-    bridge: "Jesse Ogoula / Iboga Process — Passage des prompts conversationnels à l'automatisation d'actions logicielles réelles (saisie, extraction ERP, conciliation bancaire)",
+    bridge: "Jesse Ogoula — Analyse prospective et stratégique sur la bascule vers les agents autonomes d'action directe (Computer Use, dots, Grok Bots, Cowork) et l'impact sur le travail de bureau.",
     angles: [
       {
-        name: "Débutant",
+        name: "Débutant / Vulgarisation",
         format: "Texte long",
-        hook: "Pendant deux ans, vous avez appris à parler à l'intelligence artificielle. Demain matin, vous allez simplement la regarder travailler sur votre écran.",
+        hook: "Pendant deux ans, vous avez appris à parler à l'intelligence artificielle. Depuis le mois d'octobre 2026, OpenAI, Anthropic, Google, xAI et Microsoft se battent pour que leur IA prenne directement le contrôle de votre souris.",
         points: [
-          "Explication simple de la bascule technologique : de la génération de texte statique au pilotage visuel de logiciels existants (« Computer Use »)",
-          "Comment un agent IA analyse les boutons, champs et menus exactement comme un employé de bureau",
-          "Le cas d'usage typique : exporter un fichier Excel bancaire, ouvrir le logiciel de facturation et cocher les règlements sans aucune API",
-          "Pourquoi cette technologie supprime enfin la barrière des logiciels anciens ou non connectés dans les PME africaines"
+          "Explication du basculement : de la génération de texte statique au pilotage visuel d'interfaces logicielles complètes (« Computer Use »).",
+          "La cartographie des 5 géants : dots d'OpenAI (proactifs 24/7 sur VM cloud), Claude Cowork (précision workflows complexes), Gemini (suite bureautique Workspace), Grok Bot (agents persistants cloud avec résolutions de captchas), Copilot Studio (auto-réparation sur ERP legacy).",
+          "Cas d'usage concret : connecter deux logiciels sans API (export comptable, téléversement bancaire, pointage) sans développeur ni script fragile.",
+          "La rupture culturelle : l'IA n'est plus un outil qu'on interroge, mais un collègue virtuel opérant dans sa propre fenêtre avec ses propres autorisations."
         ]
       },
       {
-        name: "Expert",
+        name: "Expert / Stratégique",
         format: "Carrousel",
-        hook: "Architecture des agents d'action directe sur écran : Les 4 barrières de sécurité indispensables avant d'autoriser une IA à toucher à votre ERP.",
+        hook: "OpenAI, Anthropic, Google, xAI et Microsoft proposent tous des agents capables de cliquer dans vos logiciels. Avant d'en brancher un seul sur votre ERP, voici les 5 barrières de sécurité non négociables.",
         points: [
-          "Pilier 1 : Environnement d'exécution isolé (bac à sable sécurisé pour éviter tout clic destructeur)",
-          "Pilier 2 : Journalisation d'audit en temps réel (chaque clic et saisie enregistré et horodaté)",
-          "Pilier 3 : Seuils de tolérance et escalade humaine obligatoire pour les montants critiques",
-          "Pilier 4 : Protocole de réconciliation automatique en sortie pour vérifier la conformité des écritures"
+          "Pilier 1 : Environnement d'exécution isolé (Sandboxing) — obligation d'exécuter l'agent dans une machine virtuelle cloud étanche, jamais sur la machine physique de l'utilisateur.",
+          "Pilier 2 : Journalisation d'audit en continu — chaque clic, saisie et redirection doit être tracé et horodaté (Purview, logs Gemini) pour identifier toute anomalie.",
+          "Pilier 3 : Seuils de tolérance et escalade humaine (HITL) — configuration des 4 niveaux d'autonomie (agir seul, pré-approuvé, validation obligatoire, lecture seule) pour chaque flux sensible.",
+          "Pilier 4 : Idempotence et réconciliation automatique — protection contre les doubles clics ou coupures réseau pour éviter les doublons de virements ou de commandes.",
+          "Pilier 5 : Auto-réparation vs dérive algorithmique (Self-Healing) — encadrer l'adaptation visuelle des agents face aux modifications d'interfaces pour prévenir les actions imprévues."
         ]
       },
       {
-        name: "Contrarien",
+        name: "Contrarien / Marché",
         format: "Post court",
-        hook: "Les éditeurs de logiciels vous vendent des refontes d'ERP à 15 millions de FCFA pour « moderniser vos flux ». C'est déjà obsolète.",
+        hook: "Un prestataire vous facture 15 millions de FCFA pour refondre votre ERP et connecter vos logiciels via des API sur mesure. Cette proposition est déjà morte.",
         points: [
-          "Pourquoi changer de logiciel pour avoir des connecteurs modernes est devenu un gaspillage financier",
-          "Les agents visuels rendent les logiciels legacy aussi maniables que les applications de pointe",
-          "Le véritable goulet d'étranglement n'a jamais été votre vieux logiciel, mais le manque de procédures d'exécution standardisées",
-          "L'investissement rentable consiste à assainir le flux humain avant d'automatiser l'écran"
+          "Mort du RPA rigide (UiPath, scripts locaux) : les agents visuels comprennent le contexte à l'écran au lieu de pointer mécaniquement des sélecteurs CSS qui cassent à la moindre mise à jour.",
+          "Fin du dogme du « tout-API » : interconnecter un logiciel legacy et un CRM moderne ne prend plus 6 mois de développement, un agent d'action visuelle le fait en quelques minutes.",
+          "Le piège de la simplicité apparente : les benchmarks mondiaux (OSWorld) montrent 34 à 40 % d'échecs sur les tâches complexes. Automatiser sans processus clair, c'est industrialiser le chaos.",
+          "Le véritable enjeu pour les dirigeants : le goulet d'étranglement n'est plus l'incompatibilité logicielle, mais la rigueur de documentation des procédures internes."
+        ]
+      },
+      {
+        name: "Prospectif / Sociétal",
+        format: "Texte long",
+        hook: "Jusqu'ici, l'intelligence artificielle attendait sagement que vous posiez une question. Avec les « dots » d'OpenAI et les « Grok Bots » de xAI, ce sont désormais les agents qui vous contactent pour vous dire quoi faire.",
+        points: [
+          "Passage du réactif au proactif : des agents persistants 24h/24 tournant sur leurs propres ordinateurs virtuels cloud, scrutant e-mails, calendriers et flux de gestion.",
+          "Le cas concret : un agent de trésorerie qui analyse les factures la nuit et envoie un message à 7h du matin avec la relance client déjà préparée.",
+          "Le danger de la surcharge inversée : si vos agents génèrent des dizaines de sollicitations quotidiennes, la gestion des niveaux d'alerte devient un nouveau défi managérial.",
+          "La question de confiance : quel niveau de délégation accorder à une entité autonome ayant un accès permanent en lecture à votre écosystème ?"
+        ]
+      },
+      {
+        name: "Comparatif / Éducatif",
+        format: "Carrousel",
+        hook: "5 géants technologiques proposent des agents capables de piloter vos logiciels à votre place. Mais ils ne font pas la même chose et ne ciblent pas le même profil d'entreprise. Voici le comparatif.",
+        points: [
+          "Claude Computer Use (Anthropic) : précision chirurgicale, idéal pour développeurs, architectes et workflows techniques complexes.",
+          "GPT-6.1 Terra & dots (OpenAI) : compagnons proactifs cloud 24/7 pour managers et équipes opérationnelles avec intégrations multi-apps.",
+          "Gemini at Work (Google) : parfaite symbiose avec Google Workspace, contexte mémoire ultra-large et gouvernance d'entreprise intégrée.",
+          "Grok Bot (xAI) : agents nommés avec workspaces persistants, résolution de captchas et navigation web asynchrone pour développeurs/solopreneurs.",
+          "Copilot Studio (Microsoft) : taillé pour les grands comptes et logiciels legacy (ERP, intranet) avec auto-réparation et conformité Azure.",
+          "Critère de décision : le choix dépend de votre parc logiciel existant, de votre tolérance au risque et de la clarté de vos processus, pas du battage médiatique."
+        ]
+      },
+      {
+        name: "Contrarien fort / Alerte",
+        format: "Post court",
+        hook: "Un chatbot qui hallucine un chiffre dans un rapport vous fait perdre un quart d'heure de relecture. Un agent d'action visuelle qui hallucine un clic dans votre logiciel bancaire vous fait perdre plusieurs millions.",
+        points: [
+          "L'erreur n'est plus suggérée, elle est immédiatement exécutée : pas de filtre humain possible entre le clic de validation et la base de données.",
+          "La réalité des benchmarks : avec 60-66 % de réussite sur OSWorld, 1 tâche sur 3 échoue encore dans les scénarios multi-applications complexes.",
+          "Le piège du faux sentiment de sécurité : l'auto-réparation peut amener un agent à choisir un bouton alternatif imprévu et valider une mauvaise opération en toute bonne foi.",
+          "Règle de gouvernance : aucun agent d'action ne doit opérer sans bac à sable hermétique, journalisation d'audit continue et validation humaine pour les flux critiques."
         ]
       }
     ],
     sources: [
       {
-        title: "OpenAI announces GPT-6.1 Terra optimized for visual reasoning and computer-use agent workflows",
+        title: "OpenAI announces GPT-6.1 Terra and persistent cloud dots",
         domain: "openai.com",
         date: "2026-10-26",
         url: "https://openai.com/news/"
       },
       {
-        title: "Anthropic, OpenAI and the Rise of Computer-Use Autonomous Desktop Agents",
-        domain: "theverge.com",
+        title: "Claude Cowork and Computer Use API for Enterprise Workflows",
+        domain: "anthropic.com",
         date: "2026-10-24",
-        url: "https://www.theverge.com/"
+        url: "https://www.anthropic.com/news/"
       },
       {
-        title: "L'impact du Computer Use sur la productivité administrative dans les entreprises",
-        domain: "cio-mag.com",
-        date: "2026-10-27",
-        url: "https://cio-mag.com/"
-      },
-      {
-        title: "Modernisation des logiciels d'entreprise sans API grâce aux agents d'interface",
-        domain: "wearetech.africa",
+        title: "xAI introduces Grok Bots persistent cloud agents",
+        domain: "x.ai",
         date: "2026-10-25",
-        url: "https://www.wearetech.africa/"
+        url: "https://x.ai/blog/"
       },
       {
-        title: "Automatisation bureautique : la transition des macros rigides vers les agents intelligents",
-        domain: "latribune.fr",
-        date: "2026-10-26",
-        url: "https://afrique.latribune.fr/"
+        title: "Google Gemini Computer Use and Agent Gateway architecture",
+        domain: "cloud.google.com",
+        date: "2026-10-22",
+        url: "https://cloud.google.com/blog/"
+      },
+      {
+        title: "Microsoft Copilot Studio announces General Availability of Computer-Using Agents",
+        domain: "microsoft.com",
+        date: "2026-10-20",
+        url: "https://www.microsoft.com/en-us/microsoft-copilot/blog/"
+      },
+      {
+        title: "OSWorld Benchmark 2026: Evaluating Multimodal Agents on Complex Desktop Environments",
+        domain: "os-world.github.io",
+        date: "2026-10-25",
+        url: "https://os-world.github.io/"
       }
     ],
     drafted_post: `Pendant deux ans, vous avez appris à parler à l'intelligence artificielle.
