@@ -884,6 +884,113 @@ export const allIdeas = [
       }
     ],
     drafted_post: null
+  },
+
+  // ==========================================
+  // IDÉE 08 — NEWSJACKING / CONTENU (AJOUT DU 3 NOVEMBRE 2026)
+  // ==========================================
+  {
+    id: 'idea_20261103_08',
+    session_id: sessionId,
+    type: 'content',
+    title: "Google offre 1 an de Gemini gratuit aux étudiants dans 140 pays : Ce que les formateurs et dirigeants africains doivent comprendre avant leurs concurrents",
+    account: 'jesse',
+    pillar: 'ia-appliquee',
+    pillar_label: 'IA Appliquée pour Dirigeants',
+    funnel: 'TOFU',
+    score: 5,
+    bridge: "Jesse Ogoula / Formateur — Pont vers Iboga Learn pour les entreprises souhaitant structurer la montée en compétences IA de leurs équipes",
+    angles: [
+      {
+        name: "Débutant / Vulgarisation",
+        format: "Post court",
+        hook: "Google vient d'offrir 1 an d'accès premium à Gemini gratuitement aux étudiants du monde entier. 140 pays éligibles. Voici ce que ça change concrètement pour vos équipes et vos stagiaires en Afrique.",
+        points: [
+          "Gemini AI Pro ou AI Plus gratuit pendant 12 mois pour tout étudiant de l'enseignement supérieur",
+          "Vérification via email institutionnel ou SheerID — processus simple et accessible",
+          "Fonctionnalités incluses : Deep Research, Gemini Live, Notebooks 200 pages, stockage 2 To",
+          "Disponible dans 140 pays dont plusieurs en Afrique subsaharienne",
+          "Action immédiate : vérifier l'éligibilité de vos stagiaires et apprenants dès maintenant"
+        ]
+      },
+      {
+        name: "Expert / Stratégique",
+        format: "Carrousel",
+        hook: "Une offre étudiante gratuite peut transformer votre programme de formation interne. Voici 4 façons de l'intégrer concrètement.",
+        points: [
+          "Intégrer Gemini comme outil de travail dans les modules de formation métier dès l'accueil",
+          "Créer un parcours d'onboarding IA pour les alternants et stagiaires équipés Gemini",
+          "Utiliser Deep Research pour accélérer les livrables de fin de mission à fort impact",
+          "Capitaliser sur la période gratuite pour bâtir des réflexes IA durables avant l'embauche"
+        ]
+      },
+      {
+        name: "Contrarien / Prise de position",
+        format: "Texte long",
+        hook: "Un outil gratuit ne forme pas. Ce qui formera vos équipes, c'est ce qu'elles feront avec Gemini le lundi matin suivant.",
+        points: [
+          "L'accès ne suffit pas : il faut une pédagogie structurée autour de l'usage réel en contexte",
+          "Le risque est de consommer Gemini comme un moteur de recherche amélioré sans profondeur",
+          "La vraie valeur est dans l'intégration aux processus métier, pas dans la détention de l'outil",
+          "Les entreprises qui gagneront sont celles qui forment avant de distribuer les accès",
+          "Iboga Learn répond exactement à ce besoin : structurer l'usage IA en contexte professionnel africain"
+        ]
+      },
+      {
+        name: "Prospectif / Sociétal",
+        format: "Texte long",
+        hook: "Dans 3 ans, les diplômés africains formés avec Gemini AI Pro auront un avantage compétitif réel sur ceux qui n'ont jamais touché à ces outils.",
+        points: [
+          "Première génération africaine formée nativement aux outils IA de niveau mondial",
+          "Réduction potentielle du fossé de compétences numériques Nord-Sud à l'horizon 2028",
+          "Les recruteurs commencent à privilégier les profils avec maîtrise démontrée des outils IA",
+          "Le risque symétrique : l'Afrique absente de la révolution si les institutions n'agissent pas maintenant",
+          "Opportunité pour les formateurs africains de positionner leurs programmes comme passerelle concrète"
+        ]
+      },
+      {
+        name: "Comparatif / Décisionnel",
+        format: "Carrousel",
+        hook: "Étudiant équipé Gemini AI Pro vs collaborateur PME sans outil IA : le risque de compétence gap qui se creuse chaque mois.",
+        points: [
+          "Étudiant : Deep Research en 10 minutes sur n'importe quel sujet métier avec sources vérifiées",
+          "Collaborateur PME sans IA : 3 heures de recherche manuelle pour le même livrable",
+          "Étudiant : synthèses automatiques, traductions, reformulations en contexte professionnel",
+          "Collaborateur : dépendance aux process manuels et aux outils bureautiques classiques",
+          "Dans 12 mois, l'écart de productivité sera visible, mesurable et difficile à combler rapidement"
+        ]
+      },
+      {
+        name: "Storytelling / Retour terrain",
+        format: "Récit",
+        hook: "Ce que j'aurais pu faire si j'avais eu Gemini pendant ma formation en droit et en logistique.",
+        points: [
+          "Analyse jurisprudentielle en quelques minutes au lieu de plusieurs jours de recherche manuelle",
+          "Modélisation logistique assistée pour les mémoires et projets de fin d'études avec données réelles",
+          "Préparation aux entretiens avec des simulations IA contextualisées à mon secteur",
+          "Aujourd'hui, je forme 300 talents : ce que je leur apprends, c'est exactement cet usage-là",
+          "La question n'est pas l'outil, c'est la méthode : avoir Gemini sans méthode, c'est avoir un marteau sans savoir construire"
+        ]
+      }
+    ],
+    sources: [
+      {
+        url: "https://gemini.google/students/",
+        label: "Page officielle Gemini for Students",
+        date: "2026-11-03"
+      },
+      {
+        url: "https://one.google.com/ai-student",
+        label: "Portail d'inscription Google AI Student",
+        date: "2026-11-03"
+      },
+      {
+        url: "https://blog.google",
+        label: "Blog officiel Google — annonce Gemini for Students",
+        date: "2026-11-03"
+      }
+    ],
+    drafted_post: null
   }
 ];
 
